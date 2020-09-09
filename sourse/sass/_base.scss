@@ -14,7 +14,7 @@ html {
 	height: 100%;
 	background-position: center 0;
 	opacity: 0;
-	// opacity: 0.7;
+	//opacity: 0.7;
 }
 
 body,
@@ -32,6 +32,19 @@ html {
 
 .section-title { 
 	padding-bottom: var(--sTPB);
+
+	h2{
+		font-size: 30px;
+		@include media-breakpoint-up(md){
+			font-size: 40px;
+		}
+		@include media-breakpoint-up(xl){
+			font-size: 50px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 70px;
+		}
+	}
 }
 
 body {
@@ -58,12 +71,7 @@ body {
 		width: 100%;
 		left: 0;
 		top: 0;
-		z-index: 999;
-
-		&::before {
-			z-index: 999;
-			opacity: 0.76;
-		}
+		z-index: 98;
 	}
 }
 
@@ -411,4 +419,10 @@ img.img-bg,
 iframe {
 	border: none;
 }
- 
+
+.container{
+	@include media-breakpoint-down(sm){
+		padding-left: 23px;
+		padding-right: 26px;
+	}
+}

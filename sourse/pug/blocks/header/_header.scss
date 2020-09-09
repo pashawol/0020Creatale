@@ -1,7 +1,7 @@
+// start .header
+.header {
+	background-color: $primary;
 
-	// start .header
-	.header {
-		 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

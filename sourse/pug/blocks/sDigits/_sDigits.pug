@@ -1,0 +1,34 @@
+mixin sDigits()
+	// start sDigits
+	+b.SECTION.sDigits.section#sDigits&attributes(attributes)
+		+e.container.container
+			+e.bg
+				+pic('sDigits-bg-croped.png')(class="sDigits__bg-pic")
+				+e.bg-txt
+					+e.name Christian Dittrich
+					+e.after-name Geschäftsführer und Diplom-Informatiker
+			+e.txt-content
+				+b.section-title
+					h2 Querdenker, Unternehmer & Software-Visionär
+					p Creatale Gründer Christian Dittrich
+				+e.row.row
+					+digitsItem('14', 'Software-Entwickler')
+						p 14 Jahre Erfahrung als Softwareentwickler
+					+digitsItem('7', 'Unternehmer', ' Jahre')
+						p 7 Jahre Erfahrung als Unternehmer
+					+digitsItem('4', 'Jahre Dozent')
+						p Seit 2016 Dozent für Informatik an der media akademie Hochschule Stuttgart (maHS)
+					+digitsItem('1.', 'Platz Startup Weekend')
+						p Stuttgart 2014 und 2018
+	// end sDigits
+
+mixin digitsItem(digitNum, title, digitTxt='')
+	+e.col.col-lg-6
+		+e.digit
+			+e.digit-num=digitNum
+			+e.digit-txt=digitTxt
+		+e.smaller-txt
+			+e.title=title
+			+e.txt
+				block
+

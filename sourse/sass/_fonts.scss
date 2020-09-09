@@ -1,12 +1,15 @@
-$default-font: "roboto";
+$default-font: "rajdhani";
+$mono: "Source Sans Pro";
 // $file-form: ($file-formats: woff2 woff ttf);
 $addr: '../fonts/';
 $file-format: woff2 woff;
 
-@include font-face ($default-font, $addr + "Roboto-Regular/Roboto-Regular", $file-formats: $file-format);
-@include font-face ($default-font, $addr + "Roboto-Bold/Roboto-Bold", bold, $file-formats: $file-format);
-@include font-face ($default-font, $addr + "Roboto-Medium/Roboto-Medium", 500, $file-formats: $file-format);
-@include font-face ($default-font, $addr + "Roboto-Black/Roboto-Black", 900, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "rajdhani-Regular/Rajdhani-Regular", 400 ,$file-formats: $file-format);
+@include font-face ($default-font, $addr + "rajdhani-Medium/Rajdhani-Medium", 500 ,$file-formats: $file-format);
+@include font-face ($default-font, $addr + "rajdhani-SemiBold/Rajdhani-SemiBold", 600 ,$file-formats: $file-format);
+@include font-face ($default-font, $addr + "rajdhani-Bold/Rajdhani-Bold", 700 ,$file-formats: $file-format);
+
+@include font-face ($mono, $addr + "Sourece-Sans-Pro-Bold/Sourece-Sans-Pro-Bold", 700 , $file-formats: $file-format);
 
 // font-weight helper:
 

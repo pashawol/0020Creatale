@@ -1,10 +1,42 @@
 mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+		+pic('headBl-bg')(class="headerBlock__bg")
+		+e.sec-content
+			.container
+				+e.row.row
+					+headerBlockItem('Software für Deine tollen Ideen', 'Du fragst Dich, welche Software Deiner genialen Idee gerecht wird?', 1)
+						+e.ul-title Wir finden für Deine einzigartige Idee die perfekte Software-Lösung:
+						+e.list
+							ul
+								li Technologie-unabhängig
+								li Plattformübergreifend
+								li Flexibel für jede Herausforderung
+					+headerBlockItem('Software, die du liebst', 'Du willst Deine Kunden begeistern statt zu langweilen?', 2)
+						+e.ul-title Wir versetzen uns in Deine Kunden und überzeugen mit einfacher Handhabung:
+						+e.list
+							ul
+								li Unsere Software passt sich Dir an und nicht anders herum
+								li
+									.d-inline
+										| Wir lösen Probleme statt neue zu
+										|
+									.d-none.d-lg-inline schaffen
+					+headerBlockItem('Software mit schnellem Return on Invest', 'Du willst dynamische Lösungen ohne Zeit-&-Geldverschwendung?', 3)
+						+e.ul-title Wir arbeiten konsequent agil, deshalb ermöglichen wir Dir:
+						+e.list
+							ul
+								li volle Kostenkontrolle
+								li maximale Flexibilität
+								li schnelle Markteinführung
 	// end headerBlock
+
+mixin headerBlockItem(title,txt, imgNum)
+	+e.col.col-xl-4
+		+e.content
+			+e.title=title
+			+e.txt
+				p=txt
+			.d-xl-none
+				block
+		+pic(`header-block-item-${imgNum}`)(class="headerBlock__img d-none d-md-block")

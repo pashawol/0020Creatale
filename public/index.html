@@ -25,71 +25,85 @@
 	</head>
 	<body><!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
 		<div class="main-wrapper">
-			<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
-			</div>
-			<div class="menu-mobile menu-mobile--js d-lg-none">
-				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-				</div>
-				<div class="menu-mobile__inner">
-					<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="/" itemprop="url">Главная</a>
+			<div class="mob-menu mob-menu--js">
+				<div class="mob-menu__container container">
+					<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+						<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Leistungen</a>
+							<ul class="sub-menu">
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Unser Service</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Flexgarantie</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Technologien</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Rundum-Sorglos-Komplett-Paket</a></li>
+								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Sprints</a></li>
+							</ul>
 						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Услуги  </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Подбор септика   </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Акции </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> О компании  </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Доставка и оплата </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Клиентам  </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Наши работы   </a>
-						</li>
-						<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Контакты </a>
-						</li>
+						<li class="menu-item"><a href="#" itemprop="url">Referenzen</a></li>
+						<li class="menu-item"><a href="#" itemprop="url">Über uns</a></li>
+						<li class="menu-item current"><a href="#" itemprop="url">Kontakt</a></li>
 					</ul>
-					<div class="text-right"></div>
+					<div class="mob-menu__lower-row">
+						<div class="mob-menu__row row">
+							<div class="mob-menu__links-col col-auto col-lg"><a class="mob-menu__mail" href="mailto:contact@creatale.de">contact@creatale.de</a><a class="mob-menu__address" href="#"><b>Creatale GmbH</b><span>Heilbronner Str. 42</span><span>Ludwigsburg</span></a>
+							</div>
+							<div class="col-auto">
+								<div class="soc"><a class="soc__item" href="#" target="_blank"><img src="img/svg/twitter.svg" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/svg/fb.svg" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/svg/unknown.svg" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/svg/github.svg" alt=""/></a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<!--  мобильное меню-->
 			<!-- start header-->
 			<header class="header" id="header">
 				<!-- start top-nav-->
 				<div class="top-nav block-with-lazy">
 					<div class="container">
-						<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="/" itemprop="url">Главная</a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Услуги  </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Подбор септика   </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Акции </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> О компании  </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Доставка и оплата </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Клиентам  </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url"> Наши работы   </a>
-							</li>
-							<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Контакты </a>
-							</li>
-						</ul>
+						<div class="top-nav__row row">
+							<div class="col-auto"><a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt=""/></a>
+							</div>
+							<div class="col-auto d-block d-xl-none">
+								<div class="top-nav__burger burger-js"><span></span>
+								</div>
+							</div>
+							<div class="col-auto col-xl d-none d-md-block">
+								<div class="top-nav__desctop-mnu">
+									<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+										<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">Leistungen</a>
+											<ul class="sub-menu">
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Unser Service</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Flexgarantie</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Technologien</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Rundum-Sorglos-Komplett-Paket</a></li>
+												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Sprints</a></li>
+											</ul>
+										</li>
+										<li class="menu-item"><a href="#" itemprop="url">Referenzen</a></li>
+										<li class="menu-item"><a href="#" itemprop="url">Über uns</a></li>
+										<li class="menu-item current"><a href="#" itemprop="url">Kontakt</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!-- end top-nav-->
 				<!-- start topLine-->
 				<section class="topLine section" id="topLine">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>topLine</h2>
+						<div class="topLine__top-txt d-xl-none">
+							<p>Technik Beherrschen, Menschen begeistern.</p>
 						</div>
-						<div class="row"></div>
+						<div class="row">
+							<div class="col">
+								<div class="section-title">
+									<h1>Visionäre Software die BegeisterT.</h1>
+								</div>
+							</div>
+							<div class="col-auto d-none d-md-block">
+								<div class="soc"><a class="soc__item" href="#" target="_blank"><img src="img/svg/twitter.svg" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/svg/fb.svg" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/svg/unknown.svg" alt=""/></a><a class="soc__item" href="#" target="_blank"><img src="img/svg/github.svg" alt=""/></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 				<!-- end topLine-->
@@ -97,14 +111,243 @@
 			<!-- end header-->
 			<!-- start headerBlock-->
 			<div class="headerBlock section" id="headerBlock">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
+				<!-- picture-->
+				<picture class="headerBlock__bg"> 
+					<noscript class="loading-lazy">
+						<source srcset="img/@2x/webp/headBl-bg.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+						<source srcset="img/@1x/webp/headBl-bg.webp" loading="lazy" type="image/webp"/>
+						<source srcset="img/@2x/headBl-bg.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+						<source srcset="img/@1x/headBl-bg.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/headBl-bg.jpg" loading="lazy" alt=""/>
+					</noscript>
+				</picture>
+				<!-- /picture-->
+				<div class="headerBlock__sec-content">
+					<div class="container">
+						<div class="headerBlock__row row">
+							<div class="headerBlock__col col-xl-4">
+								<div class="headerBlock__content">
+									<div class="headerBlock__title">Software für Deine tollen Ideen
+									</div>
+									<div class="headerBlock__txt">
+										<p>Du fragst Dich, welche Software Deiner genialen Idee gerecht wird?</p>
+									</div>
+									<div class="d-xl-none">
+										<div class="headerBlock__ul-title">Wir finden für Deine einzigartige Idee die perfekte Software-Lösung:
+										</div>
+										<div class="headerBlock__list">
+											<ul>
+												<li>Technologie-unabhängig</li>
+												<li>Plattformübergreifend</li>
+												<li>Flexibel für jede Herausforderung</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- picture-->
+								<picture class="headerBlock__img d-none d-md-block"> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/header-block-item-1.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+										<source srcset="img/@1x/webp/header-block-item-1.webp" loading="lazy" type="image/webp"/>
+										<source srcset="img/@2x/header-block-item-1.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+										<source srcset="img/@1x/header-block-item-1.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/header-block-item-1.jpg" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="headerBlock__col col-xl-4">
+								<div class="headerBlock__content">
+									<div class="headerBlock__title">Software, die du liebst
+									</div>
+									<div class="headerBlock__txt">
+										<p>Du willst Deine Kunden begeistern statt zu langweilen?</p>
+									</div>
+									<div class="d-xl-none">
+										<div class="headerBlock__ul-title">Wir versetzen uns in Deine Kunden und überzeugen mit einfacher Handhabung:
+										</div>
+										<div class="headerBlock__list">
+											<ul>
+												<li>Unsere Software passt sich Dir an und nicht anders herum</li>
+												<li>
+													<div class="d-inline">
+														Wir lösen Probleme statt neue zu
+														
+													</div>
+													<div class="d-none d-lg-inline">schaffen</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- picture-->
+								<picture class="headerBlock__img d-none d-md-block"> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/header-block-item-2.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+										<source srcset="img/@1x/webp/header-block-item-2.webp" loading="lazy" type="image/webp"/>
+										<source srcset="img/@2x/header-block-item-2.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+										<source srcset="img/@1x/header-block-item-2.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/header-block-item-2.jpg" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+							</div>
+							<div class="headerBlock__col col-xl-4">
+								<div class="headerBlock__content">
+									<div class="headerBlock__title">Software mit schnellem Return on Invest
+									</div>
+									<div class="headerBlock__txt">
+										<p>Du willst dynamische Lösungen ohne Zeit-&amp;-Geldverschwendung?</p>
+									</div>
+									<div class="d-xl-none">
+										<div class="headerBlock__ul-title">Wir arbeiten konsequent agil, deshalb ermöglichen wir Dir:
+										</div>
+										<div class="headerBlock__list">
+											<ul>
+												<li>volle Kostenkontrolle</li>
+												<li>maximale Flexibilität</li>
+												<li>schnelle Markteinführung</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- picture-->
+								<picture class="headerBlock__img d-none d-md-block"> 
+									<noscript class="loading-lazy">
+										<source srcset="img/@2x/webp/header-block-item-3.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+										<source srcset="img/@1x/webp/header-block-item-3.webp" loading="lazy" type="image/webp"/>
+										<source srcset="img/@2x/header-block-item-3.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+										<source srcset="img/@1x/header-block-item-3.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/header-block-item-3.jpg" loading="lazy" alt=""/>
+									</noscript>
+								</picture>
+								<!-- /picture-->
+							</div>
+						</div>
 					</div>
-					<div class="row"></div>
 				</div>
 			</div>
 			<!-- end headerBlock-->
+			<!-- start sVideo-->
+			<section class="sVideo section" id="sVideo">
+				<!-- picture-->
+				<picture class="sVideo__bg"> 
+					<noscript class="loading-lazy">
+						<source srcset="img/@2x/webp/sVideo_bg.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+						<source srcset="img/@1x/webp/sVideo_bg.webp" loading="lazy" type="image/webp"/>
+						<source srcset="img/@2x/sVideo_bg.jpg" loading="lazy" type="image/jpg" media="(min-width:576px)"/>
+						<source srcset="img/@1x/sVideo_bg.jpg" loading="lazy" type="image/jpg"/><img src="img/@2x/sVideo_bg.jpg" loading="lazy" alt=""/>
+					</noscript>
+				</picture>
+				<!-- /picture-->
+				<div class="sVideo__container container">
+					<div class="sVideo__content"><a class="sVideo__play-btn" href="https://www.youtube.com/watch?v=en6gms6e54Q&amp;list=PLIU76b8Cjem5B3sufBJ_KFTpKkMEvaTQR" data-fancybox="video"></a>
+						<div class="section-title text-center">
+							<h2>Warum Creatale?</h2>
+							<p>in 20 Sekunden erklärt</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sVideo-->
+			<!-- start sDigits-->
+			<section class="sDigits section" id="sDigits">
+				<div class="sDigits__container container">
+					<div class="sDigits__bg">
+						<!-- picture-->
+						<picture class="sDigits__bg-pic"> 
+							<noscript class="loading-lazy">
+								<source srcset="img/@2x/webp/sDigits-bg-croped.webp" loading="lazy" type="image/webp" media="(min-width:576px)"/>
+								<source srcset="img/@1x/webp/sDigits-bg-croped.webp" loading="lazy" type="image/webp"/>
+								<source srcset="img/@2x/sDigits-bg-croped.png" loading="lazy" type="image/png" media="(min-width:576px)"/>
+								<source srcset="img/@1x/sDigits-bg-croped.png" loading="lazy" type="image/png"/><img src="img/@2x/sDigits-bg-croped.png" loading="lazy" alt=""/>
+							</noscript>
+						</picture>
+						<!-- /picture-->
+						<div class="sDigits__bg-txt">
+							<div class="sDigits__name">Christian Dittrich
+							</div>
+							<div class="sDigits__after-name">Geschäftsführer und Diplom-Informatiker
+							</div>
+						</div>
+					</div>
+					<div class="sDigits__txt-content">
+						<div class="section-title">
+							<h2>Querdenker, Unternehmer & Software-Visionär</h2>
+							<p>Creatale Gründer Christian Dittrich</p>
+						</div>
+						<div class="sDigits__row row">
+							<div class="sDigits__col col-lg-6">
+								<div class="sDigits__digit">
+									<div class="sDigits__digit-num">14
+									</div>
+									<div class="sDigits__digit-txt">
+									</div>
+								</div>
+								<div class="sDigits__smaller-txt">
+									<div class="sDigits__title">Software-Entwickler
+									</div>
+									<div class="sDigits__txt">
+										<p>14 Jahre Erfahrung als Softwareentwickler</p>
+									</div>
+								</div>
+							</div>
+							<div class="sDigits__col col-lg-6">
+								<div class="sDigits__digit">
+									<div class="sDigits__digit-num">7
+									</div>
+									<div class="sDigits__digit-txt"> Jahre
+									</div>
+								</div>
+								<div class="sDigits__smaller-txt">
+									<div class="sDigits__title">Unternehmer
+									</div>
+									<div class="sDigits__txt">
+										<p>7 Jahre Erfahrung als Unternehmer</p>
+									</div>
+								</div>
+							</div>
+							<div class="sDigits__col col-lg-6">
+								<div class="sDigits__digit">
+									<div class="sDigits__digit-num">4
+									</div>
+									<div class="sDigits__digit-txt">
+									</div>
+								</div>
+								<div class="sDigits__smaller-txt">
+									<div class="sDigits__title">Jahre Dozent
+									</div>
+									<div class="sDigits__txt">
+										<p>Seit 2016 Dozent für Informatik an der media akademie Hochschule Stuttgart (maHS)</p>
+									</div>
+								</div>
+							</div>
+							<div class="sDigits__col col-lg-6">
+								<div class="sDigits__digit">
+									<div class="sDigits__digit-num">1.
+									</div>
+									<div class="sDigits__digit-txt">
+									</div>
+								</div>
+								<div class="sDigits__smaller-txt">
+									<div class="sDigits__title">Platz Startup Weekend
+									</div>
+									<div class="sDigits__txt">
+										<p>Stuttgart 2014 und 2018</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sDigits-->
+			<!-- start sInnovation-->
+			<section class="sInnovation section" id="sInnovation">
+				<div class="container">
+					<div class="section-title text-center">
+						<h2>sInnovation</h2>
+					</div>
+					<div class="row"></div>
+				</div>
+			</section>
+			<!-- end sInnovation-->
 			<!-- start sForm-->
 			<section class="sForm section" id="sForm">
 				<div class="container">

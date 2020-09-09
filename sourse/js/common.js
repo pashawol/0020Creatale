@@ -236,7 +236,7 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-	screenName = 'main.png';
+	screenName = 'main-375.png';
 	if (screenName && x === "localhost:3000") {
 		$(".main-wrapper").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
@@ -290,6 +290,25 @@ function eventHandler() {
 
 	});
 	// modal window
+	//luckyoneJs
+
+	//.burger-js
+	$('.burger-js').click(function (){
+		$('.mob-menu--js, .burger-js').toggleClass('active');
+		document.body.classList.toggle("fixed");
+	});
+
+	$('.mob-menu--js .menu-item-has-children a').click(function () {
+		event.preventDefault();
+		let parent = this.parentElement;
+		parent.classList.toggle('active');
+
+		$(parent).find('.sub-menu').slideToggle(function (){
+			$(this).toggleClass('active');
+		});
+	});
+
+	//end luckyoneJs
 
 	
 };

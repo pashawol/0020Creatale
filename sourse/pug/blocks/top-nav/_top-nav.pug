@@ -1,27 +1,30 @@
-mixin mob-mnu()
-	-
-		//- let path = require('path');
-		//- let fs = require('fs');
-		//- var requestURL = 'top-nav.json';
-		//- var request = new XMLHttpRequest();
-		//- request.open('GET', requestURL);
-		//- request.responseType = 'json';
-		//- let dataJson = JSON.parse(json);
-	//- h1= dataJson['lala'] 
-	+b.toggle-menu-mobile--js.d-lg-none
-		span
-	+b.menu-mobile--js.d-lg-none
-		+b.toggle-menu-mobile--js
-			span
-		+e.inner
-		
-			+mnu()
-			.text-right
-	//  мобильное меню
-mixin top-nav() 
+mixin top-nav()
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			+mnu()
-					
+			+e.row.row
+				.col-auto
+					+e.A.logo(href="/")
+						img(src="img/svg/logo.svg" alt='')
+				.col-auto.d-block.d-xl-none
+					+e.burger.burger-js
+						span
+				.col-auto.col-xl.d-none.d-md-block
+					+e.desctop-mnu
+						+mnu()
 	// end top-nav
+
+mixin mob-mnu()
+	+b.mob-menu--js
+		+e.container.container
+			+mnu()
+			+e.lower-row
+				+e.row.row
+					+e.links-col.col-auto.col-lg
+						+e.A.mail(href="mailto:contact@creatale.de") contact@creatale.de
+						+e.A.address(href="#")
+							b Creatale GmbH
+							span Heilbronner Str. 42
+							span Ludwigsburg
+					.col-auto
+						+soc()

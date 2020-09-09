@@ -10,8 +10,13 @@ mixin soc()
 		if block
 			block
 		else
+			+item-sos('twitter')
+				img(src="img/svg/twitter.svg" alt="")
 			+item-sos('fb')
-			+item-sos('instagram')
-			+item-sos('telegram')
+				img(src="img/svg/fb.svg" alt="")
+			+item-sos('unknown')
+				img(src="img/svg/unknown.svg" alt="")
+			+item-sos('github')
+				img(src="img/svg/github.svg" alt="")
 
 //- /social buttons 
