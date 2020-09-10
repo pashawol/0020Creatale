@@ -592,7 +592,6 @@
 	height:100%;
 	background-position:center 0;
 	opacity:0;
-	opacity:.7;
 	--fgp-width_percentages-decimal: 1 !important;
 	--fgp-height_percentages-decimal: 1 !important}body,html{font-size:var(--fontSizeBase)}.section{background-size:cover;background-repeat:no-repeat;background-position:50%;padding-top:var(--sPT);padding-bottom:var(--sPB)}.section-title{padding-bottom:var(--sTPB)}.section-title .h2,.section-title h2{font-size:30px}body{min-width:320px;position:relative}body:before > *{
 	--fgp-height_percentages-decimal: initial}body:before{
