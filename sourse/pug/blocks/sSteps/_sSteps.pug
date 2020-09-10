@@ -1,0 +1,38 @@
+mixin sSteps()
+	// start sSteps
+	+b.SECTION.sSteps.section#sSteps&attributes(attributes)
+		+e.container.container
+			+b.section-title.text-center
+				h2
+					| Einfach gut:
+					br
+					| So gehen wir vor
+				p Creatale Prozess
+			+e.steps-container
+				+stepItem('Du lernst uns kennen', undefined)
+					p Im persönlichen Gespräch teilst Du uns Deine Wünsche und Ideen mit. Gemeinsam prüfen wir, ob wir zusammen passen.
+				+stepItem('Wir analysieren Deine Anforderungen','2')
+					p Im Workshop arbeiten wir mit Dir und Deinem Team heraus, was Du willst, Damit wir gemeinsame Klarheit, Transparenz und ein einheitliches Verständnis haben.
+				+stepItem('Wir erstellen das Backlog für Dich','3')
+					p
+						| Wir fassen die Anforderungen für Dich strukturiert in einem Katalog – dem so genannten
+						|
+						a(href='#') Backlog
+						|
+						| – zusammen. So kannst Du sicherstellen, dass wir Dich richtig verstanden haben und unsere Beschreibungen für Dich verständlich sind.
+				+stepItem('Du erhältst das Angebot von uns','4')
+					p Durch unser umfassendes Angebot weißt Du, ob Deine Vorstellungen mit Deinen finanziellen Mitteln übereinstimmen. Du kannst Dein Budget langfristig planen und hast gleichzeitig durch die einzelnen Sprints (= Projektabschnitte) immer sofortigen Nutzen und volle Kostenkontrolle.
+	// end sSteps
+
+mixin stepItem(title, imgNum)
+	+e.item-cont
+		+e.inner
+			+e.title=title
+			+e.txt
+				block
+			+e.img-cont
+				if imgNum
+					+e.img
+						img(loading="lazy" src=`img/svg/step-${imgNum}.svg` alt="")
+				else
+					+e.A.circle-btn.circle-btn-frame(href="#") Jetzt Termin sichern

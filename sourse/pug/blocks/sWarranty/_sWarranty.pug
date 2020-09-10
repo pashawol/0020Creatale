@@ -1,0 +1,21 @@
+mixin sWarranty()
+	// start sWarranty
+	+b.SECTION.sWarranty.section#sWarranty&attributes(attributes)
+		+e.container.container
+			+b.section-title.text-center
+				h2 Wir geben dir 100% Garantie!
+			+e.row.row
+				+warrantyItem(1)
+				+warrantyItem(2)(class="offset-3 offset-md-0 order-first order-md-0")
+				+warrantyItem(3)
+			+e.A.btn.circle-btn-frame(href="#")
+				| STARTE
+				br
+				| DEIn PROJEKT
+				br
+				| mit uns
+	// end sWarranty
+
+mixin warrantyItem(imgNum)
+	+e.col.col-6.col-md-4&attributes(attributes)
+		img(loading="lazy" src=`img/svg/warranty-img-${imgNum}.svg` alt="")

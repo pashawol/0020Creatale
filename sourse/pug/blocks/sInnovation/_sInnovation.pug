@@ -1,9 +1,19 @@
 mixin sInnovation()
 	// start sInnovation
 	+b.SECTION.sInnovation.section#sInnovation&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sInnovation
-				
-			.row
+		+pic('sInnovation-bg.png')(class='sInnovation__bg d-none d-md-block')
+		+e.container.container
+			+e.row.row
+				.col-md-6.col-lg-7.col-xl-6
+					+b.section-title
+						h2 Du hast innovative Ideen und willst so erfolgreich sein wie Apple, Tesla und Amazon?
+						p Die Gameplayer unserer Zeit beweisen: Die Zukunft gehört den Unternehmen, die ihre Kunden mit visionären Lösungen und  genialer Anwendungssoftware begeistern. Und genau dabei unterstützen wir Dich.
+			+e.lower-content
+				+e.lower-txt
+					b Hier bist Du richtig!
+					p Wir bieten Dir Software-Lösungen, mit denen Du schnell und zuverlässig Deine Kunden begeisterst.
+				+e.creature
+					img(loading="lazy" src="img/svg/orange-creature.svg" alt="")
+				+e.A.mail-link(href="mailto:contact@creatale.de") contact@creatale.de
+
 	// end sInnovation

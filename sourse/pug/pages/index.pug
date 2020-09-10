@@ -6,6 +6,10 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sVideo/_sVideo.pug
 include ../blocks/sDigits/_sDigits.pug
 include ../blocks/sInnovation/_sInnovation.pug
+include ../blocks/sSteps/_sSteps.pug
+include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sSlider/_sSlider.pug
+include ../blocks/sNews/_sNews.pug
 
 block variables
 	- let  mainPage= null
@@ -21,6 +25,10 @@ block pagecontent
 	+sVideo()
 	+sDigits()
 	+sInnovation()
+	+sSteps()
+	+sWarranty()
+	+sSlider()
+	+sNews()
 	+sForm()
 	+sContact()
 	+footer()
