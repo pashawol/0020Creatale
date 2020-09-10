@@ -1,0 +1,39 @@
+mixin sSlider()
+	// start sSlider
+	+b.SECTION.sSlider.section#sSlider&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Unsere Lieblingskunden sind Platzhirsche in ihrer Nische:
+			+e.slider
+				.man-slider-prev
+					+icon('arrow-prev')
+				.man-slider-next
+					+icon('arrow-next')
+				.swiper-container.man-slider-js
+					.swiper-wrapper
+						+manSlide('')
+						+manSlide(2)
+						+manSlide(3)
+			+e.logoes-slider
+				.swiper-container.logoes-slider-js
+					.swiper-wrapper
+						-for (var i = 1; i <= 5; i++)
+							+logoesSlide(i)
+	// end sSlider
+
+mixin manSlide(slideNum)
+	.swiper-slide
+		+e.slide-content
+			+e.img-cont
+				+e.img
+					img.swiper-lazy(src="#" data-src=`img/@2x/bw-man.jpg` alt="")
+			+e.txt-bl
+				+e.name=`Stefan Mustermann${slideNum}`
+				+e.organization Medizinisches Versorgungszentrum Labor Ludwigsburg GbR
+				+e.txt
+					p=`Das Creatable – Team ist professionell, sorgfältig und kreativ! Es ist mir eine Freude mit ihnen zusammenzuarbeiten. Sie realisieren meine Ideen und mein Konzept, zielsicher und zuverlässig.${slideNum}`
+					a(href='#') Projekt ansehen
+
+mixin logoesSlide(imgNum)
+	.swiper-slide
+		img.swiper-lazy(src="#" data-src=`img/svg/partner-slide-${imgNum}.svg` alt="")

@@ -300,6 +300,34 @@ function eventHandler() {
 		$(parent).find('.sub-menu').slideToggle(function () {
 			$(this).toggleClass('active');
 		});
+	});
+	window.addEventListener('resize', function () {
+		$('.mob-menu--js, .burger-js').removeClass('active');
+		document.body.classList.remove("fixed");
+	}, {
+		passive: true
+	}); //sSliders
+
+	var manSlider = new Swiper('.man-slider-js', {
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.man-slider-next',
+			prevEl: '.man-slider-prev'
+		},
+		//
+		lazy: {
+			loadPrevNext: true,
+			loadPrevNextAmount: 2
+		}
+	});
+	var logoesSlider = new Swiper('.logoes-slider-js', {
+		slidesPerView: 'auto',
+		loop: true,
+		//
+		lazy: {
+			loadPrevNext: true,
+			loadPrevNextAmount: 6
+		}
 	}); //end luckyoneJs
 }
 

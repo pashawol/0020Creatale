@@ -1,6 +1,234 @@
 // start .sInnovation
 .sInnovation {
-	background-color: $blue;
+	background-color: $primary;
+	color: $white;
+
+	position: relative;
+	z-index: 1;
+
+	--sPT: #{70px};
+	--sPB: #{69px};
+	--sTPB: #{20px};
+	@include media-breakpoint-up(md){
+		--sPT: #{85px};
+		--sPB: #{44px};
+		--sTPB: #{20px};
+	}
+	@include media-breakpoint-up(lg){
+		--sPT: #{85px};
+		--sPB: #{67px};
+		--sTPB: #{20px};
+	}
+	@include media-breakpoint-up(xl){
+		--sPT: #{148px};
+		--sPB: #{122px};
+		--sTPB: #{20px};
+	}
+	@include media-breakpoint-up(xxl){
+		--sPT: #{150px};
+		--sPB: #{174px};
+		--sTPB: #{20px};
+	}
+
+	&__bg{
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+
+		width: 71%;
+		@include media-breakpoint-up(lg){
+			width: 63%;
+		}
+		@include media-breakpoint-up(xxl){
+			width: 100%;
+		}
+		height: 100%;
+
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	&__container{
+
+		@include media-breakpoint-up(xxl){
+			padding: 0 85px;
+		}
+	}
+	&__row{
+		min-height: 416px;
+		@include media-breakpoint-up(md){
+			min-height: 534px;
+		}
+		@include media-breakpoint-up(lg){
+			min-height: 369px;
+		}
+		@include media-breakpoint-up(xl){
+			max-width: 99%;
+			min-height: 505px;
+		}
+		@include media-breakpoint-up(xxl){
+			max-width: 100%;
+			min-height: 617px;
+		}
+	}
+
+
+	.section-title{
+		h2{
+			color: $white;
+			font-weight: 600;
+
+
+			line-height: 1.07;
+			margin-bottom: 28px;
+			@include media-breakpoint-up(md){
+				line-height: 1.13;
+				margin-bottom: 23px;
+			}
+			@include media-breakpoint-up(lg){
+				line-height: 1.15;
+			}
+			@include media-breakpoint-up(xl){
+				font-size: 45px;
+				line-height: (50/45);
+				margin-bottom: 33px;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 60px;
+				line-height: (65/60);
+				margin-bottom: 28px;
+			}
+		}
+
+		p{
+			font-weight: 600;
+
+			font-size: 16px;
+			line-height: (26/16);
+			@include media-breakpoint-up(lg){
+				font-size: 16px;
+				line-height: (26/16);
+				max-width: 77%;
+			}
+			@include media-breakpoint-up(xl){
+				font-size: 20px;
+				line-height: 1.30;
+				max-width: 100%;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 25px;
+				line-height: (32/25);
+			}
+		}
+	}
+
+	//lower-content
+	&__lower-content{
+		text-align: center;
+
+		@include media-breakpoint-up(md){
+			max-width: 520px;
+		}
+		@include media-breakpoint-up(lg){
+			max-width: 550px;
+		}
+		@include media-breakpoint-up(xl){
+			max-width: 693px;
+		}
+		@include media-breakpoint-up(xxl){
+			max-width: 796px;
+		}
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__lower-txt{
+		font-size: 18px;
+		line-height: 1.36;
+		margin-bottom: 36px;
+		@include media-breakpoint-up(md){
+			font-size: 21px;
+			line-height: (26/21);
+			margin-bottom: 36px;
+		}
+		@include media-breakpoint-up(xl){
+			font-size: 24px;
+			line-height: (30/24);
+			margin-bottom: 35px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 30px;
+			line-height: (35/30);
+			margin-bottom: 37px;
+		}
+
+		b{
+			font-weight: 700;
+		}
+		p{
+			font-weight: 600;
+		}
+		p:last-child{
+			margin-bottom: 0;
+		}
+
+
+	}
+	&__creature{
+		margin-bottom: 15px;
+		@include media-breakpoint-up(md){
+			margin-bottom: 26px;
+		}
+
+		width: 126px;
+		height: 125px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			width: auto;
+			height: auto;
+		}
+	}
+	&__mail-link{
+
+		text-decoration: none !important;
+		@include mt();
+		color: $white;
+		&:hover{
+			color: rgba($white, .8);
+		}
+		font-weight: 500;
+
+
+		font-size: 20px;
+		line-height: (32/20);
+		@include media-breakpoint-up(xl){
+			font-size: 20px;
+			line-height: (32/20);
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+			line-height: (32/21);
+		}
+	}
+	&__{}
+	&__{}
+	&__{}
+	&__{}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
