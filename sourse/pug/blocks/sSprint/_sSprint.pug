@@ -1,0 +1,22 @@
+mixin sSprint()
+	// start sSprint
+	+b.SECTION.sSprint.section#sSprint&attributes(attributes)
+		.container
+			+b.section-title
+				h3 Was passiert in einem Sprint?
+			+sprintItem('01','Sprint-Planing','Damit Du von uns verbindliche Preise, Zeitpläne und Ergebniszusagen erhältst, bestimmen wir die Komplexität Deiner Software-Anforderungen.')
+			+sprintItem('02','Sprint-Implementation','Während Du Dich auf Dein Kerngeschäft konzentrierst, setzen wir für Dich die definierten Sprintziele (in die Realität) um.')
+			+sprintItem('03','Sprint-Review','Showtime! Du kannst Deine neu entwickelt Software jetzt einsetzen. Dein Feedback bestimmt (die nächste Sprint-Preparation und) die Weiterentwicklung.')
+			+sprintItem('04','Sprint-Preparation ','Wir übersetzen Dein Feedback in aktualisierte Anforderungen, um mit Dir das nächste Level Deiner Software zu definieren.')
+
+	// end sSprint
+
+mixin sprintItem(i,title,t)
+	+b.sprintItem
+		.row
+			+e.textCol.col-lg-6
+				+e.numb= i
+				+e.title= title
+				p= t
+			+e.col.col-lg-6
+				+pic(`sprint-${i}`,'','')

@@ -291,6 +291,26 @@
 
 	@include media-breakpoint-down(xs) {}
 
+	//03-page
+	&--sm {
+		position: relative;
+		padding-top: 0 !important;
+		height: 28.8vw;
+		padding-top: 0 !important;
+		overflow: hidden;
+	}
+	&__iconWrap {
+		position: absolute;
+		z-index: 2;
+		left: 39%;
+		top: 8.5vw;
+
+		.icon {
+			font-size: 10.3vw;
+			color: #fff;
+		}
+	}
+
 }
 
 // end.headerBlock

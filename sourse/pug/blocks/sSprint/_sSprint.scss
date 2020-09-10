@@ -1,0 +1,63 @@
+// start .sSprint
+.sSprint {
+	
+	h3 {
+		color: $white;
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sSprint
+
+.sprintItem {
+	background-color: #fff;
+	margin-bottom: 30px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	overflow: hidden;
+
+	&__textCol {
+		padding-left: 61px;
+	}
+
+	&__col {
+		overflow: hidden;
+	}
+
+	picture {
+		height: 100%;
+		img {
+			height: 100%;
+			max-width: none;
+		}
+
+	}
+
+
+	&__numb {
+		font-size: 150px;
+		@extend .mono;
+		color: $light;
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: -50px;
+		// margin-top: -50px;
+		margin-left: -20px;
+	}
+
+	&__title {
+		font-size: 30px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	p {
+		color: $secondary;
+		font-weight: 600;
+		margin-bottom: 40px;
+	}
+}

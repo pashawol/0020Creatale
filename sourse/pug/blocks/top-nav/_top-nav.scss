@@ -289,6 +289,14 @@
 		background-color: #fff;
 	}*/
 
+	&.nav-sm {
+		padding-top: 22px;
+
+		.top-nav__row {
+			padding-bottom: 30px;
+		}
+	}
+
 	// 
 	@include media-breakpoint-up(xl) {}
 
