@@ -40,11 +40,21 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/bootstrap/scss/card";
 @import "./node_modules/bootstrap/scss/breadcrumb";
 .breadcrumb {
+	font-weight: 500;
+	font-size: 16px;
+	a {
+		color: $light-dark;
+	}
 	.active {
 		a {
 			// color: $breadcrumb-active-color;
 			pointer-events: none;
+			font-weight: 700;
 		}
+	}
+	.icon {
+		font-size: 12px;
+		color: $light-dark;
 	}
 }
 @import "./node_modules/bootstrap/scss/pagination";

@@ -1,0 +1,62 @@
+// start .sGarantie
+.sGarantie {
+
+	h2 {
+		color: $primary2;
+	}
+
+	h4 {
+		font-size: 25px;
+		font-weight: 600;
+		color: $dark;
+	}
+
+	p {
+		font-weight: 500;
+		color: $dark;
+	}
+
+	&__col {
+		margin-bottom: 40px;
+	}
+
+	.section-title {
+		position: relative;
+		max-width: 790px;
+		margin: 0 auto;
+		padding-bottom: calc(var(--sTPB) * 2.5);
+		&::before {
+			content: '';
+			position: absolute;
+			@include a-cent(x);
+			bottom: rem(20);
+			width: 1px;
+			height: 79px;
+			background-color: #bbc0d6;
+		}
+	}
+
+	&__row {
+		@include media-breakpoint-up(lg) {
+			@include roww(187px);
+			margin-bottom: 155px;
+		}
+		margin-bottom: 70px;
+	}
+
+	&__txtRow {
+		@include media-breakpoint-up(xl) {
+			@include roww(245px);
+		}
+	}
+
+
+
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sGarantie

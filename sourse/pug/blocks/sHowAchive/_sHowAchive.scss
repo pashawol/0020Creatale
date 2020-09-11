@@ -1,0 +1,60 @@
+// start .sHowAchive
+.sHowAchive {
+	padding-top: calc(var(--sPT) / 1.05);
+	.container {
+		@include media-breakpoint-up(xxl) {
+			max-width: 1530px;
+		}
+	}
+	color: #fff;
+
+	h2 {
+		max-width: 700px;
+		font-weight: 600;
+		line-height: 1.1;
+		@include media-breakpoint-up(xxl) {
+			font-size: 60px;
+		}
+	}
+
+	.h6 {
+		font-size: 25px;
+		font-weight: 600;
+	}
+
+	p {
+		font-weight: 500;
+		margin-bottom: 40px;
+	}
+
+	.row{
+		@include media-breakpoint-up(xl) {
+			@include roww(94px);
+		}
+	}
+
+	li {
+		list-style: none;
+		position: relative;
+		padding-left: 36px;
+		margin-bottom: 16px;
+		font-weight: 600;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 5px;
+			width: 23px;
+			height: 23px;
+			background-image: url('../img/svg/feather-white.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sHowAchive
