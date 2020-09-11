@@ -1,4 +1,28 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
-		.container
-			h2 footer
+		+e.container.container
+			+e.top-row.row
+				.col
+					+e.A.logo(href='/')
+						img(loading="lazy" src="img/svg/logo.svg" alt="")
+					+e.A.mail.d-md-none(href="#") contact@creatale.de
+					+e.address.d-md-none
+						b Creatale GmbH
+						span Heilbronner Str. 42
+						span Ludwigsburg
+				.col-auto
+					+soc()
+			+e.A.mail.d-none.d-md-block.d-lg-none(href="#") contact@creatale.de
+			.row
+				+e.mail-col.col-lg-4.d-none.d-lg-block
+					+e.A.mail(href="#") contact@creatale.de
+				+e.address-col.col-md-6.col-lg-4.d-none.d-md-block
+					+e.address
+						b Creatale GmbH
+						span Heilbronner Str. 42
+						span Ludwigsburg
+				+e.arr-r-col.col-md-6.col-lg-4
+					+e.all-rights
+						span © creatale
+						span Datenschutzerklärung
+						span Impressum

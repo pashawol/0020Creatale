@@ -1,9 +1,28 @@
 mixin sContact()
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 sContact
-				
-			.row
+		+e.row
+			+e.map-col
+				iframe(src='https://snazzymaps.com/embed/260403' width='100%' height='100%' style='border:none;')
+				+b.section-title
+					h2 Wir freuen uns, dich bei uns begrüßen zu dürfen!
+				+e.map-descr.d-none.d-md-block
+					p
+						| creatale GmbH
+						br
+						| Heilbronner Str. 42
+						br
+						| 71634 Ludwigsburg
+					+e.link
+						span
+							| E-Mail:
+							|
+						a(href='mailto:contact@creatale.de') contact@creatale.de
+					+e.link
+						span
+							| Fax:
+							|
+						a(href="tell:+49714130992569") +49 7141 3099256-9
+			+e.img-col
+				img(loading="lazy" src="img/@2x/contact-img.jpg" alt="")
 	// end sContact
