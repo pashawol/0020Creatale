@@ -438,6 +438,7 @@ iframe {
 	z-index: 1;
 
 	&:before{
+		transition: all .3s ease-in;
 		content: '';
 		position: absolute;
 		z-index: -1;
@@ -464,6 +465,67 @@ iframe {
 	line-height: 1;
 	text-transform: uppercase;
 
+
+	@extend .water-circle;
+	transition: font-size .25s;
+	&:hover{
+		font-size: 15px;
+		color: $white;
+
+		&:before{
+			width: calc(100% - 15px);
+			height: calc(100% - 15px);
+			background-color: $primary;
+		}
+		&:after{
+			animation: water-drop 1.3s 1 cubic-bezier(.29,.79,.29,.79);
+			//cubic-bezier(.19,.67,.11,.64)
+			//
+		}
+	}
+}
+
+.water-circle{
+	&:after{
+		content: '';
+		position: absolute;
+		z-index: 9;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transform: translateY(-50%) translateX(-50%);
+		border-radius: 50%;
+		border: 1px solid $light-dark;
+
+	}
+}
+
+@keyframes water-drop {
+	0%{
+		//transform: scale(1);
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		//border: 1px solid $light-dark;
+	}
+	1%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 0.05;
+	}
+	80%{
+		opacity: 0.01;
+	}
+	100%{
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+		//border: 1px solid rgba($primary2, .1);
+
+	}
 }
 
 //middle dash

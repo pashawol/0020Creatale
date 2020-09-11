@@ -121,6 +121,7 @@
 		//prev, next
 		.man-slider-prev,
 		.man-slider-next{
+			outline: none !important;
 			position: absolute;
 			z-index: 3;
 
@@ -167,6 +168,31 @@
 					font-size: 15px;
 				}
 			}
+
+			&:hover{
+				background-color: $primary2;
+				@include media-breakpoint-up(md){
+					background-color: $white;
+				}
+
+				.icon{
+					color: $white;
+					@include media-breakpoint-up(md){
+						color: $primary2;
+					}
+				}
+			}
+
+			@extend .water-circle;
+			&:after{
+				border: 1px solid white;
+				animation: var(--animation);
+			}
+
+			&.active:after{
+				//water-drop 1.3s 1 cubic-bezier(.29,.79,.29,.79)
+			}
+
 		}
 
 		.man-slider-prev{

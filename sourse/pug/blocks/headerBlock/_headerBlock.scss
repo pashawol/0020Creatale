@@ -1,7 +1,7 @@
 // start .headerBlock
 .headerBlock {
 	position: relative;
-	z-index: 1;
+	z-index: 5;
 
 	--sPT: #{0};
 	--sTPB: #{0};
@@ -73,6 +73,7 @@
 	}
 	&__col{
 		display: flex;
+		position: relative;
 
 		margin-bottom: 45px;
 		@include media-breakpoint-up(md){
@@ -87,6 +88,41 @@
 		@include media-breakpoint-up(xl){
 			display: block;
 			margin-bottom: 0;
+
+			overflow: hidden;
+			&:hover{
+				overflow: visible;
+				.headerBlock__{}
+
+
+				.headerBlock__content{
+					background-color: $primary2;
+					&:before{
+						margin-left: 0;
+						color: $white;
+						margin-bottom: 30px;
+					}
+					margin-bottom: -153px;
+				}
+				.headerBlock__img{
+					transform: scale(0);
+					opacity: 0;
+					bottom: -101px;
+				}
+				.headerBlock__transform-xl{
+					background-color: $primary;
+					transform: scaleY(1);
+				}
+				.headerBlock__txt p{
+					color: $white;
+				}
+				.headerBlock__list ul{
+					@include media-breakpoint-up(xl){
+						margin: 0 0 50px 0;
+					}
+				}
+				.headerBlock__{}
+			}
 		}
 
 	}
@@ -99,19 +135,20 @@
 			padding: 12px 39px 19px 35px;
 		}
 		@include media-breakpoint-up(xl){
+			position: relative;
 			padding: 12px 38px 40px 38px;
-			min-height: 323px;
 		}
 		@include media-breakpoint-up(xxl){
 			padding: 15px 61px 40px 61px;
-			min-height: 433px;
 		}
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
+		@include mt();
 		background-color: $white;
 		list-style-type: none;
 		&:before{
 
+			@include mt();
 			margin-bottom: 10px;
 			margin-left: 0;
 			font-size: 70px;
@@ -140,6 +177,7 @@
 		}
 	}
 	&__title{
+		@include mt();
 		color: $body-color;
 		font-weight: 600;
 
@@ -152,16 +190,26 @@
 		@include media-breakpoint-up(xl){
 			font-size: 24px;
 			margin-bottom: 45px;
+			min-height: 60px
 		}
 		@include media-breakpoint-up(xxl){
 			font-size: 30px;
 			margin-bottom: 35px;
+			min-height: 76px;
 		}
 
 		line-height: 1.28;
 	}
 	&__txt{
+		@include media-breakpoint-up(xl){
+			min-height: 89px;
+		}
+		@include media-breakpoint-up(xxl){
+			min-height: 140px;
+		}
+
 		p{
+			@include mt();
 			color: $secondary;
 			font-weight: 600;
 
@@ -184,13 +232,48 @@
 		}
 	}
 	//tablet-list
+	&__transform-xl{
+
+		@include media-breakpoint-up(xl){
+			position: absolute;
+			z-index: 0;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			background-color: $white;
+			@include mt();
+			//transition: all .3s ease-in-out .36s;
+			transform: scaleY(0);
+			transform-origin: top;
+
+			padding: 0 38px 30px 38px;
+		}
+		@include media-breakpoint-up(xxl){
+			padding: 0 61px 51px 61px;
+			min-height: 383px;
+		}
+	}
+
 	&__ul-title{
 		color: $primary2;
-		font-weight: 600;
-
 		line-height: (26/16);
 		font-size: 16px;
 		margin-bottom: 15px;
+		@include media-breakpoint-up(xl){
+			color: $white;
+			line-height: (32/18);
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		@include media-breakpoint-up(xxl){
+			line-height: (32/21);
+			font-size: 21px;
+			margin-bottom: 30px;
+		}
+
+		font-weight: 600;
+
+
 	}
 	&__list{
 		color: $primary2;
@@ -198,6 +281,8 @@
 			list-style: none;
 			padding: 0;
 			margin: 0;
+
+			transition: all .3s ease-out .18s;
 		}
 		li{
 			position: relative;
@@ -210,6 +295,10 @@
 				height: 100%;
 
 				background-image: url(../img/svg/feather.svg);
+				@include media-breakpoint-up(xl){
+					background-image: url(../img/svg/white-feather.svg);
+				}
+
 				background-repeat: no-repeat;
 
 				background-size: 14px;
@@ -217,11 +306,21 @@
 			}
 
 			color: $primary2;
+			font-size: 16px;
+			line-height: (26/16);
+			@include media-breakpoint-up(xl){
+				color: $white;
+				line-height: (32/18);
+				font-size: 18px;
+			}
+			@include media-breakpoint-up(xxl){
+				line-height: (32/21);
+				font-size: 21px;
+			}
+
 			font-weight: 500;
 
 			padding-left: 22px;
-			font-size: 16px;
-			line-height: (26/16);
 
 
 			margin-bottom: 7px;
@@ -230,7 +329,32 @@
 			}
 		}
 	}
-	&__{}
+	//btn
+	&__white-btn{
+		@extend .circle-btn-frame;
+		border: 1px solid $white;
+		&:after{
+			border: 1px solid $white;
+		}
+
+		color: $primary2 !important;
+		&:before{
+			background-color: $white;
+		}
+
+		&:hover{
+			font-size: 15px;
+			color: $primary2;
+
+			&:before{
+				background-color: $white;
+			}
+			&:after{
+				animation: water-drop 1.3s 1 cubic-bezier(.29,.79,.29,.79);
+			}
+		}
+
+	}
 
 	//pic
 	&__img{
@@ -238,6 +362,10 @@
 		width: 50%;
 		position: relative;
 		height: auto;
+
+		@include mt();
+		transform-origin: bottom left;
+		bottom: 0;
 
 		@include media-breakpoint-up(xl){
 			width: 100%;
@@ -254,42 +382,6 @@
 			object-fit: cover;
 		}
 	}
-
-	@include media-breakpoint-up(xl) {}
-
-	@include media-breakpoint-up(lg) {}
-
-	@include media-breakpoint-up(md) {}
-
-	@include media-breakpoint-up(sm) {}
-
-	@include media-breakpoint-up(xs) {}
-
-	//
-	@include media-breakpoint-between(md, xl) {}
-
-
-	//
-	@include media-breakpoint-only(xs) {}
-
-	@include media-breakpoint-only(sm) {}
-
-	@include media-breakpoint-only(md) {}
-
-	@include media-breakpoint-only(lg) {}
-
-	@include media-breakpoint-only(xl) {}
-
-	//
-	@include media-breakpoint-down(xl) {}
-
-	@include media-breakpoint-down(lg) {}
-
-	@include media-breakpoint-down(md) {}
-
-	@include media-breakpoint-down(sm) {}
-
-	@include media-breakpoint-down(xs) {}
 
 	//03-page
 	&--sm {
@@ -310,7 +402,5 @@
 			color: #fff;
 		}
 	}
-
 }
-
 // end.headerBlock

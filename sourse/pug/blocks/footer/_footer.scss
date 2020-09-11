@@ -114,7 +114,12 @@
   }
 
   &__mail{
+    @include mt();
     color: $white;
+    &:hover{
+      color: rgba($white, .6);
+    }
+
     font-weight: 600;
     line-height: 1;
 

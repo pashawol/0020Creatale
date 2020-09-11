@@ -310,6 +310,7 @@ function eventHandler() {
 
 	var manSlider = new Swiper('.man-slider-js', {
 		slidesPerView: 1,
+		loop: true,
 		navigation: {
 			nextEl: '.man-slider-next',
 			prevEl: '.man-slider-prev'
@@ -319,6 +320,14 @@ function eventHandler() {
 			loadPrevNext: true,
 			loadPrevNextAmount: 2
 		}
+	});
+	$('.man-slider-next, .man-slider-prev').click(function () {
+		var thisStyle = this.style;
+		thisStyle.setProperty('--animation', 'none');
+		thisStyle.setProperty('--animation', 'water-drop 1.3s 1 cubic-bezier(.29,.79,.29,.79)');
+		window.setTimeout(function () {
+			thisStyle.setProperty('--animation', 'none');
+		}, 1300);
 	});
 	var logoesSlider = new Swiper('.logoes-slider-js', {
 		slidesPerView: 'auto',
