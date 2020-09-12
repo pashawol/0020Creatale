@@ -62,11 +62,7 @@
 		}
 	}
 	&__play-btn{
-		display: block;
-		position: relative;
 		border: 1px solid $white;
-		border-radius: 50%;
-
 
 		width: 121px;
 		height: 121px;
@@ -84,17 +80,7 @@
 			height: 195px;
 			margin-bottom: 63px;
 		}
-
-		&:before,
-		&:after{
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-		}
 		&:before{
-			border-radius: 50%;
 
 			width: calc(100% - 43px);
 			height: calc(100% - 43px);
@@ -106,20 +92,30 @@
 				width: calc(100% - 70px);
 				height: calc(100% - 70px);
 			}
-			background-color: $primary2;
+		}
+		&:after{
+			border: 1px solid $white;
+		}
+		&:hover{
+			&:before{
+				@include media-breakpoint-up(xl){
+					transition: all .2s;
+					width: calc(100% - 43px);
+					height: calc(100% - 43px);
+				}
+			}
+			img{
+				transform: scale(1.2);
+			}
 		}
 
-		&:after{
-			width: 40px;
-			height: 40px;
+		img {
+			@include mt();
+			height: auto;
 
-			background-image: url(../img/svg/play.svg);
-			background-repeat: no-repeat;
-			background-position: center;
-
-			background-size: 12px;
+			width: 12px;
 			@include media-breakpoint-up(xl){
-				background-size: 20px;
+				width: 20px;
 			}
 		}
 	}
