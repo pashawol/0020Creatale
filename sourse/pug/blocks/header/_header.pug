@@ -3,3 +3,21 @@ mixin header()
 	+b.HEADER.header#header&attributes(attributes)
 		block
 	// end header
+
+mixin fixedBtn()
+	+b.fixed-btn-cont
+		+e.input-box
+			+e.mob-btn.mob-btn-js.circle-btn-frame.d-lg-none
+				+icon('cross')
+			+e.address
+				b Creatale GmbH
+				span Heilbronner Str. 42 | Ludwigsburg
+			+e.title
+				h6 Du möchtest ein Projekt mit uns Starten?
+				p So erreichst du uns.
+			+e.mail-img
+				img(src="img/svg/mail-btn.svg" alt="")
+			+e.A.link(href='mailto:contact@creatale.de') contact@creatale.de
+		.fixed-btn.fixed-btn-js
+			+e.img
+				img(src="img/svg/creature-img.svg" alt="")

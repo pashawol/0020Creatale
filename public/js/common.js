@@ -337,6 +337,18 @@ function eventHandler() {
 			loadPrevNext: true,
 			loadPrevNextAmount: 6
 		}
+	});
+	$('.fixed-btn-js, .mob-btn-js').click(function () {
+		$('.fixed-btn-js').toggleClass('active');
+		$('.fixed-btn-cont').toggleClass('active');
+		$('body').toggleClass('fixed');
+	});
+	$('.fixed-btn-cont').click(function () {
+		if (this.classList.contains('active') && event.target === this) {
+			$(this).removeClass('active');
+			$(this).find('.fixed-btn-js').removeClass('active');
+			$('body').removeClass('fixed');
+		}
 	}); //end luckyoneJs
 }
 
