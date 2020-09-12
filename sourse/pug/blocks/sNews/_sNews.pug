@@ -1,16 +1,68 @@
 mixin sNews()
 	// start sNews
 	+b.SECTION.sNews.section#sNews&attributes(attributes)
-		.container
-			+b.section-title
-				h2 BLOG/NEWS
-				p Erfahre mehr über unsere Experimente, Prototypen, Open-Source-Bibliotheken, Produkten und mehr.
-			+e.row.row
-				.col-lg-7
-					+pic('blog-img')(class="sNews__banner-img")
-					+b.baner-post
-						+e.header
-
-
-				.col-lg-5
+		+e.container.container
+			+e.blog-wraper
+				+b.section-title
+					h2 BLOG/NEWS
+					p Erfahre mehr über unsere Experimente, Prototypen, Open-Source-Bibliotheken, Produkten und mehr.
+				+e.row.row
+					+e.img-col.col-lg-7
+						+pic('blog-img')(class="sNews__banner-img")
+						+b.A.baner-post.post-with-img(href='#')
+							+e.header
+								+e.h-strip
+									+e.h-img
+										img(loading="lazy" src="img/svg/partner-slide-4.svg" alt="")
+									+e.txt-strip
+										b Games NEWS
+										span Dezember 2020
+								+e.txt-strip
+									b Game Type
+									span Jump’n’Run, Singleplayer, 2D, Keyboard/Mouse input
+							+e.content
+								+e.txt-block
+									+e.title Games are our passion, we often create prototypes done in web technologies.
+									+e.place Area Unity Five
+									+e.descr Defeat alien hondes with a crazy arsenal of weapons.
+								+e.btn.circle-btn-frame
+									| PLay
+									br
+									| it NOW!
+					.col-lg-5
+						+b.A.baner-post(href='#')
+							+e.header
+								+e.txt-strip
+									b Mentoring Lunch
+									span Juli 2020
+							+e.content
+								+e.txt-block
+									+e.title Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								+e.btn.circle-btn-frame.d-none.d-md-flex
+									| Mehr
+									br
+									| erfahren
+						+b.A.baner-post(href='#')
+							+e.header
+								+e.txt-strip
+									b Mentoring Lunch
+									span Juli 2020
+							+e.content
+								+e.txt-block
+									+e.title Startup Weekend Stuttgart 2020
+									+e.descr Vom 29.11.–01.12.2020 sind wir wieder beim Startup Weekend Stuttgart dabei.
+						+b.A.baner-post(href='#')
+							+e.header
+								+e.h-strip
+									+e.h-img
+										img(loading="lazy" src="img/svg/node-logo.svg" alt="")
+									+e.txt-strip
+										b BLOG
+							+e.content
+								+e.txt-block
+									+e.title A node.js lidary for extracting data from scanned forms.
+			+mailBlock()
 	// end sNews
+
+mixin mailBlock()
+	+b.mail-bl

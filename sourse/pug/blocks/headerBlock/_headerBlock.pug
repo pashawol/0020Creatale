@@ -37,8 +37,12 @@ mixin headerBlockItem(title,txt, imgNum)
 			+e.title=title
 			+e.txt
 				p=txt
-			.d-xl-none
+			+e.transform-xl
 				block
+				+e.A.white-btn.circle-btn-frame.d-none.d-xl-flex(href='#')
+					| Mehr
+					br
+					| erfahren
 		+pic(`header-block-item-${imgNum}`)(class="headerBlock__img d-none d-md-block")
 
 mixin headerBlock-sm()
