@@ -295,7 +295,10 @@
 	&--sm {
 		position: relative;
 		padding-top: 0 !important;
-		height: 28.8vw;
+		height: calc(545px / 2);
+		@include media-breakpoint-up(md) {
+			height: 28.8vw;
+		}
 		padding-top: 0 !important;
 		overflow: hidden;
 	}
@@ -303,10 +306,17 @@
 		position: absolute;
 		z-index: 2;
 		left: 39%;
-		top: 8.5vw;
+		top: 40%;
+		@include media-breakpoint-up(lg) {
+			left: 39%;
+			top: 8.5vw;
+		}
 
 		.icon {
-			font-size: 10.3vw;
+			font-size: rem(60px);
+			@include media-breakpoint-up(md) {
+				font-size: 10.3vw;
+			}
 			color: #fff;
 		}
 	}

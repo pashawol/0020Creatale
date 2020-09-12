@@ -8,6 +8,7 @@ include ../blocks/sDigits/_sDigits.pug
 include ../blocks/sSprint/_sSprint.pug
 include ../blocks/sJoinUs/_sJoinUs.pug
 include ../blocks/sGarantie/_sGarantie.pug
+include ../blocks/sWarranty/_sWarranty.pug
 
 block variables
 	- let  mainPage= null
@@ -27,28 +28,29 @@ block pagecontent
 			h2 Wie erreicht man ein großes Ziel? In vielen kleinen
 		.row
 			.col-md-6
-				.h6 Was ist ein Sprint? Wir bei Creatale verstehen unter einem Sprint eine abgeschlossene Software-Version, die Du in wenigen Wochen einsetzen kannst. Deine Vorteile:
+				.h6 Was ist ein Sprint? Wir bei Creatale verstehen unter einem Sprint eine abgeschlossene Software-Version, die&nbsp;Du in&nbsp;wenigen Wochen einsetzen kannst. Deine Vorteile:
 			.col-md
 				ul
 					li Du bekommst echtes Anwender-Feedback aus der Praxis.
-					li Du kannst nach dem Sprint bei Bedarf die Richtung ändern und zum Beispiel das Anwender-Feedback oder eine neue Marktlage berücksichtigen.
+					li Du kannst nach dem Sprint bei Bedarf die Richtung ändern und zum&nbsp;Beispiel das Anwender-Feedback oder eine neue Marktlage berücksichtigen.
 					li Mit der abgeschlossenen Software-Version kannst Du sofort Geld verdienen.
 	+sSprint(class="bg-primary")
-	+sHowAchive(class="bg-primary")
+	+sHowAchive(class="bg-primary sHowAchive-second")
 		+b.section-title
 			h2 Lorem ipsum Headline
 		.row
 			.col-md-6
-				.h6 Subheading Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-				p SEO TEXT Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+				.h6 Subheading Lorem ipsum dolor sit amet, consectetuer adipiscing&nbsp;elit. Aenean commodo ligula eget dolor. 
+				p SEO TEXT Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean&nbsp;commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam&nbsp;felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat&nbsp;massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
 				p In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. 
 			.col-md
 				ul
 					li Du bekommst echtes Anwender-Feedback aus der Praxis.
-					li Du kannst nach dem Sprint bei Bedarf die Richtung ändern und zum Beispiel das Anwender-Feedback oder eine neue Marktlage berücksichtigen.
+					li Du kannst nach dem Sprint bei Bedarf die Richtung ändern und zum&nbsp;Beispiel das Anwender-Feedback oder eine neue Marktlage berücksichtigen.
 					li Mit der abgeschlossenen Software-Version kannst Du sofort Geld verdienen.
 				p SEO TEXT Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
 	+sJoinUs(class="bg-primary")
+	+sWarranty-sm()
 	+sGarantie()
 	+sForm()
 	+sContact()

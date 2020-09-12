@@ -14,9 +14,9 @@ mixin sSprint()
 mixin sprintItem(i,title,t)
 	+b.sprintItem
 		.row
-			+e.textCol.col-lg-6
+			+e.textCol.col-lg-auto
 				+e.numb= i
 				+e.title= title
 				p= t
-			+e.col.col-lg-6
+			+e.col.col-lg
 				+pic(`sprint-${i}`,'','')

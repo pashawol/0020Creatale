@@ -1,0 +1,129 @@
+// start .sLabor
+.sLabor {
+	position: relative;
+
+	h2 {
+		color: $primary2;
+		font-weight: 600;
+		@include media-breakpoint-up(xxl) {
+			font-size: 60px;
+		}
+		max-width: 950px;
+	}
+
+	picture {
+		text-align: right;
+	}
+
+	&__subtitle {
+		font-size: $small;
+		color: $secondary;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.section-title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.h6 {
+		font-weight: 600;
+	}
+
+	p {
+		font-weight: 500;
+		color: $dark;
+	}
+
+	li {
+		list-style: none;
+		position: relative;
+		padding-left: 24px;
+		color: $light-dark;
+		margin-bottom: 30px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 5px;
+			width: 23px;
+			height: 23px;
+			background-image: url('../img/svg/feather.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+
+		}
+	}
+
+	&__main {
+		padding-left: 58px;
+	}
+
+	&__form {
+		padding: 34px 44px 34px 58px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+		background-color: #f8f9fa;
+		margin-bottom: 70px;
+	}
+
+	&__site {
+		font-weight: 700;
+		font-size: $small;
+		color: $secondary;
+		margin-bottom: 50px;
+		display: block;
+	}
+
+	&__name {
+		color: $primary2;
+		margin-bottom: 15px;
+		font-weight: 700;
+	}
+
+	&__data {
+		color: $light-dark;
+		font-weight: 500;
+		span {
+			display: block;
+			margin-bottom: 15px;
+		}
+		a {
+			color: inherit;
+		}
+		padding-bottom: 5px;
+	}
+
+	&__siteMain {
+		font-weight: 500;
+		color: $primary2;
+		display: block;
+	}
+
+	&__rBlock {
+		padding-top: 100px;
+	}
+
+	&__pic {
+		@include media-breakpoint-up(lg) {
+			margin-left: calc(-1 * (100vw - 175%) / 2);
+		}
+		img {
+			width: 100%;
+		}
+	}
+
+
+
+
+
+
+
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sLabor
