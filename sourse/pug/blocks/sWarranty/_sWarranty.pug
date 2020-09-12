@@ -19,3 +19,32 @@ mixin sWarranty()
 mixin warrantyItem(imgNum)
 	+e.col.A.col-6.col-md-4(href='#')&attributes(attributes)
 		img(loading="lazy" src=`img/svg/warranty-img-${imgNum}.svg` alt="")
+
+mixin sWarranty-sm()
+	// start sWarranty
+	+b.SECTION.sWarranty--sm.section#sWarranty&attributes(attributes)
+		+e.container.container
+			+b.section-title.text-center
+				h2 Wir geben dir 100% Garantie!
+				p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			+e.row.row
+				+warrantyItem(1)
+				+warrantyItem(2)(class="offset-3 offset-md-0 order-first order-md-0")
+				+warrantyItem(3)
+
+mixin sWarranty-sl()
+	// start sWarranty
+	+b.SECTION.sWarranty--sl.section#sWarranty&attributes(attributes)
+		+e.container.container
+			+e.A.btn.circle-btn-frame(href="#")
+				| STARTE
+				br
+				| DEIn PROJEKT
+				br
+				| mit uns
+			+e.logoes-slider
+				.swiper-container.logoes-slider-js
+					.swiper-wrapper
+						-for (var i = 1; i <= 5; i++)
+							+logoesSlide(i)
+	// end sWarranty

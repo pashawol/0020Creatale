@@ -1,0 +1,29 @@
+extends layout/main.pug
+
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sSlider/_sSlider.pug
+include ../blocks/sJoinUs/_sJoinUs.pug
+include ../blocks/sLabor/_sLabor.pug
+include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sSlider/_sSlider.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= '04'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav(class="nav-sm")
+		//- +topLine()
+	.container
+		+breadcrumb('Referenzen')
+	+sSlider-04()
+	+sLabor()
+	+sWarranty-sl()
+	+sJoinUs(class="bg-primary")
+	+sContact()
+	+footer()
+
+

@@ -21,7 +21,7 @@ mixin sSlider()
 							+logoesSlide(i)
 	// end sSlider
 
-mixin manSlide(slideNum)
+mixin manSlide(slideNum,logo)
 	.swiper-slide
 		+e.slide-content
 			+e.img-cont
@@ -33,7 +33,35 @@ mixin manSlide(slideNum)
 				+e.txt
 					p=`Das Creatable – Team ist professionell, sorgfältig und kreativ! Es ist mir eine Freude mit ihnen zusammenzuarbeiten. Sie realisieren meine Ideen und mein Konzept, zielsicher und zuverlässig.${slideNum}`
 					a(href='#') Projekt ansehen
+				if logo
+					+e.logo
+						img(loading="lazy" src="img/svg/partner-slide-3.svg")
 
 mixin logoesSlide(imgNum)
 	.swiper-slide
 		img.swiper-lazy(src="#" data-src=`img/svg/partner-slide-${imgNum}.svg` alt="")
+
+mixin sSlider-04()
+	// start sSlider
+	+b.SECTION.sSlider--04.section#sSlider&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h1 Unsere Lieblings-Kunden
+				.h6 Besonders gerne arbeiten wir mit Unternehmensgründern sowie mit kleinen und mittelständischen Unternehmen, die Platzhirsch in ihrer Nische sind und als Hidden Champions tolle Ideen realisieren. 
+				.h6 Unser Lieblingskunden kommen aus unterschiedlichsten Branchen. Sie haben Freude daran, akitiv involviert zu sein und wirken partnerschaftlich an den gemeinsamen Projekten mit.
+
+			+e.slider
+				.man-slider-prev
+					+icon('arrow-prev')
+				.man-slider-next
+					+icon('arrow-next')
+				.swiper-container.man-slider-js
+					.swiper-wrapper
+						+manSlide('','logo')
+						+manSlide(2 ,'logo')
+						+manSlide(3 ,'logo')
+			//- +e.logoes-slider
+			//- 	.swiper-container.logoes-slider-js
+			//- 		.swiper-wrapper
+			//- 			-for (var i = 1; i <= 5; i++)
+			//- 				+logoesSlide(i)

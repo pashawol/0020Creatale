@@ -1,0 +1,52 @@
+mixin sLabor()
+	// start sLabor
+	+b.SECTION.sLabor.section#sLabor&attributes(attributes)
+		.container
+			+e.subtitle Lorem ipsum sit dolor
+			+b.section-title
+				h2 Medizinisches Versorgungszentrum Labor Ludwigsburg GbR
+				+e.logo
+					img(loading="lazy" src="img/svg/partner-slide-3.svg")
+				
+			.row
+				.col-lg-5
+					+e.main
+						.h6 Beschreibung
+						p Die Labor-Gemeinschaftspraxis Ludwigsburg ist ein regionales Labor, das eine patientien- und zeitnahe Analytik von der Probenabholung bis zur Befundübermittlung anbietet. Zu den Kunden des Labors gehören niedergelassene Ärzte und Krankenhäusern aus dem Großraum Stuttgart und Ludwigsburg. Das Labor ist seit dem Jahre 2003 bei folgenden Stellen nach den Normen DIN EN ISO 15189 und DIN EN ISO/IEC 17025 bei der DAkkS (Deutsche Akkreditierungsstelle GmbH) akkreditiert.
+						p Das Untersuchungsspektrum des MVZ Labors deckt alle wesentlichen Gebiete der Labormedizin ab. Die Schwerpunkte des Labors liegen in den Bereichen:
+						ul
+							li Klinischer Chemie
+							li Stoffwechsel
+							li Hämostaseologie
+							li Infektiologie
+						p Zusätzlich bietet das Labor auch alle neuen analytischen Methoden aus verschiedenen Bereichen wie z.B. der Molekularbiologie an.
+					+e.form
+						+e.site.ttu(href="https://www.mvz-labor-lb.de/labor/") https://www.mvz-labor-lb.de/labor/
+						+e.name Medizinisches Versorgungszentrum
+						+e.data
+							span Labor Ludwigsburg GbR
+							span Wernerstraße 33
+							span 71636 Ludwigsburg
+							span Telefon: #[a(href="tel:071419660") 07141/966-0]
+						+e.siteMain(href="https://www.mvz-labor-lb.de/") https://www.mvz-labor-lb.de/
+				.col-lg
+					+pic('labor-stat.png')
+				+e.picCol.col-lg-7
+					+pic('labor-tablet.png')(class="sLabor__pic")
+				.col-lg
+					+e.rBlock
+						.h6 Leistungen
+						p creatale wurde mit der Aufgabe betreut, die Auftragserfassung im Medizinischen Versorgungszentrum Labor Ludwigsburg zu verbessern. Hierbei wurden unter anderem verschiedenste Leistungen in Anspruch genommen:
+						ul
+							li Prozessanalyse des Auftragseingangs und der Auftragsbearbeitung&nbsp;im&nbsp;Labor
+							li Beratung zur Prozessoptimierung des Auftragseingangs im Labor
+							li Entwicklung einer Scanlösung für den Auftragseingang im Labor
+							li Automatisierung des Auftragseingangs im Labor mit Bilderkennung
+							li Entwicklung einer Oberfläche für die Auftragsdatenkorrektur
+						p.primary Durch die stetige Optimierung des Systems wurden einige Punkte in den Prozessen/Arbeitsabläufen verbessert:
+						ul
+							li Reduzierung allgemeiner Beschwerden durch Ärzte um 30%
+							li effizientere automatisierte Auftragsannahme
+							li Reduzierung der fehlerhaften Auftragsdaten um mehr als 50%
+						p Es ist damit gelungen, die hohen Qualitätsstandards nochmals wesentlich zu verbessern.
+	// end sLabor
