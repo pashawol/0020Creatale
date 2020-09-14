@@ -194,6 +194,21 @@
 			padding: 28px 27px 27px 57px;
 		}
 	}
+	//07
+	&--grand{
+		@include media-breakpoint-up(lg){
+			max-width: 700px;
+		}
+		@include media-breakpoint-up(xl){
+			max-width: 840px;
+		}
+	}
+	&--l-brick{
+
+	}
+
+	//end 07
+
 
 	//common item
 
@@ -271,6 +286,7 @@
 	}
 	&__h-strip{
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 	}
 	&__h-strip + &__txt-strip{
@@ -294,6 +310,7 @@
 		display: flex;
 		align-items: center;
 		&:after{
+			@include mt();
 			content: '|';
 
 			display: inline-block;
@@ -327,6 +344,7 @@
 		}
 	}
 	&__txt-strip{
+		@include mt();
 		display: block;
 		text-decoration: none !important;
 		color: $secondary;
@@ -350,6 +368,7 @@
 		}
 		& > *{
 			&:after{
+				@include mt();
 				content: '|';
 				display: inline-block;
 
@@ -370,12 +389,14 @@
 		@include media-breakpoint-up(md){
 			display: flex;
 			align-items: flex-end;
+			justify-content: space-between;
 		}
 	}
 	&__txt-block{
 
 	}
 	&__title{
+		@include mt();
 		display: block;
 		color: $body-color;
 		font-weight: 600;
@@ -414,6 +435,7 @@
 		}
 	}
 	&__descr{
+		@include mt();
 		display: block;
 		color: $light-dark;
 		font-weight: 500;

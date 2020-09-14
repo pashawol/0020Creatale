@@ -1,0 +1,120 @@
+mixin sBlogDet()
+	// start sBlogDet
+	+b.SECTION.sBlogDet.section#sBlogDet&attributes(attributes)
+		+e.container.container
+			+e.row.row
+				.col-lg-7
+					+e.A.nav-link(href='#')
+						+e.nav-btn.circle-btn-frame
+							+icon('arrow-prev')
+						.txt zur Übersicht
+					+e.txt-cont
+						+b.txt-strip--top
+							b 18:51 Uhr
+							span Juli 2020
+						+b.section-title
+							h2 Games are our passion, we often create prototypes done in web technologies.
+							p Stuttgarter Studierende bloggen über ihre Zeit an der Universität - drei Beispiele aus den Fachbereichen IT.
+						+b.txt-strip--no-dash.top-no-dash
+							b
+								| VON:
+								|
+							span Marius Leuschner
+						+soc()(class="top-soc")
+							+item-sos()
+								img(src="img/svg/twitter-g.svg" alt="")
+							+item-sos()
+								img(src="img/svg/fb-g.svg" alt="")
+							+item-sos()
+								img(src="img/svg/unknown-g.svg" alt="")
+							+item-sos()
+								img(src="img/svg/unknown-2-g.svg" alt="")
+					+e.img
+						img(loanding="lazy" src="img/@2x/blog-img.jpg" alt="")
+					+e.txt-cont-bot
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+						h6 SEO Zwischenüberschrift einzeilig
+						p Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+						p Sed consequat, Leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+						+b.txt-strip--no-dash
+							b
+								| Schlagwörter:
+								|
+							span software, game, PHP
+						+b.txt-strip--no-dash
+							b UNS interessiert deine Meinung zu diesem Thema. Schreib uns deine MeinunG.
+						+soc()
+							+item-sos()
+								img(src="img/svg/twitter-g.svg" alt="")
+							+item-sos()
+								img(src="img/svg/fb-g.svg" alt="")
+							+item-sos()
+								img(src="img/svg/unknown-g.svg" alt="")
+					+e.lower-nav
+						+e.A.nav-link(href='#')
+							+e.nav-btn.circle-btn-frame
+								+icon('arrow-prev')
+							.txt.d-none.d-sm-block zur Übersicht
+						+e.A.nav-link--reverse(href='#')
+							.txt.d-none.d-sm-block nächster Artikel
+							+e.nav-btn.circle-btn-frame
+								+icon('arrow-next')
+				.col-lg-5
+					+e.col-title Beliebte Artikel
+					//-1
+					+b.A.baner-post(href='#')
+						+e.header
+							+e.txt-strip
+								b Mentoring Lunch
+								span Juli 2020
+						+e.content
+							+e.txt-block
+								+e.title Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+							+e.btn.circle-btn-frame.d-none.d-md-flex
+								| Mehr
+								br
+								| erfahren
+					//-2
+					+b.A.baner-post(href='#')
+						+e.header
+							+e.txt-strip
+								b Mentoring Lunch
+								span Juli 2020
+						+e.content
+							+e.txt-block
+								+e.title Startup Weekend Stuttgart 2020
+								+e.descr Vom 29.11.–01.12.2020 sind wir wieder beim Startup Weekend Stuttgart dabei.
+					//-3
+					+b.A.baner-post(href='#')
+						+e.header
+							+e.h-strip
+								+e.h-img
+									img(loading="lazy" src="img/svg/node-logo.svg" alt="")
+								+e.txt-strip
+									b BLOG
+						+e.content
+							+e.txt-block
+								+e.title A node.js lidary for extracting data from scanned forms.
+					//-4
+					+b.A.baner-post(href='#')
+						+e.header
+							+e.txt-strip
+								b Mentoring Lunch
+								span Juli 2020
+						+e.content
+							+e.txt-block
+								+e.title Startup Weekend Stuttgart 2020
+								+e.descr Vom 29.11.–01.12.2020 sind wir wieder beim Startup Weekend Stuttgart dabei.
+					//-5
+					+b.A.baner-post(href='#')
+						+e.header
+							+e.h-strip
+								+e.h-img
+									img(loading="lazy" src="img/svg/node-logo.svg" alt="")
+								+e.txt-strip
+									b BLOG
+						+e.content
+							+e.txt-block
+								+e.title A node.js lidary for extracting data from scanned forms.
+			+mailBlock()
+	// end sBlogDet

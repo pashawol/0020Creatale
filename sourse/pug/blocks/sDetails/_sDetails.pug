@@ -1,0 +1,86 @@
+mixin sDetails()
+	// start sDetails
+	+b.SECTION.sDetails.section#sDetails&attributes(attributes)
+		+pic('moon-man')(class="sDetails__banner-img")
+		.container
+			.row
+				+e.left-col.col-lg-8.col-xxl-9
+					+e.txt-contnet
+						+e.col-title Karriere
+						+b.section-title
+							h2 IT-Systemadministrator / DevOps Engineer (m/w/d) in Teilzeit
+							p Deine Leidenschaft sind reibungslos laufende Systeme und Prozesse? Du bist zukünftigen technischen Entwicklungen immer einen Schritt voraus? Du glaubst daran, dass Software Spaß machen muss?
+						+e.txt
+							+e.txt-item
+								h6 Technik beherrschen, Menschen begeistern.
+								p Bei creatale beschäftigen wir uns damit, wie Menschen auf Arbeit und in ihrer Freizeit von begeisternden Softwarelösungen optimal profitieren können. Wir unterstützen visionäre Unternehmensgründer mit individuell entwickelten High-End-Softwarelösungen und helfen Menschen beim Entspannen mit außergewöhnlichen Spielen.
+								p Wir glauben daran, dass die besten Ergebnisse entstehen, wenn jeder sein Arbeitsumfeld selbstbestimmt organisieren und seine Aufgaben eigenverantwortlich erledigen darf. Werde Teil der creatale-Familie und arbeite in einem jungen, leidenschaftlichen und kreativen Team, das höchste Ansprüche an sich selbst stellt.
+							+e.list-item
+								h6 Auf dich warten vielfältige Aufgaben
+								ul
+									li Du betreust unsere Server und Services, damit wir mit unseren Kunden und in unseren Teams effizient arbeiten können.
+									li Du unterstützt uns bei der Auswahl von Softwaresystemen, die zu unseren Anforderungen passen.
+									li
+										| Du bist bereit deine Arbeit im Gesamtkonzept des Unternehmens zu sehen und übernimmst proaktiv
+										|
+										br.d-none.d-xxl-block
+										| Verantwortung.
+									li Gemeinsam mit uns und unseren Teams konzipierst du Sicherheitsmaßnahmen für unser Unternehmen und unsere Projekte und setzt diese gemeinsam mit uns um.
+							+e.list-item
+								h6 Dein Idealprofil
+								ul
+									li Du hast mindestens 2 Jahre Erfahrung mit der Administration von Linux-Servern, On-Premise- und Private-Cloud-Lösungen, insbesondere Open-Source-Anwendungen.
+									li Du konzipierst und betreibst Systeme nach den höchsten Standards der Informationssicherheit und des Datenschutzes.
+									li Du kannst gängige Continuos-Integration- und Continuous-Delivery-Prozesse automatisieren, einrichten und betreiben, beherrschst mindestens eine Skriptsprache und bringst idealerweise Programmierkenntnisse mit.
+									li Für dich steht der Kundennutzen an erster Stelle.
+									li Du bist fähig und bereit neue Skills auch außerhalb dessen, womit du dich wohl fühlst, zu erlernen: Weiterentwicklung ist für dich selbstverständlich.
+									li Du automatisierst wiederkehrende Aufgaben und Prozesse in unseren Projekten und unserer Verwaltung.
+									li Du kannst unter wechselnden Anforderungen und Prioritäten arbeiten.
+									li Du kannst deine Problemlösungen gegenüber deinen Vorgesetzten und der Geschäftsführung argumentieren und verteidigen, wenn sie dem Wohl des Unternehmens dienen.
+									li Du bringst unternehmerisches Denken und Handeln mit und hast idealerweise Erfahrung mit dem Aufbau von Unternehmen.
+					+e.brick
+						+e.b-txt
+							+e.b-title Für dich klingt diese Stelle nach einem Traumjob?
+							+e.b-contnent
+								span
+									| Dann bewirb dich bei uns unter
+									|
+								a(href='mailto:career@creatale.de') career@creatale.de.
+								span
+									|
+									| Bitte sende uns deine Bewerbung im PDF-Format zu.
+								.txt-darken Dein Ansprechpartner ist Christian Dittrich.
+						+e.A.b-btn.circle-btn-frame(href="#")
+							| Jetzt
+							br
+							| bewerben
+				.col-lg-4.col-xxl-3
+					+e.left-col-content
+						+e.portrait.text-center
+							+e.contact-txt Dein Ansprechpartner
+							+e.img-cont
+								+e.img-inner
+									img(loading='lazy' src="img/@2x/small-portrait.png" alt="")
+								+e.A.portrait-btn.circle-btn-frame(href="#")
+									| Jetzt
+									br
+									| bewerben
+							+e.name Christian Dittrich
+							+e.spec Softwareentwickler und Unternehmer
+						+e.lower-pills
+							+e.l-title Was erwartet Dich
+							+e.l-slider
+								.swiper-container.expect-slider-js
+									.swiper-wrapper
+										+expectSlide(1, 'FEEL-GOOD-KULTUR')
+										+expectSlide(2, 'Flexibilität')
+										+expectSlide(3, 'QUALITÄT & VIELFALT')
+										+expectSlide(4, 'TEAMSPIRIT')
+	// end sDetails
+
+mixin expectSlide(imgNum, slideTxt)
+	.swiper-slide
+		+e.slide-cont
+			+e.img
+				img.swiper-lazy(src="#" data-src=`img/@2x/expect-img-c-${imgNum}.jpg` alt="")
+			+e.slide-txt=slideTxt

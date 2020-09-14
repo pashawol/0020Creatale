@@ -1,0 +1,31 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sHowAchive/_sHowAchive.pug
+include ../blocks/sDigits/_sDigits.pug
+include ../blocks/sSprint/_sSprint.pug
+include ../blocks/sJoinUs/_sJoinUs.pug
+include ../blocks/sGarantie/_sGarantie.pug
+include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sDetails/_sDetails.pug
+include ../blocks/sBlog/_sBlog.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= '07-blog-o'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav(class="nav-sm")
+		//- +topLine()
+	.container
+		+breadcrumb('Über uns', 'Blog')
+	+sBlog()
+	+sContact()
+	+footer()
+
+
