@@ -48,6 +48,9 @@ mixin headerBlockItem(title,txt, imgNum)
 mixin headerBlock-sm()
 	// start headerBlock
 	+b.headerBlock--sm.section#headerBlock&attributes(attributes)
-		+pic('headBl-bg')(class="headerBlock__bg")
-		+e.iconWrap
-			+icon('vision-control')
+		if block
+			block
+		else
+			+pic('headBl-bg')(class="headerBlock__bg")
+			+e.iconWrap
+				+icon('vision-control')

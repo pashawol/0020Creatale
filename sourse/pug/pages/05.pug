@@ -1,0 +1,38 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sHowAchive/_sHowAchive.pug
+include ../blocks/sDigits/_sDigits.pug
+include ../blocks/sSprint/_sSprint.pug
+include ../blocks/sJoinUs/_sJoinUs.pug
+include ../blocks/sGarantie/_sGarantie.pug
+include ../blocks/sWarranty/_sWarranty.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= '05'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav(class="nav-sm")
+		//- +topLine()
+	.container
+		+breadcrumb('Leistungen ', 'Sprints')
+	+headerBlock-sm(class="headerBlock-gradient")
+		+pic('header-bg-05')(class="headerBlock__bg")
+		+b.section-title--center
+			h1 Das Unternehmen
+	+sSprint-05(class="bg-primary")
+
+	+sJoinUs-team(class="bg-primary")
+	+sWarranty-sm()
+	+sGarantie()
+	+sForm()
+	+sContact()
+	+footer()
+
+

@@ -44,10 +44,50 @@
 		width: 279px;
 		height: 279px;
 		margin: 0 auto 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		picture {
+			flex-shrink: 0;
 			border-radius: 50%;
 			overflow: hidden;
+			width: 229px;
+			height: 229px;
+
 		}
+		img {
+			width: 100%;
+		}
+		&--sm {
+			width: 165px;
+			height: 164px;
+			picture {
+				width: 136px;
+				height: 136px;
+			}
+		}
+	}
+	&__btn {
+		width: 165px;
+		height: 164px;
+		border: 1px solid $white;
+		color: $primary2 !important;
+		font-size: 15px;
+		&::before {
+			background-color: #fbdd00 !important;
+		}
+		&:after{
+			border: 1px solid $white;
+		}
+	}
+
+	&__col {
+		display: flex;
+		justify-content: center;
+		// align-items: center;
+	}
+	&__item {
+		// margin: auto 0;
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

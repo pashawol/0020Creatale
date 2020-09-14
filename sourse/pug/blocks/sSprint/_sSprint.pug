@@ -15,8 +15,43 @@ mixin sprintItem(i,title,t)
 	+b.sprintItem
 		.row
 			+e.textCol.col-lg-auto
-				+e.numb= i
-				+e.title= title
-				p= t
+				if block
+					block
+				else
+					+e.numb= i
+					+e.title= title
+					p= t
 			+e.col.col-lg
 				+pic(`sprint-${i}`,'','')
+
+mixin sSprint-05()
+	// start sSprint
+	+b.sSprint--05.section#sSprint&attributes(attributes)
+		.container
+			+b.section-title
+				.h4 creatale wurde am 17.09.2012 in Ludwigsburg gegründet.
+				.h4 Unser creatale-Team besteht aus Software-Ingenieuren mit der Leidenschaft für die Softwareentwicklung. Unser Ziel ist es, die benutzerfreundlichste und effzienteste Softwarelösung für unsere Kunden zu finden. Wir beraten mittelständische Unternehmen in der Region Stuttgart und unterstützen Sie bei der Vorbereitung und Umsetzung von IT-Projekten. Unsere Softwareberatung ermöglicht Ihnen Kostensenkungen und Effizienzverbesserungen durch die Auswahl einer passenden Software.
+			+sprintItem('5')
+				+e.title Mission und Vision
+				p Wir von creatale haben zwei Leidenschaften.
+				p Zum einen wollen wir Sie begeistern, indem Sie durch unsere qualifizierte Softwareberatung nur wirklich passende und genutzte Software erhalten. Zum anderen leben wir unsere Begeisterung für IT in der Entwicklung und Programmierung von anspruchsvollen Computerspielen.
+				p.black So lautet auch das creatale-Motto:
+				+e.link(href="#") Technik beherrschen, Menschen begeistern.
+			+sprintItem('6')
+				+e.title Philosophie
+				p Bei sämtlichen Beratungsthemen werden entsprechend der creatale-Philosophie auch Open-Source-Lösungen berücksichtigt. Durch unsere Unabhängigkeit sind wir nicht auf bestimmte Software-Lösungen angewiesen, sondern beraten Sie unvoreingenommen.
+			+sprintItem('7')
+				+e.title Unsere Stärken
+				p Der große Vorteil, den wir Ihnen bieten, ist unsere unabhängige Softwareberatung. Diese Unabhängigkeit können wir Ihnen gewährleisten, da wir kein Vertriebsinteresse an Softwareprodukten haben. Nur so erhalten Sie die optimale Softwareberatung für Ihre komplexe Aufgabenstellung.
+				p Bei einer Zusammenarbeit mit creatale erwartet Sie Projektmanagementerfahrung, neuestes technisches Wissen, agiles Denken und eine hohe Problemlösekompetenz.
+				p Wir decken den kompletten Softwareentwicklungsprozess mit Requirements Engineering, Softwarearchitektur, Programmierung und Softwaretest ab. Zu unseren Spezialgebieten zählen die Themengebiete Interaktive Medien, Visualisierung, Webscraping, Analytics und Simulation.
+			+sprintItem('8')
+				+e.title Unsere Leidenschaft: Games
+				p In unserer Forge befinden sich sowohl Open Source Libraries als auch unsere bisher programmierten Games, die fast alle im Browser spielbar sind. Wir wünschen Ihnen viel Spaß und Unterhaltung beim Ausprobieren und Stöbern.
+				+e.bottomLine
+					+e.iconWrap
+						img(src="img/svg/partner-slide-4.svg", alt="")
+					+e.btn.circle-btn-frame(href="#")
+						| Welcome to 
+						br
+						| the forge
