@@ -9,3 +9,6 @@
 1. <https://luckyone1221.github.io/0020Creatale/public/08-blog-d.html>
 1. <https://luckyone1221.github.io/0020Creatale/public/09-forge.html>
 1. <https://luckyone1221.github.io/0020Creatale/public/10-forge-det.html>
+
+1. <https://luckyone1221.github.io/0020Creatale/public/11.html>
+1. <https://luckyone1221.github.io/0020Creatale/public/14.html>
