@@ -55,6 +55,7 @@ $output-bourbon-deprecation-warnings: false;
 	.icon {
 		font-size: 12px;
 		color: $light-dark;
+		margin-bottom: 2px;
 	}
 }
 @import "./node_modules/bootstrap/scss/pagination";
