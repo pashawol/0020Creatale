@@ -1,0 +1,42 @@
+mixin sImpressum()
+	// start sImpressum
+	+b.SECTION.sImpressum.section#sImpressum&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Impressum
+			.row
+				+e.left-col.col-md-6
+					+e.txt
+						+e.title Kontakt
+						p
+							| creatale GmbH
+							br
+							| Heilbronner Str. 42
+							br
+							| 71634 Ludwigsburg
+						+e.links
+							+e.link
+								span
+									| E-Mail:
+									|
+								a(href='mailto:contact@creatale.de') contact@creatale.de
+							+e.link
+								span
+									| Fax:
+									|
+								a(href='tel:+49714130992569') +49 7141 3099256-9
+						p Vertretungsberechtiger Geschäftsführer: Christian Dittrich
+				+e.right-col.col-md-6
+					+e.txt--right-col
+						+e.title Angaben gemäß §5 TMG
+						b Eintragungen
+						p Eintragung im Handelsregister sowie Angaben gemäß §27a Umsatzsteuergesetz und §139c Abgabenordnung:
+						b Registergericht
+						p Amtsgericht Stuttgart
+						b Registernummer
+						p HRB 742907
+						b Umsatzsteuernummer
+						p 71310/10402
+						b Umsatzsteuer-Identifikationsnummer
+						p DE285112068
+	// end sImpressum

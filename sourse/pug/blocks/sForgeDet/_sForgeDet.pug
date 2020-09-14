@@ -2,8 +2,53 @@ mixin sForgeDet()
 	// start sForgeDet
 	+b.SECTION.sForgeDet.section#sForgeDet&attributes(attributes)
 		.container
-			+b.section-title
-				h2 Area Onety Five
-				p You thought you’d hit it big with the apprenticeship at Area Onety Five, but then the invasion came… You pillaged a random science lab and have no idea what all this stuff does. Probably break really soon. And then what do you do? Use [WASD] to run und jump, [I] to open your inventory and left click to shoot.
-			.row
+			+e.row.row
+				+e.left-col.col-lg-8.col-xxl-9
+					+e.l-col-txt
+						+b.section-title
+							h2 Area Onety Five
+							p You thought you’d hit it big with the apprenticeship at Area Onety Five, but then the invasion came… You pillaged a random science lab and have no idea what all this stuff does. Probably break really soon. And then what do you do? Use [WASD] to run und jump, [I] to open your inventory and left click to shoot.
+						+e.txt
+							h6 Game type
+							p Jump'n'Run, Singleplayer, 2D, Keyboard/Mouse input
+							h6 Features
+							ul
+								li WebGL accelerated sprite graphics with pixie.js
+								li Infinitely generated level
+								li 12 Wacky Weapons
+							p
+								| Our entry for the
+								|
+								a(href="#") Global Game Jam 2014.
+								|
+								|Thanks to our artists Sonja Seiler, Sarah S. Stark, and Christian Teller.
+				+e.portrait-col.col-lg-4.col-xxl-3
+					+e.portrait-cont
+						+b.portrait.text-center
+							+e.img-cont
+								+e.img-inner
+									img(loading='lazy' src="img/@2x/games-item-1.jpg" alt="")
+								+e.A.portrait-btn.circle-btn-frame(href="#")
+									| PLAY it
+									br
+									| NOW!
+			+e.img-row.row
+				.col-md-4
+					+gameImg(1 ,'small-item')
+					+gameImg(2 ,'big-item')
+				.col-md-4
+					+gameImg(3 ,'big-item')
+					+gameImg(4 ,'small-item')
+				.col-md-4
+					+gameImg(5 ,'small-item')
+					+gameImg(6 ,'big-item')
+			+e.A.lower-btn(href="#")
+				|PLAY it
+				br
+				|NOW!
+
 	// end sForgeDet
+
+mixin gameImg(imgNum, contClasses='')
+	+e.A.game-img(class=contClasses href=`img/@2x/forge-det-${imgNum}.jpg` data-fancybox="gameImgs")
+		img(loading='lazy' src=`img/@2x/forge-det-${imgNum}.jpg` alt="")

@@ -66,3 +66,17 @@ mixin sNews()
 
 mixin mailBlock()
 	+b.mail-bl
+		+e.title
+			| Sicher hast Du schon viele langweilige
+			br
+			| Weihnachtsgrüße erhalten.
+		+e.content
+			+e.left-img
+				img(loading="lazy" src="img/svg/mail-btn.svg" alt="")
+			+e.line
+				p Trage hier deine E-Mail-Adresse ein und erfahre, wie Weihnachtspost zum Erlebnis wird.
+			+e.A.btn(href="#")
+				| Jetzt
+				br
+				| Anmelden
+

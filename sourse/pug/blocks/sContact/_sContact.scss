@@ -1,5 +1,8 @@
 // start .sContact
 .sContact {
+	&.padding-0{
+		padding-top: 0;
+	}
 	--sPB: #{0};
 	--sTPB: #{0};
 

@@ -21,6 +21,9 @@ body,
 html {
 	font-size: var(--fontSizeBase);
 	// @include font-size(1rem);
+	&.painted-primary{
+		background-color: $primary2;
+	}
 }
 
 
