@@ -21,11 +21,14 @@ mixin gamesItem(imgNum, title, descr)
 					img(loading="lazy" src=`img/@2x/games-item-${imgNum}.jpg` alt="")
 			+b.A.baner-post--game(href='#')
 				+e.header
-					+e.h-strip
-						+e.h-img
-							img(loading="lazy" src="img/svg/partner-slide-4.svg" alt="")
-						+e.txt-strip
-							b Games
+					if block
+						block
+					else
+						+e.h-strip
+							+e.h-img
+								img(loading="lazy" src="img/svg/partner-slide-4.svg" alt="")
+							+e.txt-strip
+								b Games
 				+e.content
 					+e.txt-block
 						+e.title=title
@@ -34,3 +37,18 @@ mixin gamesItem(imgNum, title, descr)
 						| PLay
 						br
 						| it NOW!
+
+mixin sGames-karriere()
+	// start sGames
+	+b.SECTION.sGames--karriere.section#sGames&attributes(attributes)
+		+e.container.container
+			+b.section-title
+				h2 Karriere bei creatale
+				p Möchtest du ein Teil unseres Teams werden?
+			+e.row.row
+				+gamesItem(4, 'Marketing Manager (Schwerpunkt Online) (m/w/d) in Teilzeit', 'Du hast eine Leidenschaft für außergewöhnliche Geschichten und tiefgründige, vertrauensvolle Kundenbeziehungen?')
+					+e.karriere Karriere
+				+gamesItem(5, 'IT-Systemadministrator / DevOps Engineer (m/w/d) in Teilzeit', 'Deine Leidenschaft sind reibungslos laufende Systeme und Prozesse? Du bist zukünftigen technischen Entwicklungen immer einen Schritt voraus?')
+					+e.karriere Karriere
+
+			//- +mailBlock()

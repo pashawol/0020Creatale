@@ -172,4 +172,39 @@
 	@include media-breakpoint-down(md) {}
 	@include media-breakpoint-down(sm) {}
 
+	//karriere
+	&--karriere {
+		padding-top: rem(65px);
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(130);
+		}
+		.sGames__img-inner {
+			padding-top: 52.3% !important;
+		}
+		.baner-post--game .baner-post__btn {
+			margin-top: auto;
+		}
+		.baner-post__descr {
+			max-width: 502px;
+		}
+		.baner-post--game {
+			@include media-breakpoint-up(xxl) {
+				padding: 30px 28px 56px 57px;
+			}
+		}
+		.sGames__row {
+			padding-bottom: 0 !important;
+		}
+	}
+	//
+
+	.baner-post {
+		&__karriere {
+			color: $secondary;
+			font-size: $small;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	//
 } // end.sGames

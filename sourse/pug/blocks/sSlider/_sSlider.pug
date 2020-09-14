@@ -39,7 +39,10 @@ mixin manSlide(slideNum,logo)
 
 mixin logoesSlide(imgNum)
 	.swiper-slide
-		img.swiper-lazy(src="#" data-src=`img/svg/partner-slide-${imgNum}.svg` alt="")
+		if block
+			block
+		else
+			img.swiper-lazy(src="#" data-src=`img/svg/partner-slide-${imgNum}.svg` alt="")
 
 mixin sSlider-04()
 	// start sSlider
