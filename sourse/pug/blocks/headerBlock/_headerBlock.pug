@@ -45,7 +45,7 @@ mixin headerBlockItem(title,txt, imgNum)
 					| erfahren
 		+pic(`header-block-item-${imgNum}`)(class="headerBlock__img d-none d-md-block")
 
-mixin headerBlock-sm()
+mixin headerBlock-sm(imgName='headBl-bg')
 	// start headerBlock
 	+b.headerBlock--sm.section#headerBlock&attributes(attributes)
 		if block

@@ -1,0 +1,34 @@
+mixin sForge()
+	// start sForge
+	+b.SECTION.sForge.section#sForge&attributes(attributes)
+		+e.head
+			+pic('forge-bg')(class="sForge__bg")
+			+b.section-title--white.text-center
+				h2 Welcome to Forge
+				p Where we show off  our experiments, prototypes, open source libraries, products and more!
+		.container
+			+b.section-title--common
+				h2 Open Source Libraries
+				p We believe in the open source philosophy and publish the reusable components and libraries we create.
+			+e.git-row.row
+				+libraryItem('fv', 'A node,js library for extracting data from. Scanned forms.')
+				+libraryItem('dv', 'A node,js library for processing and understanding scanned documents')
+
+	// end sForge
+
+mixin libraryItem(title, descr)
+	+e.git-col.col-lg-6
+		+b.A.baner-post--git(href='#')
+			+e.header
+				+e.h-strip
+					+e.h-img
+						img(loading="lazy" src="img/svg/node-logo.svg" alt="")
+					+e.txt-strip
+						b BLOG
+			+e.content
+				+e.txt-block
+					+e.title=title
+					+e.descr=descr
+				+e.git-hub-btn.circle-btn-frame
+					+icon('github')
+

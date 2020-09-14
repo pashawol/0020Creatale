@@ -216,10 +216,6 @@
 
 		font-size: 20px;
 		line-height: (32/20);
-		@include media-breakpoint-up(xl){
-			font-size: 20px;
-			line-height: (32/20);
-		}
 		@include media-breakpoint-up(xxl){
 			font-size: 21px;
 			line-height: (32/21);

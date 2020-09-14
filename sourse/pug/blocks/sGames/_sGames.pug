@@ -1,0 +1,36 @@
+mixin sGames()
+	// start sGames
+	+b.SECTION.sGames.section#sGames&attributes(attributes)
+		+e.container.container
+			+b.section-title
+				h2 Games
+				p Games are our passion, we often create prototypes done in web technologies.
+			+e.row.row
+				+gamesItem(1, 'Area Unity Five', 'Defeat alien hondes with a crazy arsenal of weapons.')
+				+gamesItem(2, 'The Royal Fall', 'Help the princess escape the mad prince through a magical,  endless well.')
+				+gamesItem(3, 'Tube Racer', 'Fly inside a tube and avoid obstacles.')
+				+gamesItem(3, 'Eggenfelden', 'Multiplayer tile-placing game based. On the popular board game „Carcassonne“.')
+			+mailBlock()
+	// end sGames
+
+mixin gamesItem(imgNum, title, descr)
+	+e.col.col-lg-6
+		+e.item
+			+e.img
+				+e.img-inner
+					img(loading="lazy" src=`img/@2x/games-item-${imgNum}.jpg` alt="")
+			+b.A.baner-post--game(href='#')
+				+e.header
+					+e.h-strip
+						+e.h-img
+							img(loading="lazy" src="img/svg/partner-slide-4.svg" alt="")
+						+e.txt-strip
+							b Games
+				+e.content
+					+e.txt-block
+						+e.title=title
+						+e.descr=descr
+					+e.btn.circle-btn-frame
+						| PLay
+						br
+						| it NOW!
