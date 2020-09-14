@@ -30,7 +30,33 @@
 		font-size: 25px;
 		color: $white;
 		font-weight: 600;
-		line-height: (35/25);
+		line-height: 1.3;
+		margin-bottom: 1.5rem;
+	}
+
+	&--05 {
+		padding-top: calc(var(--sPT) * 1.1);
+		.section-title {
+			max-width: 770px;
+			padding-bottom: calc(var(--sTPB) * 1.8);
+		}
+		.sprintItem__textCol {
+			padding-top: 52px;
+		}
+		.sprintItem__title {
+			margin-bottom: 18px;
+		}
+		.sprintItem {
+			p {
+				line-height: 1.55;
+				margin-bottom: 30px;
+			}
+
+			p.black {
+				margin-bottom: 0px;
+			}
+
+		}
 	}
 
 } // end.sSprint
@@ -47,6 +73,7 @@
 	}
 
 	&__textCol {
+		padding-bottom: 20px;
 		padding-left: 30px;
 		padding-right: 30px;
 		@include media-breakpoint-up(lg) {
@@ -68,8 +95,10 @@
 		justify-content: center;
 		height: 100%;
 		img {
-			height: 100%;
-			max-width: none;
+			@include media-breakpoint-up(md) {
+				height: 100%;
+				max-width: none;
+			}
 		}
 	}
 

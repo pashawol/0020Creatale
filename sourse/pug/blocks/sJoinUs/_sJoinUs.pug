@@ -57,3 +57,16 @@ mixin sJoinUs-team()
 									| Teams!
 						+e.col.col-6
 							+item('7','Markus')
+
+mixin sJoinUs-04()
+	// start sJoinUs
+	+b.SECTION.sJoinUs.section#sJoinUs&attributes(attributes)
+		.container.text-center
+			+b.section-title.text-center
+				h3 Du möchtest auch ein Projekt mit uns Starten?
+				p Zögere nicht und vereinbare einen Kennenlerntermin mit uns.
+			+e.ingWrap
+				+pic('photoPerson-2','','')
+			+e.name Christian Dittrich
+			+e.position Softwareentwickler und Unternehmer
+			+e.mail(href="mailto:contact@creatale.de") contact@creatale.de

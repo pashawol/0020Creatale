@@ -1,6 +1,14 @@
 // start .sLabor
 .sLabor {
 	position: relative;
+	padding-top: calc(var(--sPT) * 1.15);
+	padding-bottom: calc(var(--sPB) / 2.8);
+	
+	// .container {
+	// 	@include media-breakpoint-up(xxl) {
+	// 		max-width: 1543px;
+	// 	}
+	// }
 
 	h2 {
 		color: $primary2;
@@ -9,7 +17,39 @@
 			font-size: 60px;
 		}
 		max-width: 950px;
+		line-height: 1.1;
 	}
+
+	.section-title {
+		padding-bottom: calc(var(--sTPB) * 1.65);
+		padding-left: 25px;
+		@include media-breakpoint-up(lg) {
+			padding-left: 60px;
+			display: flex;
+			justify-content: space-between;
+			// align-items: center;
+		}
+		&__logo {
+			@include media-breakpoint-up(lg) {
+				padding-top: 20px;
+				width: 310px;
+				img {
+					width: 100%;
+				}
+			}
+			@include media-breakpoint-up(xxl) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__main {
+		padding-left: 25px;
+		@include media-breakpoint-up(lg) {
+			padding-left: 63px;
+		}
+	}
+
 
 	picture {
 		text-align: right;
@@ -20,29 +60,45 @@
 		color: $secondary;
 		font-weight: 700;
 		text-transform: uppercase;
+		margin-bottom: 20px;
+		padding-left: 25px;
+		@include media-breakpoint-up(lg) {
+			padding-left: 63px;
+		}
 	}
 
-	.section-title {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
 
 	.h6 {
 		font-weight: 600;
+		font-size: 25px;
+		color: $dark;
+		margin-bottom: .7rem;
 	}
 
 	p {
 		font-weight: 500;
 		color: $dark;
+		max-width: 595px;
+		line-height: calc(32/21);
+		margin-bottom: 1.5rem;
+	}
+	
+	ul {
+		margin-top: -13px;
+		@include media-breakpoint-up(xxl) {
+			margin-left: -10px;
+		}
 	}
 
 	li {
 		list-style: none;
 		position: relative;
-		padding-left: 24px;
+		padding-left: 35px;
 		color: $light-dark;
-		margin-bottom: 30px;
+		margin-bottom: 5px;
+		@include media-breakpoint-up(md) {
+			margin-bottom: 18px;
+		}
 
 		&::before {
 			content: '';
@@ -58,28 +114,30 @@
 		}
 	}
 
-	&__main {
-		padding-left: 58px;
-	}
-
 	&__form {
-		padding: 34px 44px 34px 58px;
+		max-width: 656px;
+		padding: 34px 44px 37px 58px;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 		background-color: #f8f9fa;
-		margin-bottom: 70px;
+		margin-bottom: 40px;
+		margin-top: 30px;
+		@include media-breakpoint-up(lg) {
+			margin-top: 63px;
+			margin-bottom: 80px;
+		}
 	}
 
 	&__site {
 		font-weight: 700;
 		font-size: $small;
 		color: $secondary;
-		margin-bottom: 50px;
+		margin-bottom: 38px;
 		display: block;
 	}
 
 	&__name {
 		color: $primary2;
-		margin-bottom: 15px;
+		margin-bottom: 5px;
 		font-weight: 700;
 	}
 
@@ -88,7 +146,7 @@
 		font-weight: 500;
 		span {
 			display: block;
-			margin-bottom: 15px;
+			margin-bottom: 1px;
 		}
 		a {
 			color: inherit;
@@ -103,10 +161,15 @@
 	}
 
 	&__rBlock {
-		padding-top: 100px;
+		padding-top: 40px;
+		@include media-breakpoint-up(lg) {
+			padding-top: 100px;
+		}
 	}
 
+
 	&__pic {
+		margin-left: calc(-1 * (100vw - 99%) / 2);
 		@include media-breakpoint-up(lg) {
 			margin-left: calc(-1 * (100vw - 175%) / 2);
 		}

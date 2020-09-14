@@ -1,29 +1,83 @@
+// start .sForm
+.sForm {
+	background-color: #f7f7f8;
+	border-top: 1px solid #bbc0d6;
+	padding-top: calc(var(--sPT) / 1.13);
+	padding-bottom: calc(var(--sPB) * 1.55);
+	.section-title {
+		color: $primary2;
+	}
 
-	// start .sForm
-	.sForm {
-		 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
+	h1 {
+		font-size: 30px;
+		font-weight: 700;
+		margin-bottom: .4rem;
+	}
+
+	.section-title {
+		p {
+			font-weight: 500;
+		}
+		padding-bottom: calc(var(--sTPB) / 4);
+	}
+
+	.container {
+		@include media-breakpoint-up(md) {
+			max-width: 825px;
+		}
+	}
+
+	&__contact {
+		color: $body-color;
+		margin-bottom: 30px;
+		font-size: $small;
+		line-height: calc(23/18);
+		letter-spacing: -0.18px;
+		span {
+			display: block;
+		}
+		a {
+			color: inherit;
+		}
+	}
+
+
+
+
+
+
+
+
+
 	@include media-breakpoint-up(xs) {}
-	
-	//
 	@include media-breakpoint-between(md, xl) { }
-	
-	
-	//
-	@include media-breakpoint-only(xs) {}
-	@include media-breakpoint-only(sm) {}
-	@include media-breakpoint-only(md) {}
-	@include media-breakpoint-only(lg) {}
 	@include media-breakpoint-only(xl) {}
-	
-	//
-	@include media-breakpoint-down(xl) {}
-	@include media-breakpoint-down(lg) {}
-	@include media-breakpoint-down(md) {}
-	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {} 
 
 } // end.sForm
+
+.form-wrap {
+
+	.form-control {
+		max-width: 376px;
+	}
+
+	&__btn {
+		background-color: transparent;
+		margin-top: rem(40);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__input-wrap {
+		padding-bottom: 17px;
+	}
+
+	&__select {
+		background-image: url('../img/svg/chevron-down.svg');
+		background-position: 90% center;
+		background-repeat: no-repeat;
+		background-size: 15px;
+		
+	}
+}

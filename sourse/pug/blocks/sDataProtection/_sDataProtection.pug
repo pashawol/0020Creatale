@@ -1,0 +1,121 @@
+mixin sDataProtection()
+	// start sDataProtection
+	+b.SECTION.sDataProtection.section#sDataProtection&attributes(attributes)
+		.container
+			+b.section-title
+				h1 Datenschutzerklärung
+				
+			+e.row.row
+				.col-md-6
+					+e.polite Mit der Nutzung unserer Webseite stimmen Sie der Verwendung ihrer personenbezogenen Daten gemäß dieser Erklärung zu.
+				.col
+					+e.contact
+						.h6 Kontakt
+						span Christian Dittrich
+						span creatale GmbH
+						span Heibronner Str. 42
+						span 71634 Ludwigsburg
+						+e.mail(href="mailto:datenschutz@creatale.de") E-Mail: datenschutz@creatale.de
+			+e.block
+				.h4 Verarbeitung personenbezogener Daten
+				.h6 Verarbeitete Daten, Art und Zweck der Verarbeitung
+				p Während der Nutzung dieser Webseite werden von Ihnen die IP-Adresse, der von Ihrem Browser verwendete User-Agent, die aufgerufene Webseite und der Zeitpunkt des Zugriffs erhoben, übermittelt, verwendet und gespeichert.
+				p Der von Ihrem Browser übermittelte User-Agent enthält üblicherweise Daten zum Browsertyp, dessen Version und zum Betriebssystem.
+				p Ihre IP-Adresse, Ihr User-Agent und die aufgerufene Webseite werden im Rahmen Ihrer Anfrage an unseren Webserver zum Zweck der Auslieferung unserer Webseite an Sie und eine eventuelle Zugriffsbeschränkung auf diese erhoben, übermittelt und verwendet. Die Rechtmäßigkeit hierfür begründet sich durch Art.6 Abs. 1 Bst. b DSGVO.
+				p Ihre IP-Adresse, Ihr User-Agent, die aufgerufene Webseite und der Zeitpunkt des Zugriffs werden im Rahmen Ihrer Anfrage an unseren Webserver in einem Zugriffsprotokoll zum Zweck der Sicherung unserer IT-Systeme gespeichert. Die Rechtmäßigkeit ergibt sich aus § 100 Abs. 1 TKG. Die Speicherdauer beträgt gemäß BGH Urteil vom 3.Juli 2014 Az. III ZR 391/13 7 Tage.
+				p Die Bereitstellung der Webserver wird in unserem Auftrag durch die Hetzner Online GmbH (Industriestr. 25, 91710 Gunzenhausen) durchgeführt. Im Rahmen dieses Vertragsverhältnis wird Ihre IP-Adresse zu Bearbeitung Ihrer Anfragen an unseren Webserver und zur Sicherung der IT-Systeme gemäß Auftragsverarbeitungsvertrag vom 25.05.2018 verarbeitet.
+			+e.block
+				.h6 Empfänger
+				p Ihre IP-Adresse, Ihr User-Agent, die aufgerufene Webseite und der Zeitpunkt des Zugriffs werden durch unseren Webserver verarbeitet und können während der Verarbeitung im Webserver von niemandem eingesehen werden. Wir nutzen zur Übertragung SSL-Verschlüsselung (HTTPS), damit Ihre personenbezogenen Daten auch während der Übertragung von niemandem eingesehen werden können.
+				p Auf die in Zugriffsprotokollen gespeicherten IP-Adressen, User-Agents, aufgerufenen Webseiten und Zugriffszeitpunkte haben ausschließlich unsere Administratoren Zugriff. Dies wird durch personengebundene SSH-Schlüssel und entsprechende Dateiberechtigungen sichergestellt. Der Zugriff auf die Daten erfolgt ausschließlich über verschlüsselte Transportwege (SSH).
+			+e.block
+				.h6 Betroffenenrechte
+				p Sie haben jederzeit das Recht
+				ul
+					li auf Auskunft zu den von Ihnen gespeicherten Daten gemäß #[a(href="#") Art. 15 DSGVO]
+
+					li auf Berichtigung der von Ihnen gespeicherten Daten bei Falschheit gemäß #[a(href="#") Art. 16 DSGVO]
+					li auf Löschung der von Ihnen gespeicherten Daten gemäß #[a(href="#") Art. 17 DSGVO]
+					li auf Einschränkung der Verarbeitung der von Ihnen gespeicherten Daten, sofern die die Richtigkeit der erfassten Daten bezweifeln, die Verarbeitung unrechtmäßig ist, die Daten für die Zwecke der Verarbeitung nicht mehr benötigt werden, oder Sie gemäß Art. 21 Abs. 1 DSGVO gegen die Verarbeitung Widerspruch eingelegt haben gemäß #[a(href="#") Art. 18 DSGVO]
+					li und auf die Übertragung der von Ihnen gespeicherten Daten an Sie oder Dritte durch Ihre Weisung gemäß #[a(href="#") Art. 20 DSGVO.] 
+				p Anfragen hierzu richten Sie bitte an den oben angegeben Kontakt.
+				p Die Verarbeitung und Speicherung Ihrer IP-Adresse, Ihres User-Agents, der aufgerufenen Webseite und des Zeitpunkts des Zugriffs ist für die Bereitstellung unserer Webseite zwingend notwendig. Es besteht folglich hierzu von Ihrer Seite keine Widerspruchsmöglichkeit.
+				p Sie haben das Recht bei einer Aufsichtsbehörde Beschwerde einzulegen, wenn unsere Verarbeitung Ihrer Ansicht nach gegen die DSGVO verstößt.
+	// end sDataProtection
+
+mixin sDataProtection-inner()
+	// start sDataProtection
+	+b.SECTION.sDataProtection--inner.section#sDataProtection&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Datenschutzerklärung
+				
+			+e.polite Mit der Nutzung unserer Webseite stimmen Sie der Verwendung ihrer personenbezogenen Daten gemäß dieser Erklärung zu.
+			+e.contact
+				.h6 Kontakt gemäß Art. 13 Abs. 1 Bst. a DSGVO
+				span Christian Dittrich
+				span creatale GmbH
+				span Heibronner Str. 42
+				span 71634 Ludwigsburg
+				+e.mail(href="mailto:datenschutz@creatale.de") E-Mail: datenschutz@creatale.de
+			+e.block
+				.h4 Verarbeitung personenbezogener Daten
+				.h6 Verarbeitete Daten, Art und Zweck der Verarbeitung
+				p Wir verarbeiten Ihre personenbezogenen Daten, um mit Ihnen in Kontakt bleiben zu können oder im Bedarfsfall einen Kontakt herstellen zu können. Ein Bedarfsfall entsteht für uns unter anderem bei Interesse an Ihren Dienstleistungen, einer möglichen Kooperation oder zum Austausch von Know-How. Wir nutzen die von Ihnen erfassten personenbezogenen Daten für andere als diese Zwecke ausschließlich nach vorheriger Einwilligung durch Sie oder sofern durch eine andere Rechtsgrundlage begründet und informieren Sie entsprechend darüber.
+				p Die hier beschriebene Verarbeitung Ihrer personenbezogenen Daten zum Zweck der Kontaktaufnahme wird im allgemeinen durch die Übergabe Ihrer Visitenkarte an uns, durch eine E-Mail von Ihnen an eine von unserem E-Mail-Server bereitgestellte E-Mail-Adresse oder Post an unsere Geschäftsadresse ausgelöst. Wir ergänzen die Daten aus anderen uns zur Verfügung stehenden Quellen, z.B. Social-Media-Profilen oder während eines Geschäftskontaktes durch Sie gemachte Angaben, sofern notwendig.
+				p Wir erfassen, organisieren, speichern und verwenden für den Zweck der Kontaktaufnahme von Ihnen:
+				ul
+					li Vorname
+					li Zweitname(n)
+					li Nachname
+					li Titel
+					li Anrede
+					li weitere Namensbestandteile (z.B. Namenszusätze)
+					li Geschlecht
+					li Adresse(n) mit Straße, Hausnummer, Postleitzahl, Stadt und Adresszusätzen
+					li E-Mail-Adresse(n)
+					li Telefonnummer(n)
+					li Faxnummer(n)
+					li Webseite(n)
+					li Skype-Account(s)
+					li Unternehmen und ggf. Positionen in diesen
+					li Links zu Social-Media-Accounts, soweit bekannt für z.B. Xing, Facebook, LinkedIn
+					li soweit vorhanden ein Bild der Visitenkarte (Vorder- und Rückseite) und den darauf erkannten Text
+					li soweit bekannt Ort und Zeitpunkt des Erstkontaktes
+					li Schlagworte
+					li Akzeptanz der Datenschutzbestimmung und ein eventueller Widerruf
+					li Einwilligung zum Erhalt unseres interaktiven Weihnachtsgrußes und ein eventueller       Widerruf
+					li Einwilligung zum Erhalt von Informationen über unser Unternehmen, unsere Dienstleistungen und unsere Produkte und ein eventueller Widerruf
+					li Versicherung der Volljährigkeit zur Bewertung der Rechtmäßigkeit der Einwilligung
+				p Wir speichern die obengenannten Daten in einer Datenbank auf unserem Server und den Computern der berechtigten Empfänger.
+				p Die Rechtmäßigkeit hierfür begründet sich durch Art.6 Abs. 1 Bst. f.
+				p Die Bereitstellung der Server wird in unserem Auftrag durch die Hetzner Online GmbH (Industriestr. 25, 91710 Gunzenhausen) durchgeführt. Im Rahmen dieses Vertragsverhältnis werden Ihre Daten gemäß Auftragsverarbeitungsvertrag vom 25.05.2018 in unserem Auftrag verarbeitet.
+				p Sie können der Verwendung Ihrer personenbezogenen Daten zu diesem Zweck jederzeit widersprechen, z.B. indem Sie eine E-Mail an datenschutz@creatale.de schicken oder unter #[a(href="https://gdpr-services.creatale.de/anmeldung/c2ed2ac2-1044-4ab3-92cb-78d9c2223d2a?userId=99e94dbe-ff0a-4489-8020-4a59f0efac18") https://gdpr-services.creatale.de/anmeldung/c2ed2ac2-1044-4ab3-92cb-78d9c2223d2a?userId=99e94dbe-ff0a-4489-8020-4a59f0efac18]. Wenn Sie der Verwendung widersprechen, werden die Daten gelöscht, sofern wir diese nicht noch für andere Zwecke benötigen oder rechtlich zur Speicherung verpflichtet sind. Wenn Sie der Verwendung nicht widersprechen, werden die Daten durch uns gespeichert, solange das berechtigte Interesse besteht und spätestens mit Beendigung der Gesellschaft gelöscht.
+			+e.block
+				.h6 Lokal gespeicherte Daten
+				p Wenn Sie uns über die Webseite #[a(href="https://gdpr-services.creatale.de/anmeldung/c2ed2ac2-1044-4ab3-92cb-78d9c2223d2a?userId=99e94dbe-ff0a-4489-8020-4a59f0efac18") https://gdpr-services.creatale.de/anmeldung/c2ed2ac2-1044-4ab3-92cb-78d9c2223d2a?userId=99e94dbe-ff0a-4489-8020-4a59f0efac18] eine Einwilligung erteilt haben, dann werden zu Ihrer Authentifizierung eine NutzerId und ein zufälliges Secret in Ihrem Browser gespeichert. Die NutzerId wird in einem Cookie, einer kleinen Textdatei auf Ihrem Rechner, gespeichert und beim Aufruf der Webseite an unseren Server übertragen, damit dieser Ihre Identität überprüfen kann. Das zufällige Secret wird im LocalStorage gespeichert und nie an unsere oder andere Server übertragen. Es dient zur Prüfung der Integrität der bei uns gespeicherten Einwilligungsdaten. Die Speicherung der NutzerId und des Secrets erfolgt ohne Zeitbegrenzung, Sie können diese aber jederzeit in Ihren Browser löschen.
+			+e.block
+				.h6 Empfänger
+				p Die von Ihnen gespeicherten Daten werden durch unsere Mitarbeiter in der Geschäftsführung und im Customer-Relationship-Management verarbeitet hierzu gehören auch in diesem Bereich tätige Büroassistenzen. Eine Übertragung an und Verarbeitung durch Dritte findet nicht statt.
+				p Auf die auf unserem Server gespeicherten Daten haben ausschließlich unsere Mitarbeiter in der Geschäftsführung, im Customer-Relationship-Management und unsere Administratoren Zugriff. Dies wird durch personengebundene SSH-Schlüssel, entsprechende Dateiberechtigungen und personengebundene Zugangsberechtigungen, zu auf unserem Server bereitgestellte Webanwendungen zur Speicherung und Verarbeitung dieser Daten, sichergestellt. Der Zugriff auf die Daten erfolgt ausschließlich über verschlüsselte Transportwege (SSH und SSL).
+
+			+e.block
+				.h6 Betroffenenrechte
+				p Sie haben jederzeit das Recht
+				ul
+					li auf Auskunft zu den von Ihnen gespeicherten Daten gemäß #[a(href="#") Art. 15 DSGVO]
+
+					li auf Berichtigung der von Ihnen gespeicherten Daten bei Falschheit gemäß #[a(href="#") Art. 16 DSGVO]
+					li auf Löschung der von Ihnen gespeicherten Daten gemäß #[a(href="#") Art. 17 DSGVO]
+					li auf Einschränkung der Verarbeitung der von Ihnen gespeicherten Daten, sofern die die Richtigkeit der erfassten Daten bezweifeln, die Verarbeitung unrechtmäßig ist, die Daten für die Zwecke der Verarbeitung nicht mehr benötigt werden, oder Sie gemäß 
+						span.tdu 
+							a(href="#") Art. 21 Abs. 1 DSGVO 
+							|gegen die Verarbeitung Widerspruch eingelegt haben gemäß 
+							a(href="#") Art. 18 DSGVO
+					li und auf die Übertragung der von Ihnen gespeicherten Daten an Sie oder Dritte durch Ihre Weisung gemäß #[a(href="#") Art. 20 DSGVO.] 
+				p Anfragen hierzu richten Sie bitte an den oben angegeben Kontakt.
+				p Sie haben das Recht, jederzeit Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, die aufgrund Art. 6 Abs. 1 Bst. f DSGVO durch uns verarbeitet werden. Wir werden Ihre personen bezogenen Daten dann nicht weiter verabreiten, sofern wir keine Gründe für eine zwingende Notwendigkeit der Verarbeitung angeben können.
+				p Sie haben das Recht bei einer Aufsichtsbehörde Beschwerde einzulegen, wenn unsere Verarbeitung Ihrer Ansicht nach gegen die DSGVO verstößt.
+
+
+	// end sDataProtection

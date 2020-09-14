@@ -9,6 +9,8 @@ include ../blocks/sSprint/_sSprint.pug
 include ../blocks/sJoinUs/_sJoinUs.pug
 include ../blocks/sGarantie/_sGarantie.pug
 include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sGames/_sGames.pug
+include ../blocks/sNews/_sNews.pug
 
 block variables
 	- let  mainPage= null
@@ -21,7 +23,7 @@ block pagecontent
 		+top-nav(class="nav-sm")
 		//- +topLine()
 	.container
-		+breadcrumb('Leistungen ', 'Sprints')
+		+breadcrumb('Unternehmen')
 	+headerBlock-sm(class="headerBlock-gradient")
 		+pic('header-bg-05')(class="headerBlock__bg")
 		+b.section-title--center
@@ -29,9 +31,10 @@ block pagecontent
 	+sSprint-05(class="bg-primary")
 
 	+sJoinUs-team(class="bg-primary")
-	+sWarranty-sm()
-	+sGarantie()
-	+sForm()
+	+sGames-karriere()
+	//- +sWarranty-sm()
+	//- +sGarantie()
+	//- +sForm()
 	+sContact()
 	+footer()
 

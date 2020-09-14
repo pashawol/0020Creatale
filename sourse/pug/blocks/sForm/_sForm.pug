@@ -3,7 +3,36 @@ mixin sForm()
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
 			+b.section-title.text-center
-				h2 sForm
-				
-			.row
+				h1 Bestätigung und Einwilligung
+				p Vielen Dank, dass Sie sich für unsere interaktive Weihnachtskarte anmelden möchten.
+			+e.contact
+				+e.mail(href="mailto:ik@vi-studios.com") E-Mail-Adresse: ik@vi-studios.com
+				span NutzerId: 99e94dbe-ff0a-4489-8020-4a59f0efac18
+				span NewsletterId: c2ed2ac2-1044-4ab3-92cb-78d9c2223d2a
+				span Secret: null
+			+form-wrap
+				.row
+					.col-sm-6
+						+e.input-wrap.form-group
+							+e.SELECT.select.form-control(id="select")
+								option(value="Anrede") Anrede
+								option(value="Lorem") Lorem, ipsum.
+								option(value="Lorem2") Lorem, ipsum dolor.
+					.col-sm-6
+					.col-sm-6
+						+input('Vorname')
+					.col-sm-6
+						+input('Nachname')
+				+in-c('checkbox','','polite')
+					+e.SPAN.text Ich habe die #[a(href="#") Datenschutzerklärung] zur Verarbeitung meiner personenbezogenen Daten gelesen und akzeptiere diese.
+				+in-c('checkbox','','interactive ')
+					+e.SPAN.text Ich möchte gerne Ihren interaktiven #[strong Weihnachtsgruß] erhalten und stimme zu, dass Sie dafür die von Ihnen erhobenen Daten nutzen.
+				+in-c('checkbox','','info')
+					+e.SPAN.text Ich möchte gerne in Zukunft Informationen über Ihr Unternehmen, Ihre Dienstleistungen und Ihre Produkte haben und stimme zu, dass Sie dafür die von Ihnen erhobenen Daten nutzen. #[strong.d-block Hinweis: Wir versenden Newsletter maximal 1 mal pro Woche.]
+				+in-c('checkbox','','age')
+					+e.SPAN.text Ich bestätige, dass ich #[strong mindestens 18 Jahre] alt bin und im Land meines Wohnsitzes die Volljährigkeit erreicht habe.
+				+e.btn.circle-btn-frame(type="submit")
+					| Anmeldung 
+					br
+					| Bestätigen
 	// end sForm

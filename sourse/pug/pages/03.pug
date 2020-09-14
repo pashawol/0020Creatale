@@ -9,6 +9,7 @@ include ../blocks/sSprint/_sSprint.pug
 include ../blocks/sJoinUs/_sJoinUs.pug
 include ../blocks/sGarantie/_sGarantie.pug
 include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sNews/_sNews.pug
 
 block variables
 	- let  mainPage= null
@@ -52,7 +53,9 @@ block pagecontent
 	+sJoinUs(class="bg-primary")
 	+sWarranty-sm()
 	+sGarantie()
-	+sForm()
+	.container
+		+mailBlock()
+	//- +sForm()
 	+sContact()
 	+footer()
 
