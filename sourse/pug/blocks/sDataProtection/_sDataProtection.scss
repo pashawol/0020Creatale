@@ -18,6 +18,7 @@
 
 	h1, h2 {
 		color: $primary2;
+		font-size: 30px;
 		@include media-breakpoint-up(xl){
 			font-size: 45px;
 

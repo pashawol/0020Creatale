@@ -148,7 +148,7 @@
 		h3 {
 			margin-bottom: 10px;
 		}
-		.sJoinUs__imgWrap {
+		.sJoinUs__ingWrap:not(.sJoinUs__ingWrap--sm) {
 			@include media-breakpoint-only(lg) {
 				width: 200px;
 				height: 200px;
