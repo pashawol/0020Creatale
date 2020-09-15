@@ -107,7 +107,7 @@
 		line-height: calc(32/21);
 		list-style: none;
 		position: relative;
-		padding-left: 20px;
+		padding-left: 25px;
 		@include media-breakpoint-up(sm) {
 			padding-left: 30px;
 		}
@@ -116,7 +116,10 @@
 			content: '';
 			position: absolute;
 			left: 0;
-			top: 5px;
+			top: 0;
+			@include media-breakpoint-up(md) {
+				top: 5px;
+			}
 			width: 23px;
 			height: 23px;
 			background-image: url('../img/svg/feather.svg');
