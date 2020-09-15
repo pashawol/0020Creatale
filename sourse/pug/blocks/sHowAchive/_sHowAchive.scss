@@ -1,7 +1,10 @@
 // start .sHowAchive
 .sHowAchive {
+	padding-bottom: calc(var(--sPB) / 2);
+	@include media-breakpoint-up(lg) {
+		padding-bottom: calc(var(--sPB) / 1.37);
+	}
 	padding-top: calc(var(--sPT) / 1.05);
-	padding-bottom: calc(var(--sPB) / 1.37);
 	.container {
 		@include media-breakpoint-up(xxl) {
 			max-width: 1530px;
@@ -22,11 +25,18 @@
 		font-size: 25px;
 		font-weight: 600;
 		line-height: 1.3;
+		margin-bottom: 20px;
+		@include media-breakpoint-down(md) {
+			font-size: 20px;
+		}
 	}
 
 	p {
 		font-weight: 500;
 		margin-bottom: 40px;
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
+		}
 	}
 
 	.row{
@@ -45,6 +55,9 @@
 		padding-left: 30px;
 		@include media-breakpoint-up(sm) {
 			padding-left: 43px;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
 		}
 		margin-bottom: 17px;
 		font-weight: 600;

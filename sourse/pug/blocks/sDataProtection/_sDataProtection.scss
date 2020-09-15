@@ -50,11 +50,17 @@
 	p {
 		margin-bottom: 1.52rem;
 		line-height: calc(32/21);
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
+		}
 	}
 
 	&__polite {
 		max-width: 595px;
 		margin-bottom: 36px;
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
+		}
 	}
 
 	&__row {
@@ -74,6 +80,9 @@
 			color: $dark;
 			font-weight: 500;
 			line-height: calc(32/21);
+			@include media-breakpoint-down(md) {
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -82,6 +91,9 @@
 		margin-top: rem(33);
 		color: $dark;
 		font-weight: 500;
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
+		}
 	}
 
 	ul {
@@ -89,6 +101,9 @@
 	}
 
 	li {
+		@include media-breakpoint-down(md) {
+			font-size: 16px;
+		}
 		line-height: calc(32/21);
 		list-style: none;
 		position: relative;

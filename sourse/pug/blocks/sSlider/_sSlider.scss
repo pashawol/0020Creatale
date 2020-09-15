@@ -484,7 +484,7 @@
 	&--04 {
 
 		&::before {
-			height: 691px;
+			height: 68.5%;
 			@include media-breakpoint-up(md){
 				height: calc(100% - 478px);
 			}
