@@ -133,14 +133,18 @@
 		color: $secondary;
 		font-weight: 600;
 		margin-bottom: 40px;
-		@include media-breakpoint-down(md) {
-			font-size: 16px;
-		}
 	}
 
 	&__bottomLine {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@include media-breakpoint-up(sm) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__iconWrap {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 20px;
+		}
 	}
 }

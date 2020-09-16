@@ -8,9 +8,6 @@
 		font-weight: 600;
 		margin-bottom: 20px;
 		display: block;
-		@include media-breakpoint-down(md) {
-			font-size: 16px;
-		}
 	}
 
 	&__name {
@@ -31,9 +28,6 @@
 
 	p {
 		font-weight: 500;
-		@include media-breakpoint-down(md) {
-			font-size: 16px;
-		}
 	}
 
 	h3 {
