@@ -17,8 +17,10 @@ mixin sSlider()
 			+e.logoes-slider
 				.swiper-container.logoes-slider-js
 					.swiper-wrapper
-						-for (var i = 1; i <= 5; i++)
+						-for (var i = 1; i <= 4; i++)
 							+logoesSlide(i)
+						+logoesSlide()
+							img.swiper-lazy(src="#" data-src=`img/@2x/abcomed.png` alt="")
 	// end sSlider
 
 mixin manSlide(slideNum,logo)

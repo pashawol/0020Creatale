@@ -166,6 +166,7 @@
 	@include mt();
 	&:hover{
 		background-color: $light-white;
+		z-index: 3;
 	}
 
 	position: relative;

@@ -470,17 +470,19 @@ iframe {
 	line-height: 1;
 	text-transform: uppercase;
 
-
 	@extend .water-circle;
 	transition: font-size .25s;
 	&:hover{
 		font-size: 15px;
 		color: $white;
 
+		animation: text-glitch2 .3s infinite;
 		&:before{
 			width: calc(100% - 15px);
 			height: calc(100% - 15px);
-			background-color: $primary;
+			//background-color: $primary;
+			animation: glitch-anim .5s ease 1;
+			background-color: $black;
 		}
 		&:after{
 			animation: water-drop 1.3s 1 cubic-bezier(.29,.79,.29,.79);
@@ -616,6 +618,8 @@ iframe {
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		outline: none !important;
+		cursor: pointer;
 
 		@extend .circle-btn-frame;
 		z-index: 111;
@@ -637,24 +641,50 @@ iframe {
 		}
 
 		&:before{
+			//
+
+			//overflow: hidden;
+			transition: background-position .1s linear .36s;
 			border: 2px solid $white;
+			background-color: $primary2 !important;
 			opacity: 0;
+		}
 
-			background-image: url(../img/svg/cross.svg);
-			background-repeat: no-repeat;
+		.icon{
+			position: absolute;
+			z-index: -1;
 
-			background-size: 20px;
+			top: 50%;
+			left: 50%;
+
+			@include mt();
+			opacity: 0;
+			transform: translateY(-75%) translateX(-50%);
+
+			color: $white;
+			font-size: 20px;
 			@include media-breakpoint-up(xxl){
-				background-size: 25px;
+				font-size: 25px;
 			}
-			background-position: center;
+
+			//
+			transition: opacity .3s ease-in-out 0s, transform .3s ease-in-out 0s;
 		}
 		&.active{
 			&:before{
 				opacity: 1;
+				animation: none;
+			}
+			.icon{
+				opacity: 1;
+				transform: translateY(-50%) translateX(-50%);
+
+				//
+				transition: opacity .3s ease-in-out .18s, transform .3s ease-in-out .18s;
 			}
 			.fixed-btn-cont__img{
 				opacity: 0;
+				//?transition: opacity .36s ease-in-out .36s;
 			}
 			.fixed-btn-cont__input-box{
 				transform: scale(1);
@@ -813,3 +843,90 @@ iframe {
 
 	}
 }
+
+//watch dog
+//    animation: glitch-anim .5s ease 1 forwards;
+@keyframes glitch-anim {
+	0% {
+		clip: rect(70px, 450px, 76px, 0)
+	}
+	10% {
+		clip: rect(29px, 450px, 16px, 0)
+	}
+	20% {
+		clip: rect(70px, 450px, 76px, 0)
+	}
+	30% {
+		clip: rect(29px, 450px, 16px, 0)
+	}
+	40% {
+		clip: rect(76px, 450px, 3px, 0)
+	}
+	50% {
+		clip: rect(70px, 450px, 76px, 0)
+	}
+	60% {
+		clip: rect(29px, 450px, 16px, 0)
+	}
+	70% {
+		clip: rect(42px, 450px, 78px, 0)
+	}
+	80% {
+		clip: rect(15px, 450px, 13px, 0)
+	}
+	90% {
+		clip: rect(15px, 450px, 13px, 0)
+	}
+	to {
+		background: #000;
+		clip: rect(0, 450px, 120px, 0)
+	}
+}
+
+
+@keyframes text-glitch2{
+	0% {
+		text-shadow: 0px 0px $deep-red, 0px 0px $toxic-cyan;
+	}
+	20% {
+		text-shadow: -2px 2px $deep-red, 2px -2px $toxic-cyan;
+	}
+	40% {
+		text-shadow: -2px -2px $deep-red, 2px 2px $toxic-cyan;
+	}
+	60% {
+		text-shadow: 2px 2px $deep-red, -2px -2px $toxic-cyan;
+	}
+	80% {
+		text-shadow: 2px -2px $deep-red, -2px 2px $toxic-cyan;
+	}
+	100% {
+		text-shadow: 0px 0px $deep-red, 0px 0px $toxic-cyan;
+	}
+
+}
+
+//orgignal watch dogs
+/*
+@keyframes glitch {
+	0% {
+		transform: translate(0)
+	}
+	20% {
+		transform: translate(-2px, 2px)
+	}
+	40% {
+		transform: translate(-2px, -2px)
+	}
+	60% {
+		transform: translate(2px, 2px)
+	}
+	80% {
+		transform: translate(2px, -2px)
+	}
+	to {
+		transform: translate(0)
+	}
+}
+
+*/

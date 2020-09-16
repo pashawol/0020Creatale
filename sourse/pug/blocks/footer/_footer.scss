@@ -179,7 +179,7 @@
     }
   }
   &__all-rights{
-    span{
+    span, a{
       &:after{
         content: '·';
         display: inline-block;
@@ -187,6 +187,14 @@
       }
       &:last-child:after{
         content: none;
+      }
+    }
+
+    a{
+      @include mt();
+      color: $white;
+      &:hover{
+        color: rgba($white, .6);
       }
     }
     font-weight: 500;
