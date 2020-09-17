@@ -762,12 +762,12 @@
 	min-height:100px;
 	font-size:20px;
 	color:#fff;
-	--fgp-width_percentages-decimal: 1 !important}iframe{border:none}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn > *{
+	--fgp-width_percentages-decimal: 1 !important}iframe{border:none}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn,.sVideo__play-btn > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
-	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn > *{
+	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn,.sVideo__play-btn > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
-	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn > *{
-	--fgp-has-polyfil_gap-item: initial}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn{
+	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn,.sVideo__play-btn > *{
+	--fgp-has-polyfil_gap-item: initial}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn,.sVideo__play-btn{
 	outline:none!important;
 	cursor:pointer;
 	width:125px;
@@ -799,11 +799,11 @@
 	--fgp-width: calc(125px - var(--fgp-gap_container_column, 0%)) !important;
 	--fgp-gap_percentage-to-pixels_column: calc(-125px * var(--fgp-gap_percentage-decimal_row)) !important;
 	--fgp-gap_percentage-to-pixels_row: calc(-125px * var(--fgp-gap_percentage-decimal_row)) !important;
-	--fgp-height: calc(125px - var(--fgp-gap_container_row, 0%)) !important;--fgp-has-polyfil_gap-container: initial}.circle-btn-frame:before,.fixed-btn-cont .fixed-btn:before,.headerBlock__white-btn:before,.mail-bl__btn:before,.sForgeDet__lower-btn:before > *{
+	--fgp-height: calc(125px - var(--fgp-gap_container_row, 0%)) !important;--fgp-has-polyfil_gap-container: initial}.circle-btn-frame:before,.fixed-btn-cont .fixed-btn:before,.headerBlock__white-btn:before,.mail-bl__btn:before,.sForgeDet__lower-btn:before,.sVideo__play-btn:before > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
-	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:before,.fixed-btn-cont .fixed-btn:before,.headerBlock__white-btn:before,.mail-bl__btn:before,.sForgeDet__lower-btn:before > *{
+	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:before,.fixed-btn-cont .fixed-btn:before,.headerBlock__white-btn:before,.mail-bl__btn:before,.sForgeDet__lower-btn:before,.sVideo__play-btn:before > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
-	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:before,.fixed-btn-cont .fixed-btn:before,.headerBlock__white-btn:before,.mail-bl__btn:before,.sForgeDet__lower-btn:before{
+	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:before,.fixed-btn-cont .fixed-btn:before,.headerBlock__white-btn:before,.mail-bl__btn:before,.sForgeDet__lower-btn:before,.sVideo__play-btn:before{
 	-webkit-transition:all .3s ease-in;
 	transition:all .3s ease-in;
 	content:"";
@@ -822,11 +822,11 @@
 	--fgp-width: calc(calc(100% - 20px) - var(--fgp-gap_container_column, 0%)) !important;
 	--fgp-gap_percentage-to-pixels_column: calc(-calc(100% - 20px) * var(--fgp-gap_percentage-decimal_row)) !important;
 	--fgp-gap_percentage-to-pixels_row: calc(-calc(100% - 20px) * var(--fgp-gap_percentage-decimal_row)) !important;
-	--fgp-height: calc(calc(100% - 20px) - var(--fgp-gap_container_row, 0%)) !important}.circle-btn-frame:hover,.fixed-btn-cont .fixed-btn:hover,.headerBlock__white-btn:hover,.mail-bl__btn:hover,.sForgeDet__lower-btn:hover{font-size:15px;color:#fff;-webkit-animation:text-glitch2 .3s infinite;animation:text-glitch2 .3s infinite}.circle-btn-frame:hover:before,.fixed-btn-cont .fixed-btn:hover:before,.headerBlock__white-btn:hover:before,.mail-bl__btn:hover:before,.sForgeDet__lower-btn:hover:before > *{
+	--fgp-height: calc(calc(100% - 20px) - var(--fgp-gap_container_row, 0%)) !important}.circle-btn-frame:hover,.fixed-btn-cont .fixed-btn:hover,.headerBlock__white-btn:hover,.mail-bl__btn:hover,.sForgeDet__lower-btn:hover,.sVideo__play-btn:hover{font-size:15px;color:#fff;-webkit-animation:text-glitch2 .3s infinite;animation:text-glitch2 .3s infinite}.circle-btn-frame:hover:before,.fixed-btn-cont .fixed-btn:hover:before,.headerBlock__white-btn:hover:before,.mail-bl__btn:hover:before,.sForgeDet__lower-btn:hover:before,.sVideo__play-btn:hover:before > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
-	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:hover:before,.fixed-btn-cont .fixed-btn:hover:before,.headerBlock__white-btn:hover:before,.mail-bl__btn:hover:before,.sForgeDet__lower-btn:hover:before > *{
+	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:hover:before,.fixed-btn-cont .fixed-btn:hover:before,.headerBlock__white-btn:hover:before,.mail-bl__btn:hover:before,.sForgeDet__lower-btn:hover:before,.sVideo__play-btn:hover:before > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
-	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:hover:before,.fixed-btn-cont .fixed-btn:hover:before,.headerBlock__white-btn:hover:before,.mail-bl__btn:hover:before,.sForgeDet__lower-btn:hover:before{
+	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame:hover:before,.fixed-btn-cont .fixed-btn:hover:before,.headerBlock__white-btn:hover:before,.mail-bl__btn:hover:before,.sForgeDet__lower-btn:hover:before,.sVideo__play-btn:hover:before{
 	width:calc(100% - 15px);
 	height:calc(100% - 15px);
 	-webkit-animation:glitch-anim .5s ease 1;
@@ -837,9 +837,9 @@
 	--fgp-width: calc(calc(100% - 15px) - var(--fgp-gap_container_column, 0%)) !important;
 	--fgp-gap_percentage-to-pixels_column: calc(-calc(100% - 15px) * var(--fgp-gap_percentage-decimal_row)) !important;
 	--fgp-gap_percentage-to-pixels_row: calc(-calc(100% - 15px) * var(--fgp-gap_percentage-decimal_row)) !important;
-	--fgp-height: calc(calc(100% - 15px) - var(--fgp-gap_container_row, 0%)) !important}.circle-btn-frame:hover:after,.fixed-btn-cont .fixed-btn:hover:after,.headerBlock__white-btn:hover:after,.mail-bl__btn:hover:after,.sForgeDet__lower-btn:hover:after{-webkit-animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1;animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1}.circle-btn-frame:after,.fixed-btn-cont .fixed-btn:after,.headerBlock__white-btn:after,.mail-bl__btn:after,.sForgeDet__lower-btn:after,.sSlider__slider .man-slider-next:after,.sSlider__slider .man-slider-prev:after,.water-circle:after > *{
-	--fgp-width_percentages-decimal: initial}.circle-btn-frame:after,.fixed-btn-cont .fixed-btn:after,.headerBlock__white-btn:after,.mail-bl__btn:after,.sForgeDet__lower-btn:after,.sSlider__slider .man-slider-next:after,.sSlider__slider .man-slider-prev:after,.water-circle:after > *{
-	--fgp-height_percentages-decimal: initial}.circle-btn-frame:after,.fixed-btn-cont .fixed-btn:after,.headerBlock__white-btn:after,.mail-bl__btn:after,.sForgeDet__lower-btn:after,.sSlider__slider .man-slider-next:after,.sSlider__slider .man-slider-prev:after,.water-circle:after{
+	--fgp-height: calc(calc(100% - 15px) - var(--fgp-gap_container_row, 0%)) !important}.circle-btn-frame:hover:after,.fixed-btn-cont .fixed-btn:hover:after,.headerBlock__white-btn:hover:after,.mail-bl__btn:hover:after,.sForgeDet__lower-btn:hover:after,.sVideo__play-btn:hover:after{-webkit-animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1;animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1}.circle-btn-frame:after,.fixed-btn-cont .fixed-btn:after,.headerBlock__white-btn:after,.mail-bl__btn:after,.sForgeDet__lower-btn:after,.sSlider__slider .man-slider-next:after,.sSlider__slider .man-slider-prev:after,.sVideo__play-btn:after,.water-circle:after > *{
+	--fgp-width_percentages-decimal: initial}.circle-btn-frame:after,.fixed-btn-cont .fixed-btn:after,.headerBlock__white-btn:after,.mail-bl__btn:after,.sForgeDet__lower-btn:after,.sSlider__slider .man-slider-next:after,.sSlider__slider .man-slider-prev:after,.sVideo__play-btn:after,.water-circle:after > *{
+	--fgp-height_percentages-decimal: initial}.circle-btn-frame:after,.fixed-btn-cont .fixed-btn:after,.headerBlock__white-btn:after,.mail-bl__btn:after,.sForgeDet__lower-btn:after,.sSlider__slider .man-slider-next:after,.sSlider__slider .man-slider-prev:after,.sVideo__play-btn:after,.water-circle:after{
 	content:"";
 	position:absolute;
 	z-index:9;
@@ -1186,7 +1186,7 @@
 	--fgp-gap_percentage-to-pixels_column: calc(-22px * var(--fgp-gap_percentage-decimal_column)) !important;
 	--fgp-gap_percentage-to-pixels_row: calc(-22px * var(--fgp-gap_percentage-decimal_column)) !important;
 	--fgp-width: calc(22px - var(--fgp-gap_container_column, 0%)) !important;
-	--fgp-height_percentages-decimal: 1 !important}.headerBlock__list li:last-child{margin-bottom:0}.headerBlock__white-btn{border:1px solid #fff;color:#ff7e0f!important}.headerBlock__white-btn:after{border:1px solid #fff}.headerBlock__white-btn:before{background-color:#fff}.headerBlock__white-btn:hover{font-size:15px;color:#ff7e0f}.headerBlock__white-btn:hover:before{background-color:#fff}.headerBlock__white-btn:hover:after{-webkit-animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1;animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1}.headerBlock__img > *{
+	--fgp-height_percentages-decimal: 1 !important}.headerBlock__list li:last-child{margin-bottom:0}.headerBlock__white-btn{border:1px solid #fff;color:#ff7e0f!important}.headerBlock__white-btn:after{border:1px solid #fff}.headerBlock__white-btn:before{background-color:#fff}.headerBlock__white-btn:hover{font-size:15px;color:#ff7e0f}.headerBlock__white-btn:hover:after{-webkit-animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1;animation:water-drop 1.3s cubic-bezier(.29,.79,.29,.79) 1}.headerBlock__img > *{
 	--fgp-width_percentages-decimal: initial}.headerBlock__img > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
 	--fgp-gap_percentage-to-pixels_row: initial}.headerBlock__img{
@@ -2244,6 +2244,9 @@
 	--fgp-gap_percentage-to-pixels_row: initial}.sVideo__play-btn:before > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
 	--fgp-gap_percentage-to-pixels_row: initial}.sVideo__play-btn:before{
+	-webkit-animation:none!important;
+	animation:none!important;
+	background-color:#ff7e0f!important;
 	width:calc(100% - 43px);
 	height:calc(100% - 43px);
 	--fgp-gap_percentage-to-pixels_column: calc(-calc(100% - 43px) * var(--fgp-gap_percentage-decimal_column)) !important;

@@ -62,6 +62,7 @@
 		}
 	}
 	&__play-btn{
+		@extend .circle-btn-frame;
 		border: 1px solid $white;
 
 		width: 121px;
@@ -81,6 +82,8 @@
 			margin-bottom: 63px;
 		}
 		&:before{
+			animation: none !important;
+			background-color: $primary2 !important;
 
 			width: calc(100% - 43px);
 			height: calc(100% - 43px);
