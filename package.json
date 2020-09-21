@@ -47,16 +47,15 @@
     "gulp-tabify": "0.0.2",
     "gulp-uglify": "^3.0.2",
     "postcss": "^7.0.32",
+    "bootstrap": "^5.0.0-alpha1",
+    "postcss-preset-env": "^6.7.0",
     "postcss-nested": "^4.2.3"
   },
   "optionalDependencies": {},
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "bootstrap": "^5.0.0-alpha1",
     "inputmask": "^5.0.5",
-    "jquery": "^3.5.1",
     "loading-attribute-polyfill": "^1.5.4",
-    "postcss-preset-env": "^6.7.0",
     "swiper": "^5.4.5"
   }
 }
