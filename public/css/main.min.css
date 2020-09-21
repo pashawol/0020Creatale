@@ -759,9 +759,14 @@
 	width:100%;
 	z-index:1000;
 	background:#000;
-	min-height:100px;
+	min-height:50px;
 	font-size:20px;
 	color:#fff;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
 	--fgp-width_percentages-decimal: 1 !important}iframe{border:none}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn,.sVideo__play-btn > *{
 	--fgp-gap_percentage-to-pixels_column: initial;
 	--fgp-gap_percentage-to-pixels_row: initial}.circle-btn-frame,.fixed-btn-cont .fixed-btn,.headerBlock__white-btn,.mail-bl__btn,.sForgeDet__lower-btn,.sVideo__play-btn > *{
