@@ -142,8 +142,7 @@ var JSCCommon = {
 	ifie: function ifie() {
 		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 
-		if (isIE11) {
-			$("body").prepend('<p   class="browsehappy container">Sorry, you are using an outdated browser. You are welcome, <a href="http://browsehappy.com/" target="_blank">refresh your browser</a>, to improve performance, display quality and improve safety.</p>');
+		if (isIE11) {//$("body").prepend('<p   class="browsehappy container">Sorry, you are using an outdated browser. You are welcome, <a href="http://browsehappy.com/" target="_blank">refresh your browser</a>, to improve performance, display quality and improve safety.</p>')
 		}
 	},
 	heightwindow: function heightwindow() {
