@@ -1,0 +1,25 @@
+mixin sWarrantyTabs()
+	// start sWarrantyTabs
+	+b.SECTION.sWarrantyTabs.section#sWarrantyTabs&attributes(attributes)
+		+e.container.container
+			+b.section-title.text-center
+				h2 Unser Garantieversprechen
+			+e.row.row
+				+e.picture-col.d-none.d-sm-block.col-sm-6
+					+pic('warranty-man.jpg')(class='sWarrantyTabs__pic')
+				+e.mark-col.col-sm-6
+					+markItem(1, 'Flexgarantie')
+					+markItem(2, 'Exit-Garantie')
+				+e.mark-col.col-sm-6
+					+markItem(3, 'Preisgarantie')
+					+markItem(4, 'Termingarantie')
+				+e.mark-col.col-sm-6
+					+markItem(5, 'Qualitätsgarantie')
+					+markItem(6, 'Eigentumsgarantie')
+	// end sWarrantyTabs
+
+mixin markItem(imgNum, txt)
+	+e.A.mark-item(href='#')
+		+e.img
+			img(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
+		+e.txt=txt

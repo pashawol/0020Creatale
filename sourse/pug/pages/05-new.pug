@@ -1,0 +1,50 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sHowAchive/_sHowAchive.pug
+include ../blocks/sDigits/_sDigits.pug
+include ../blocks/sSprint/_sSprint.pug
+include ../blocks/sJoinUs/_sJoinUs.pug
+include ../blocks/sGarantie/_sGarantie.pug
+include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sGames/_sGames.pug
+include ../blocks/sNews/_sNews.pug
+
+include ../blocks/sChess/_sChess.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= '05-new'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav(class="nav-sm")
+		//- +topLine()
+	.container
+		+breadcrumb('Unternehmen')
+	+headerBlock-sm(class="headerBlock-gradient")
+		+pic('header-bg-05')(class="headerBlock__bg")
+		+b.section-title--center
+			h1 Unsere Story
+	+b.orange-strip
+		+e.container.container
+			+e.row.row
+				+e.col.col-lg-6
+					p Dein erstes Gespr&auml;ch mit Christian Dittrich, unserem CEO, wird vermutlich sehr locker und redselig verlaufen. Falls du&nbsp;trotzdem das Gef&uuml;hl hast, das Eis brechen zu&nbsp;m&uuml;ssen, versuch&rsquo;s mal mit einer Frage &agrave;&nbsp;la&nbsp;&laquo;Warum sind Apple und Amazon eigentlich so&nbsp;erfolgreich geworden?&raquo;. Dar&uuml;ber spricht Christian n&auml;mlich voller Begeisterung.
+				+e.col.col-lg-6
+					p
+						| ACHTUNG: Vermutlich willst du&nbsp;ihn danach sofort mit einer VisionControl-Entwicklung (individueller Softwareentwicklung) beauftragen. Die Begeisterung steckt n&auml;mlich&nbsp;an. Erfahre hier,
+						br.d-none.d-xxl-block
+						| was Christian&nbsp;&mdash; und den Rest von uns bei creatale&nbsp;&mdash; antreibt!
+	//+sSprint-05(class="bg-primary")
+	+sChess()
+	+sJoinUs-team(class="bg-primary")
+	+sGames-karriere()
+	+sContact()
+	+footer()
+
+

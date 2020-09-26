@@ -3,7 +3,7 @@ mixin sBlogDet()
 	+b.SECTION.sBlogDet.section#sBlogDet&attributes(attributes)
 		+e.container.container
 			+e.row.row
-				.col-lg-7
+				.col-lg-8
 					+e.A.nav-link(href='#')
 						+e.nav-btn.circle-btn-frame
 							+icon('arrow-prev')
@@ -33,9 +33,99 @@ mixin sBlogDet()
 						img(loanding="lazy" src="img/@2x/blog-img.jpg" alt="")
 					+e.txt-cont-bot
 						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-						h6 SEO Zwischenüberschrift einzeilig
+					+e.gray-brick
+						+e.gb-img
+							+e.gb-img-inner
+								img(loanding="lazy" src="img/@2x/chess-img-1.jpg" alt="")
+						+e.gb-txt-cont
+							+e.gb-title Warum zu Creatale?
+							+e.gb-txt
+								p Digitalagenturen gibt es wie Sand am Meer - also warum gerade in unsere mir uns durchstarten? Jede und jeder von uns hat unterschiedliche Vorstellungen von seinem perfekten Arbeitsplatz: moderne Workspaces und flexible Arbeitszeiten, grandioser Teamspirit innerhalb und außerhalb der Projekte sowie Espressoflat und Feierabendbier.
+					+e.txt-cont-bot
+						h6 Zwischenüberschrift einzeilig
 						p Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
 						p Sed consequat, Leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+						+e.feather-row
+							+e.quote
+								| „Die Macht ist mit dir, junger Skywalker. Aber noch bist du kein Jedi.
+								|
+								br.d-none.d-xxl-block
+								| Du weißt nicht, wie stark die dunkle Seite der Macht sein kann.“
+							+e.author – Dave Vader
+						p Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+						p Sed consequat, Leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+						h6
+							| Zwischenüberschrift einzeilig Quisque rutrum. Aenean imperdiet.
+							br.d-none.d-xxl-block
+							| Etiam ultricies nisi vel augue. Curabitur ullamco
+						p Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+					+e.orange-brick
+						+e.ob-txt-cont
+							+e.ob-title Alle Vorteile: Warum du VisionControl lieben wirst
+							+e.ob-txt
+								p VisionControl ist ein Rundum-Sorglospaket: Erst nachdem wir Dich eingehend beraten haben, gehen wir in die Entwicklung.
+						+e.ob-img
+							+e.ob-img-inner
+								img(loading='lazy' src="img/@2x/orange-brick-bg.png" alt="")
+					+e.txt-cont-bot
+						p
+							| Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							br.d-none.d-xxl-block
+							| Vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+						ul
+							li Du hast mindestens 2 Jahre Erfahrung mit der Administration von Linux-Servern, On-Premise- und Private-Cloud-Lösungen, insbesondere Open-Source-Anwendungen.
+							li Du konzipierst und betreibst Systeme nach den höchsten Standards der Informationssicherheit und des Datenschutzes.
+							li Du kannst gängige Continuos-Integration- und Continuous-Delivery-Prozesse automatisieren, einrichten und betreiben, beherrschst mindestens eine Skriptsprache und bringst idealerweise Programmierkenntnisse mit.
+						p
+							| Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							br.d-none.d-xxl-block
+							| Vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+					+e.img-row.row
+						.col-sm-4
+							+createleImg(1 ,'small-item')
+							+createleImg(2 ,'big-item')
+						.col-sm-4
+							+createleImg(3 ,'big-item')
+							+createleImg(4 ,'small-item')
+						.col-sm-4
+							+createleImg(5 ,'small-item')
+							+createleImg(6 ,'big-item')
+					+e.txt-cont-bot
+						p
+							| Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							br.d-xxl-block.d-none
+							| Vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+					+b.txt-bricks--small
+						+smallBrickItem('Wir kreieren immer individuelle Software, die maßgeschneidert für Deine Anforderungen passt.')
+							p Du erhältst zu 100 % exakt, was Du brauchst. Nicht Du musst Dich der Software anpassen – die Software wird passend für Dich gemacht.
+						+smallBrickItem('Wir legen den Fokus auf eine bequeme Handhabung, damit Menschen Deine Software mögen und freiwillig gerne und oft benutzen.')
+							p Du bekommst nicht nur Software sondern echte Problemlösungen, die Deine Kunden und Mitarbeiter begeistern.
+						+smallBrickItem('Wir arbeiten kreativ, flexibel, plattformübergreifend und technologieunabhängig.')
+							p Deine Software kann, was Du willst und wo Du willst. Ob mobil, am Desktop oder im Web: Uneingeschränkt in allen Möglichkeiten.
+					+e.txt-cont-bot
+						h6 Zwischenüberschrift einzeilig
+						p Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+						p Sed consequat, Leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.
+					+e.cards-row.row
+						+cardItem(1, 'Flexgarantie')
+						+cardItem(3, 'Preisgarantie')
+						+cardItem(5, 'Qualitätsgarantie')
+					+e.txt-cont-bot
+						p Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+					+b.sSteps
+						.text-center
+							+e.sm-title Einfach gut: So gehen wir vor
+							+e.sm-subtitle Creatale Prozess
+						+e.steps-container
+							+smallStepItem('Du lernst uns kennen', undefined)
+								p Im persönlichen Gespräch teilst Du uns Deine Wünsche und Ideen mit. Gemeinsam prüfen wir, ob wir zusammen passen.
+							+smallStepItem('Wir analysieren Deine Anforderungen','2')
+								p Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamc
+							+smallStepItem('Lorem ipsum dolor sit amet','3')
+								p venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+					+e.txt-cont-bot
+						p Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+					+e.txt-cont-bot.lower-nav
 						+b.txt-strip--no-dash
 							b
 								| Schlagwörter:
@@ -44,11 +134,11 @@ mixin sBlogDet()
 						+b.txt-strip--no-dash
 							b UNS interessiert deine Meinung zu diesem Thema. Schreib uns deine MeinunG.
 						+soc()
-							+item-sos()
+							+item-sos(1, 'Flexgarantie')
 								img(src="img/svg/twitter-g.svg" alt="")
-							+item-sos()
+							+item-sos(3, 'Preisgarantie')
 								img(src="img/svg/fb-g.svg" alt="")
-							+item-sos()
+							+item-sos(5, 'Qualitätsgarantie')
 								img(src="img/svg/unknown-g.svg" alt="")
 					+e.lower-nav
 						+e.A.nav-link(href='#')
@@ -59,8 +149,18 @@ mixin sBlogDet()
 							.txt.d-none.d-sm-block nächster Artikel
 							+e.nav-btn.circle-btn-frame
 								+icon('arrow-next')
-				.col-lg-5
-					+e.col-title Beliebte Artikel
+				.col-lg-4
+					//-+e.col-title Beliebte Artikel
+					+e.portrait-cont
+						+b.portrait.text-center
+							+e.img-cont
+								+e.img-inner
+									img(loading='lazy' src="img/@2x/photoPerson-2.jpg" alt="")
+								+e.A.portrait-btn.circle-btn-frame(href="#")
+									| Mehr über
+									br
+									| Mich
+						+e.port-txt Ich bin Christian und leidenschaftlicher Software Entwickler. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 					//-1
 					+b.A.baner-post(href='#')
 						+e.header
@@ -69,7 +169,7 @@ mixin sBlogDet()
 								span Juli 2020
 						+e.content
 							+e.txt-block
-								+e.title Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+								+e.title Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula…
 							+e.btn.circle-btn-frame.d-none.d-md-flex
 								| Mehr
 								br
@@ -82,7 +182,7 @@ mixin sBlogDet()
 								span Juli 2020
 						+e.content
 							+e.txt-block
-								+e.title Startup Weekend Stuttgart 2020
+								+e.title Startup Weekend
 								+e.descr Vom 29.11.–01.12.2020 sind wir wieder beim Startup Weekend Stuttgart dabei.
 					//-3
 					+b.A.baner-post(href='#')
@@ -94,7 +194,11 @@ mixin sBlogDet()
 									b BLOG
 						+e.content
 							+e.txt-block
-								+e.title A node.js lidary for extracting data from scanned forms.
+								+e.title
+									| A node.js lidary for
+									|
+									br.d-none.d-xxl-block
+									| extracting data from
 					//-4
 					+b.A.baner-post(href='#')
 						+e.header
@@ -103,7 +207,7 @@ mixin sBlogDet()
 								span Juli 2020
 						+e.content
 							+e.txt-block
-								+e.title Startup Weekend Stuttgart 2020
+								+e.title Startup Weekend
 								+e.descr Vom 29.11.–01.12.2020 sind wir wieder beim Startup Weekend Stuttgart dabei.
 					//-5
 					+b.A.baner-post(href='#')
@@ -115,6 +219,41 @@ mixin sBlogDet()
 									b BLOG
 						+e.content
 							+e.txt-block
-								+e.title A node.js lidary for extracting data from scanned forms.
+								+e.title
+									| A node.js lidary for
+									|
+									br.d-none.d-xxl-block
+									| extracting data from
 			+mailBlock()
 	// end sBlogDet
+
+mixin createleImg(imgNum, contClasses='')
+	+e.A.game-img(class=contClasses href=`img/@2x/createle-img-${imgNum}.jpg` data-fancybox="createleImgs")
+		img(loading='lazy' src=`img/@2x/createle-img-${imgNum}.jpg` alt="")
+
+mixin smallBrickItem(leftColTxt='leftColTxt')
+	+e.brick-item
+		+e.mob-title.d-block.d-lg-none Unsere Stärken
+		+e.brick-l-col
+			p=leftColTxt
+		+e.mob-title.d-block.d-lg-none Deine Vorteile
+		+e.brick-r-col
+			block
+
+mixin cardItem(imgNum, txt)
+	+e.card-col.col-md-4
+		+e.A.card-item(href='#')
+			+e.card-img
+				img(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
+			+e.card-txt=txt
+
+mixin smallStepItem(title, imgNum)
+	+e.item-cont
+		+e.inner
+			+e.title=title
+			+e.txt
+				block
+			+e.img-cont
+				if imgNum
+					+e.img
+						img(loading="lazy" src=`img/svg/step-${imgNum}.svg` alt="")

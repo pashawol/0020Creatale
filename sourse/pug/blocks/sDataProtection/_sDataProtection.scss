@@ -30,16 +30,27 @@
 	}
 
 	.h6, h6 {
-		font-size: 25px;
+		font-size: 21px;
+		@include media-breakpoint-up(xl){
+			font-size: 25px;
+		}
+
 		font-weight: 600;
 		margin-bottom: .7rem;
 	}
 
 	.h4, h4 {
 		color: $dark;
-		font-size: 30px;
 		font-weight: 600;
 		margin-bottom: 1.08rem;
+
+		font-size: 21px;
+		@include media-breakpoint-up(xl){
+			font-size: 24px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 30px;
+		}
 	}
 
 	&__block {
@@ -53,11 +64,27 @@
 		a {
 			word-break: break-all;
 		}
+
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
 	}
 
 	&__polite {
 		max-width: 595px;
 		margin-bottom: 36px;
+
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
 	}
 
 	&__row {
@@ -77,6 +104,14 @@
 			color: $dark;
 			font-weight: 500;
 			line-height: calc(32/21);
+
+			font-size: 16px;
+			@include media-breakpoint-up(xl){
+				font-size: 18px;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 21px;
+			}
 		}
 	}
 
@@ -85,6 +120,14 @@
 		margin-top: rem(33);
 		color: $dark;
 		font-weight: 500;
+
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
 	}
 
 	ul {
@@ -93,6 +136,14 @@
 
 	li {
 		line-height: calc(32/21);
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
+
 		list-style: none;
 		position: relative;
 		padding-left: 25px;
@@ -136,6 +187,14 @@
 
 		li {
 			color: $dark;
+
+			font-size: 16px;
+			@include media-breakpoint-up(xl){
+				font-size: 18px;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 21px;
+			}
 			a {
 				text-decoration: underline;
 			}
@@ -143,6 +202,14 @@
 
 		.sDataProtection__block {
 			padding-bottom: 20px;
+
+			font-size: 16px;
+			@include media-breakpoint-up(xl){
+				font-size: 18px;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 21px;
+			}
 		}
 
 

@@ -1,0 +1,180 @@
+// start .sChess
+.sChess {
+	--sPT: #{40px};
+	--sPB: #{40px};
+	@include media-breakpoint-up(md){
+		--sPT: #{55px};
+		--sPB: #{55px};
+	}
+	@include media-breakpoint-up(lg){
+		--sPT: #{70px};
+		--sPB: #{70px};
+	}
+	@include media-breakpoint-up(xl){
+		--sPT: #{90px};
+		--sPB: #{90px};
+	}
+	@include media-breakpoint-up(xxl){
+		--sPT: #{138px};
+		--sPB: #{138px};
+	}
+
+	&__items-cont{
+
+	}
+	&__item{
+		@extend .container;
+
+		@include media-breakpoint-up(md){
+			max-width: 100% !important;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		//even
+		&:nth-child(2n){
+			flex-direction: row-reverse;
+		}
+		margin-bottom: rem(40);
+		@include media-breakpoint-up(md){
+			margin-bottom: rem(55);
+		}
+		@include media-breakpoint-up(lg){
+			margin-bottom: rem(70);
+		}
+		@include media-breakpoint-up(xl){
+			margin-bottom: rem(90);
+		}
+		@include media-breakpoint-up(xxl){
+			margin-bottom: rem(138);
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		@include media-breakpoint-up(xl){
+			&:nth-child(2n + 1){
+				.sChess__img-cont{
+					transform: translateX(32px);
+				}
+				.sChess__txt{
+					@include media-breakpoint-up(xl){
+						margin-top: 34px;
+						padding-left: 10.5vw;
+						padding-right: 11.5vw;
+					}
+				}
+			}
+			&:nth-child(2n){
+				.sChess__img-cont{
+					transform: translateX(-32px);
+				}
+				.sChess__txt{
+					@include media-breakpoint-up(xl){
+						margin-top: 34px;
+						padding-left: 8.5vw;
+						padding-right: 13.5vw;
+					}
+				}
+
+			}
+		}
+	}
+	&__txt{
+		margin-bottom: 15px;
+		@include media-breakpoint-up(md){
+			padding-left: 6.5vw;
+			padding-right: 6.5vw;
+			margin-bottom: 0;
+		}
+		@include media-breakpoint-up(lg){
+			padding-left: 8vw;
+			padding-right: 8vw;
+		}
+		h4{
+			font-weight: 600;
+			line-height: 1.2;
+
+
+			font-size: 21px;
+			@include media-breakpoint-up(xl){
+				font-size: 24px;
+			}
+			margin-bottom: 15px;
+			@include media-breakpoint-up(xxl){
+				font-size: 30px;
+				margin-bottom: 19px;
+			}
+		}
+		p{
+			font-weight: 500;
+
+			font-size: 16px;
+			line-height: (26/16);
+			@include media-breakpoint-up(xl){
+				font-size: 18px;
+				line-height: (32/18);
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 21px;
+				line-height: (32/21);
+			}
+		}
+		p:last-child{
+			margin-bottom: 0;
+		}
+	}
+	&__img-cont{
+		@include mt();
+		flex-shrink: 0;
+
+		@include media-breakpoint-up(md){
+			width: 42vw;
+		}
+		@include media-breakpoint-up(lg){
+			width: 45.7vw;
+		}
+	}
+	&__img{
+		width: 100%;
+		padding-top: 64.35%;
+		position: relative;
+		height: 0;
+
+		img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__{}
+	&__{}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sChess
+//125px

@@ -64,7 +64,11 @@
 	}
 
 	&__subtitle {
-		font-size: $small;
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: $small;
+		}
+
 		color: $secondary;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -78,7 +82,12 @@
 
 	.h6 {
 		font-weight: 600;
-		font-size: 25px;
+
+		font-size: 21px;
+		@include media-breakpoint-up(xl){
+			font-size: 25px;
+		}
+
 		color: $dark;
 		margin-bottom: .7rem;
 	}
@@ -89,6 +98,14 @@
 		max-width: 595px;
 		line-height: calc(32/21);
 		margin-bottom: 1.5rem;
+
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
 	}
 	
 	ul {
@@ -138,7 +155,11 @@
 
 	&__site {
 		font-weight: 700;
-		font-size: $small;
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: $small;
+		}
+
 		color: $secondary;
 		margin-bottom: 38px;
 		display: block;
@@ -161,12 +182,28 @@
 			color: inherit;
 		}
 		padding-bottom: 5px;
+
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
 	}
 
 	&__siteMain {
 		font-weight: 500;
 		color: $primary2;
 		display: block;
+
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
 	}
 
 	&__rBlock {

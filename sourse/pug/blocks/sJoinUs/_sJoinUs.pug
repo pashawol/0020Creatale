@@ -12,6 +12,23 @@ mixin sJoinUs()
 			+e.mail(href="mailto:contact@creatale.de") contact@creatale.de
 	// end sJoinUs
 
+mixin sJoinUs-christian()
+	// start sJoinUs
+	+b.SECTION.sJoinUs--heigher.section#sJoinUs&attributes(attributes)
+		.container.text-center
+			+b.section-title.text-center
+				h3
+					| Klingt das interessant für Dich?
+					br.d-none.d-xxl-block
+					| So zünden wir Deinen Start. Melde dich bei uns per Mail.
+				p Wir lieben Herausforderungen!
+			+e.ingWrap
+				+pic('photoPerson-2','','')
+			+e.name Christian Dittrich
+			+e.position Softwareentwickler und Unternehmer
+			+e.mail(href="mailto:contact@creatale.de") contact@creatale.de
+	// end sJoinUs
+
 mixin sJoinUs-team()
 	// start sJoinUs
 	+b.SECTION.sJoinUs--team.section#sJoinUs&attributes(attributes)
