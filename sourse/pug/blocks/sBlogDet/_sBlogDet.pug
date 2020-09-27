@@ -247,7 +247,7 @@ mixin cardItem(imgNum, txt)
 				img.img-svg-js(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
 			+e.card-txt.text-center
 				+e.card-headline=txt
-				+e.card-descr Wir garantieren Dir seriöse Qualität. Durch uns verursachte Fehler beheben wir lebenslang und kostenfrei.
+				+e.card-descr.d-none.d-md-block Wir garantieren Dir seriöse Qualität. Durch uns verursachte Fehler beheben wir lebenslang und kostenfrei.
 
 mixin smallStepItem(title, imgNum)
 	+e.item-cont
