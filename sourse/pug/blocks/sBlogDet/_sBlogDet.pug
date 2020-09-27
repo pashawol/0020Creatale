@@ -244,8 +244,10 @@ mixin cardItem(imgNum, txt)
 	+e.card-col.col-md-4
 		+e.A.card-item(href='#')
 			+e.card-img
-				img(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
-			+e.card-txt=txt
+				img.img-svg-js(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
+			+e.card-txt.text-center
+				+e.card-headline=txt
+				+e.card-descr Wir garantieren Dir seriöse Qualität. Durch uns verursachte Fehler beheben wir lebenslang und kostenfrei.
 
 mixin smallStepItem(title, imgNum)
 	+e.item-cont
