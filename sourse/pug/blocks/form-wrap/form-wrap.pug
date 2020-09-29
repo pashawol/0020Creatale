@@ -1,6 +1,6 @@
 mixin form-head()
 	form.js-form-validate( data-parsley-validate="") 
-		input(type='hidden', class="order", name='order', value=`Заявка  с сайта` ) 
+		input(type='hidden', class="order", name='order', value=`Application from the site` ) 
 		block
 
 mixin input(placeholder,  t='text', label, name= t)
@@ -44,7 +44,7 @@ mixin form-wrap()
 	+b.form-wrap&attributes(attributes)
 		form
 			input(type='hidden',  name='example-input-field')
-			input(type='hidden', class="order", name='order', value=`Заявка  с сайта`) 
+			input(type='hidden', class="order", name='order', value=`Application from the site`) 
 			input(type="hidden" class='utm_source' name='utm_source')
 			input(type="hidden" class='utm_term' name='utm_term')
 			input(type="hidden" class='utm_medium' name='utm_medium')
@@ -67,11 +67,11 @@ mixin add-file(n)
 		label
 			+e.INPUT.input(name='file', type='file')
 			+e.SPAN.btn 
-			+e.SPAN.text   Прикрепить резюме
+			+e.SPAN.text   Attach resume
 		+e.SPAN.filename 
 
 
 mixin polite()
 	+e.polite
 		+in-c()(checked)
-			+e.SMALL.text.text-secondary Согласен на обработку и хранение моих персональных данных в соответствии с условиями
+			+e.SMALL.text.text-secondary I agree to the processing and storage of my personal data in accordance with the terms
