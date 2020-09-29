@@ -1,0 +1,36 @@
+extends layout/main.pug
+
+include ../blocks/sVControl/_sVControl.pug
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sHowAchive/_sHowAchive.pug
+include ../blocks/sDigits/_sDigits.pug
+include ../blocks/sSprint/_sSprint.pug
+include ../blocks/sJoinUs/_sJoinUs.pug
+include ../blocks/sGarantie/_sGarantie.pug
+include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sDetails/_sDetails.pug
+
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sBlog/_sBlog.pug
+include ../blocks/sSteps/_sSteps.pug
+include ../blocks/sForgeDet/_sForgeDet.pug
+include ../blocks/sBlogDet/_sBlogDet.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= '08-blog-d-new'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav(class="nav-sm")
+		//- +topLine()
+	.container
+		+breadcrumb('Über uns', 'Blog', 'Games are our passion, we often create prototypes done in web technologies.')
+	+sBlogDet()
+	+sContact()
+	+footer()
+
+

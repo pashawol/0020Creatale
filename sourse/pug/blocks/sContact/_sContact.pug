@@ -1,4 +1,4 @@
-mixin sContact()
+mixin sContact(addClasses='d-none d-md-block')
 	// start sContact
 	+b.SECTION.sContact.section#sContact&attributes(attributes)
 		+e.row
@@ -6,7 +6,7 @@ mixin sContact()
 				img(src='img/@2x/map-img.jpg' alt="")
 				+b.section-title
 					h2 Wir freuen uns, dich bei uns begrüßen zu dürfen!
-				+e.map-descr.d-none.d-md-block
+				+e.map-descr(class=addClasses)
 					p
 						| creatale GmbH
 						br

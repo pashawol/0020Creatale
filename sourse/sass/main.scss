@@ -39,6 +39,22 @@ $output-bourbon-deprecation-warnings: false;
 // @import "./node_modules/bootstrap/scss/navbar";
 // @import "./node_modules/bootstrap/scss/card";
 @import "./node_modules/bootstrap/scss/breadcrumb";
+
+nav[aria-label="breadcrumb"]{
+	position: relative;
+
+	&:after{
+		content: '' !important;
+		position: absolute;
+		z-index: 3;
+		width: 200vw;
+
+		top: calc(100% - 1px);
+		left: -50vw;
+		height: 1px;
+		background-color: lighten($light-dark, 1);
+	}
+}
 .breadcrumb {
 	font-weight: 500;
 	font-size: 16px;

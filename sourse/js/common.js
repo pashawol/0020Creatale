@@ -134,8 +134,7 @@ const JSCCommon = {
 	ifie() {
 		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 		if (isIE11) {
-			$("body").prepend('<p   class="browsehappy container">Sorry, you are using an outdated browser. You are welcome, <a href="http://browsehappy.com/" target="_blank">refresh your browser</a>, to improve performance, display quality and improve safety.</p>')
-
+			//$("body").prepend('<p   class="browsehappy container">Sorry, you are using an outdated browser. You are welcome, <a href="http://browsehappy.com/" target="_blank">refresh your browser</a>, to improve performance, display quality and improve safety.</p>')
 		}
 	},
 
@@ -183,7 +182,7 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-	screenName = '09.png';
+	screenName = '08-new.png';
 	if (screenName && x === "localhost:3000") {
 		$(".main-wrapper").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
@@ -327,6 +326,31 @@ function eventHandler() {
 		},
 
 	});
+	//img-svg
+	$('img.img-svg-js').each(function () {
+		var $img = $(this);
+		var imgClass = $img.attr('class');
+		var imgURL = $img.attr('src');
+		$.get(imgURL, function (data) {
+			// Get the SVG tag, ignore the rest
+			var $svg = $(data).find('svg'); // Add replaced image's classes to the new SVG
+
+			if (typeof imgClass !== 'undefined') {
+				$svg = $svg.attr('class', imgClass + ' replaced-svg');
+			} // Remove any invalid XML tags as per http://validator.w3.org
+
+
+			$svg = $svg.removeAttr('xmlns:a'); // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+
+			if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+				$svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
+			} // Replace image with new SVG
+
+
+			$img.replaceWith($svg);
+		}, 'xml');
+	}); // accordion
+
 
 	//end luckyoneJs
 

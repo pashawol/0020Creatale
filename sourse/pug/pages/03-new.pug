@@ -1,0 +1,43 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sHowAchive/_sHowAchive.pug
+include ../blocks/sDigits/_sDigits.pug
+include ../blocks/sSprint/_sSprint.pug
+include ../blocks/sJoinUs/_sJoinUs.pug
+include ../blocks/sGarantie/_sGarantie.pug
+include ../blocks/sWarranty/_sWarranty.pug
+include ../blocks/sNews/_sNews.pug
+include ../blocks/sVControl/_sVControl.pug
+include ../blocks/sAgileDesr/_sAgileDesr.pug
+include ../blocks/sWarrantyTabs/_sWarrantyTabs.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= '03-new'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		+top-nav(class="nav-sm")
+		//- +topLine()
+	.container
+		+breadcrumb('Leistungen ', 'Sprints')
+	+headerBlock-sm(class="headerBlock-bg-only")
+		+pic('03-new-bg.jpg')(class="headerBlock__bg")
+	+sVControl()
+	+sJoinUs-christian(class="bg-primary")
+	+sAgileDesr(class="bg-primary")
+	+sSprint(class="bg-primary")
+	+sJoinUs(class="bg-primary sJoinUs--bigger")
+	+sWarrantyTabs()
+	.container
+		+mailBlock()
+	//- +sForm()
+	+sContact()
+	+footer()
+
+

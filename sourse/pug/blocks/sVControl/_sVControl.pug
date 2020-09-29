@@ -1,0 +1,63 @@
+mixin sVControl()
+	// start sVControl
+	+b.SECTION.sVControl.section#sVControl&attributes(attributes)
+		+e.container.container
+			+e.top-row.row
+				+e.img-col.col-lg-5.col-xl-6.col-xxl-5
+					+e.img-cont
+						img(loading="lazy" src="img/svg/vision-controll.svg" alt="")
+				+e.title-col.col-lg-7.col-xl-6.col-xxl-7
+					+b.section-title
+						h2 Deine Vision. Unsere Expertise. Mit VisionControl entwickeln wir dir genau die Software, die Du brauchst.
+			+e.txt-row.row
+				+e.left-col.col-lg-6
+					p Du bist ein Visionär. Denn Du weißt instinktiv was Dein Business braucht, um endlich durchzustarten: die passende Software. Mit VisionControl, unserem hauseigenen Entwicklungsprozess, wird diese Software Realität. So erhältst Du ein individuelles, maßgeschneidertes Softwaresystem, das genau das tut, was es tun soll.
+				+e.right-col.col-lg-6
+					p Weißt Du jetzt schon, was Deine Software können muss – oder hast Du eher eine vage Vorstellung? So oder so: Mit VisionControl überführen wir Deine Vision in ein Konzept, das Deine Kunden (und dein Konto) begeistert. Lass uns zusammen etwas Großes erschaffen!
+			+b.tabs
+				+e.caption.row
+					+e.btn.col-md-4.active
+						+e.btn-inner Deine Vorteile mit VisionControl
+					+e.btn.col-md-4
+						+e.btn-inner Agile Entwicklung: Wie wir arbeiten
+					+e.btn.col-md-4
+						+e.btn-inner Unser Garantieversprechen
+				+e.wrap
+					+pic('05-light-thing-edit')(class="tabs__bg")
+					+e.content.active
+						h4 Alle Vorteile: Warum du VisionControl lieben wirst
+						p VisionControl ist ein Rundum-Sorglospaket: Erst nachdem wir Dich eingehend beraten haben, gehen wir in die Entwicklung. Jede Zeile Code wird eigens für Dich geschrieben. Gemeinsam erschaffen wir eine Software, die es so noch nie gab. Dabei behältst Du immer die volle Kontrolle über Dein Projekt.
+					+e.content
+						h4 Alle Vorteile: Warum du VisionControl lieben wirst2
+						p VisionControl ist ein Rundum-Sorglospaket: Erst nachdem wir Dich eingehend beraten haben, gehen wir in die Entwicklung. Jede Zeile Code wird eigens für Dich geschrieben. Gemeinsam erschaffen wir eine Software, die es so noch nie gab. Dabei behältst Du immer die volle Kontrolle über Dein Projekt.2
+					+e.content
+						h4 Alle Vorteile: Warum du VisionControl lieben wirst3
+						p VisionControl ist ein Rundum-Sorglospaket: Erst nachdem wir Dich eingehend beraten haben, gehen wir in die Entwicklung. Jede Zeile Code wird eigens für Dich geschrieben. Gemeinsam erschaffen wir eine Software, die es so noch nie gab. Dabei behältst Du immer die volle Kontrolle über Dein Projekt.3
+			+b.txt-bricks
+				+e.brick-head.d-none.d-lg-flex
+					+e.brick-l-col.head-col Unsere Stärken
+					+e.brick-r-col.head-col Deine Vorteile
+				+controlBrickItem('Wir kreieren immer individuelle Software, die maßgeschneidert für Deine Anforderungen passt.')
+					p Du erhältst zu 100 % exakt, was Du brauchst. Nicht Du musst Dich der Software anpassen – die Software wird passend für Dich gemacht.
+				+controlBrickItem('Wir legen den Fokus auf eine bequeme Handhabung, damit Menschen Deine Software mögen und freiwillig gerne und oft benutzen.')
+					p Du bekommst nicht nur Software sondern echte Problemlösungen, die Deine Kunden und Mitarbeiter begeistern.
+				+controlBrickItem('Wir arbeiten kreativ, flexibel, plattformübergreifend und technologieunabhängig.')
+					p Deine Software kann, was Du willst und wo Du willst. Ob mobil, am Desktop oder im Web: Uneingeschränkt in allen Möglichkeiten.
+				+controlBrickItem('Wir betreuen Dich durchgehend von der Projektplanung bis zur Umsetzung. Du hast immer einen verantwortlichen Ansprechpartner, der im Thema ist und Deine Sprache spricht.')
+					p Du landest nicht in anonymen Call-Centern. Kurze, schnelle Kommunikationswege und klare Verantwortungen ersparen Dir Stress,
+				+controlBrickItem('Wir geben unseren Kunden alle Nutzungsrechte für die programmierten Anwendungen und den Quellcode – zeitlich und räumlich unbegrenzt.')
+					p Du kannst Deine Software international und zeitlich unbegrenzt weiter nutzen und zweitverwerten – ohne nachträgliche Kostenfalle.
+				+controlBrickItem('Als Prozess-Profis arbeiten wir branchenunabhängig.')
+					p Du profitierst von innovativen Lösungen aus anderen
+				+controlBrickItem('Weil wir konsequent agil entwickeln, führen wir Deine Software immer schrittweise (iterativ) ein. ')
+					p Du minimierst die Zeit bis zur Markteinführung - bei voller Kostenkontrolle und maximaler Flexibilität. Dabei sicherst Du einen schnellen Return on Investment (ROI) und kannst zügig auf Änderungen reagieren.
+	// end sVControl
+
+mixin controlBrickItem(leftColTxt='leftColTxt')
+	+e.brick-item
+		+e.mob-title.d-block.d-lg-none Unsere Stärken
+		+e.brick-l-col
+			p=leftColTxt
+		+e.mob-title.d-block.d-lg-none Deine Vorteile
+		+e.brick-r-col
+			block
