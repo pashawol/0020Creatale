@@ -1,5 +1,4 @@
 const JSCCommon = {
-	// часть вызов скриптов здесь, для использования при AJAX
 	btnToggleMenuMobile: [].slice.call(document.querySelectorAll(".toggle-menu-mobile--js")),
 	menuMobile: document.querySelector(".menu-mobile--js"),
 	menuMobileLink: [].slice.call(document.querySelectorAll(".menu-mobile--js ul li a")),
@@ -14,9 +13,9 @@ const JSCCommon = {
 			autoFocus: false,
 			i18n: {
 				en: {
-					CLOSE: "Закрыть",
-					NEXT: "Вперед",
-					PREV: "Назад",
+					CLOSE: "Close",
+					NEXT: "Forward",
+					PREV: "Back",
 					// PLAY_START: "Start slideshow",
 					// PLAY_STOP: "Pause slideshow",
 					// FULL_SCREEN: "Full screen",
@@ -99,7 +98,6 @@ const JSCCommon = {
 	},
 	// /mobileMenu
 
-	// табы  .
 	tabscostume(tab) {
 
 		let tabs = {
@@ -128,7 +126,6 @@ const JSCCommon = {
 		});
 
 	},
-	// /табы
 
 	// /inputMask
 	ifie() {
@@ -152,7 +149,6 @@ const JSCCommon = {
 		}, { passive: true });
 	},
 	animateScroll() {
-		// листалка по стр
 		$(" .top-nav li a, .scroll-link").click(function () {
 			const elementClick = $(this).attr("href");
 			const destination = $(elementClick).offset().top;
@@ -182,7 +178,7 @@ function eventHandler() {
 	// добавляет подложку для pixel perfect
 	var x = window.location.host;
 	let screenName;
-	screenName = '00-carier.png';
+	screenName = '08-new.png';
 	if (screenName && x === "localhost:3000") {
 		$(".main-wrapper").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
 	}
