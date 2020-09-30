@@ -75,6 +75,52 @@ mixin sJoinUs-team()
 						+e.col.col-6
 							+item('7','Markus')
 
+
+mixin sJoinUs-carier()
+	// start sJoinUs
+	+b.SECTION.sJoinUs--team.sJoinUs--carier.section#sJoinUs&attributes(attributes)
+		+pic('small-mars-man.png')(class="sJoinUs__bg-bot")
+		.container.text-center
+			+b.section-title.text-center
+				p Wir stellen wieder ein.
+				h2 Werde ein Teil von Creatale
+			mixin item(i,t)
+				+e.item
+					if block
+						block
+					else
+						+e.ingWrap--sm
+							+pic(`photoPerson-${i}`,'','')
+						p= t
+			.row.justify-content-center
+				.col-lg
+					.row
+						+e.col.col-12
+							+item('3','Christin')
+						+e.col.col-6
+							+item('4','Anna')
+						+e.col.col-6
+							+item('5','Frank')
+				.col-lg-3
+					a.btn-job(href='#')
+						| JOB
+						br
+						| Finden
+				.col-lg
+					.row
+						+e.col.col-12
+							+item('6','Patrik')
+						+e.col.col-6
+							+item()
+								+e.btn.circle-btn-frame(href="#")
+									| Werde Teil
+									br
+									| unseres
+									br
+									| Teams!
+						+e.col.col-6
+							+item('7','Markus')
+
 mixin sJoinUs-04()
 	// start sJoinUs
 	+b.SECTION.sJoinUs.section#sJoinUs&attributes(attributes)

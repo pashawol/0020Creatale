@@ -213,6 +213,77 @@
 			}
 		}
 	}
+	&--carier{
+		@include media-breakpoint-up(xxl){
+			padding-top: 73px;
+		}
+
+		.btn-job{
+			margin: 0 auto rem(60) auto;
+
+			@extend .circle-btn-frame;
+			border: 1px solid $white;
+			&:after{
+				border: 1px solid $white;
+			}
+
+			color: $primary2 !important;
+			&:before{
+				background-color: $white;
+			}
+
+			&:hover{
+				font-size: 15px;
+				color: $primary2;
+
+				&:before{
+
+				}
+				&:after{
+					animation: water-drop 1.3s 1 cubic-bezier(.29,.79,.29,.79);
+				}
+			}
+
+		}
+		//
+		position: relative;
+		.sJoinUs__bg-bot{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+
+
+			display: none;
+			@include media-breakpoint-up(sm){
+				display: block;
+				width: 150px;
+			}
+			@include media-breakpoint-up(md){
+				width: 200px;
+			}
+			@include media-breakpoint-up(lg){
+				width: 280px;
+				display: block;
+			}
+			@include media-breakpoint-up(xl){
+				width: 320px;
+			}
+			@include media-breakpoint-up(xxl){
+				width: 390px;
+			}
+
+
+			img{
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+	}
+
 
 	h2 {
 		margin-bottom: 65px;

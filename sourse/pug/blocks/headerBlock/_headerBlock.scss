@@ -454,7 +454,19 @@
 			//object-fit: none;
 		}
 	}
-
+	&-bg-dark{
+		position: relative;
+		&:after{
+			position: absolute;
+			//top
+			content: '';
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,.3);
+		}
+	}
 
 	.section-title--center {
 		position: absolute;
