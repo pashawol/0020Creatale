@@ -1,6 +1,5 @@
 extends layout/main.pug
 
-
 include ../blocks/sContent/_sContent.pug
 include ../blocks/sContact/_sContact.pug
 include ../blocks/sHowAchive/_sHowAchive.pug
@@ -25,9 +24,9 @@ block pagecontent
 		+top-nav(class="nav-sm")
 		//- +topLine()
 	.container
-		+breadcrumb('Leistungen ')
+		+breadcrumb('Leistungen')
 	+headerBlock-sm(class="headerBlock-bg-only")
-		+pic('03-new-bg.jpg')(class="headerBlock__bg")
+		+pic('03-new-bg-new.png')(class="headerBlock__bg")
 	+sVControl()
 	+sJoinUs-christian(class="bg-primary")
 	+sAgileDesr(class="bg-primary")
