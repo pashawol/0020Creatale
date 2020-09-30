@@ -13,8 +13,10 @@ include ../blocks/sNews/_sNews.pug
 include ../blocks/sVControl/_sVControl.pug
 include ../blocks/sAgileDesr/_sAgileDesr.pug
 include ../blocks/sWarrantyTabs/_sWarrantyTabs.pug
-include ../blocks/sWhy/_sWhy.pug
 include ../blocks/sChess/_sChess.pug
+include ../blocks/sGames/_sGames.pug
+include ../blocks/sRoutine/_sRoutine.pug
+include ../blocks/sBlogDet/_sBlogDet.pug
 
 block variables
 	- let  mainPage= null
@@ -31,11 +33,14 @@ block pagecontent
 	+headerBlock-sm(class="headerBlock-bg-only headerBlock-bg-dark")
 		+pic('carier-bg.jpg')(class="headerBlock__bg")
 	+sJoinUs-carier(class="bg-primary")
-	+sChess()
-
-	+sWhy()
-	.container
-		+mailBlock()
+	+b.sChess--carier.section#sChess&attributes(attributes)
+		+e.items-cont
+			+chessItem('00')
+				h2 Warum zu Creatale?
+				p Digitalagenturen gibt es wie Sand am Meer - also warum gerade in unsere mir uns durchstarten? Jede und jeder von uns hat unterschiedliche Vorstellungen von seinem perfekten Arbeitsplatz: moderne Workspaces und flexible Arbeitszeiten, grandioser Teamspirit innerhalb und außerhalb der Projekte sowie Espressoflat und Feierabendbier. Was ist dir wichtig? Mach dir hier einen Überblick darüber, was wir dir für deine tägliche Arbeit bei uns bieten.
+	+sRoutine()
+	+sWarrantyTabs-karrier()
+	+sGames-karriere()
 	//- +sForm()
 	+sContact()
 	+footer()

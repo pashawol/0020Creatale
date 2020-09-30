@@ -216,6 +216,16 @@
 	&--carier{
 		@include media-breakpoint-up(xxl){
 			padding-top: 73px;
+			padding-bottom: 38px;
+		}
+		.section-title{
+			padding-bottom: 30px;
+			@include media-breakpoint-up(lg){
+				padding-bottom: 52px;
+			}
+			h2{
+				margin-bottom: 0;
+			}
 		}
 
 		.btn-job{
@@ -252,6 +262,9 @@
 			bottom: 0;
 			left: 50%;
 			transform: translateX(-50%);
+			@include media-breakpoint-up(xxl){
+				transform: translateX(-56%);
+			}
 
 
 			display: none;

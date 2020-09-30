@@ -18,6 +18,25 @@ mixin sWarrantyTabs()
 					+markItem(6, 'Eigentumsgarantie')
 	// end sWarrantyTabs
 
+mixin sWarrantyTabs-karrier()
+	// start sWarrantyTabs
+	+b.SECTION.sWarrantyTabs--karrier.section#sWarrantyTabs&attributes(attributes)
+		+e.container.container
+			+b.section-title.text-center
+				h2 Das bekommst du bei uns
+			+e.row.row
+				+e.picture-col.d-none.d-sm-block.col-sm-6
+					+pic('wt-carrier.jpg')(class='sWarrantyTabs__pic')
+				+e.mark-col.col-sm-6
+					+markItem(1, 'Karriere & Weiterbildung')
+					+markItem(2, 'QUALITÄT')
+				+e.mark-col.col-sm-6
+					+markItem(3, 'Lorem Ipsum')
+					+markItem(4, 'TEAMSPIRIT')
+				+e.mark-col.col-sm-6
+					+markItem(5, 'FLEXIBILITÄT')
+					+markItem(6, 'Lorem Ipsum')
+
 mixin markItem(imgNum, txt)
 	+e.A.mark-item(href='#')
 		+e.img

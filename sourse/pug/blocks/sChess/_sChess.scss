@@ -19,6 +19,7 @@
 		--sPB: #{138px};
 	}
 
+
 	&__items-cont{
 
 	}
@@ -94,6 +95,23 @@
 			padding-left: 8vw;
 			padding-right: 8vw;
 		}
+		h2{
+			color: $primary2;
+			font-weight: 600;
+
+			margin-bottom: 10px;
+			@include media-breakpoint-up(xl){
+				font-size: 45px;
+				line-height: (55/45);
+				margin-bottom: 15px;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 60px;
+				line-height: (65/60);
+				margin-bottom: 23px;
+			}
+		}
+
 		h4{
 			font-weight: 600;
 			line-height: 1.2;
@@ -176,5 +194,12 @@
 	@include media-breakpoint-down(md) {}
 	@include media-breakpoint-down(sm) {}
 
+
+	&--carier{
+		@include media-breakpoint-up(xxl){
+			--sPT: 218px;
+			--sPB: 129px;
+		}
+	}
 } // end.sChess
 //125px

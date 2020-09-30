@@ -1,0 +1,67 @@
+// start .sRoutine
+.sRoutine {
+
+	@include media-breakpoint-up(xxl){
+		--sPT: 100px;
+		--sTPB: 66px;
+		--sPB: 40px;
+	}
+
+	.section-title{
+		max-width: 796px;
+		margin: 0 auto;
+		h2{
+			color: $primary2;
+			font-weight: 600;
+
+			margin-bottom: 20px;
+			@include media-breakpoint-up(xl){
+				font-size: 45px;
+				line-height: (55/45);
+				margin-bottom: 25px;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 60px;
+				line-height: (65/60);
+				margin-bottom: 46px;
+			}
+		}
+		p{
+			font-weight: 600;
+			line-height: 1.2;
+
+			font-size: 18px;
+			margin-bottom: 12px;
+			@include media-breakpoint-up(xl){
+				font-size: 21px;
+			}
+			@include media-breakpoint-up(xxl){
+				font-size: 25px;
+				line-height: (32/25);
+			}
+		}
+
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+
+} // end.sRoutine

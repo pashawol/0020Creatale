@@ -25,6 +25,25 @@
 		--sTPB: 56px;
 	}
 
+	&--karrier{
+		@include media-breakpoint-up(md){
+			--sPT: 50px;
+			--sPB: 0;
+		}
+		@include media-breakpoint-up(lg){
+			--sPT: 50px;
+			--sPB: 0;
+		}
+		@include media-breakpoint-up(xl){
+			--sPT: 50px;
+			--sPB: 0;
+		}
+		@include media-breakpoint-up(xxl){
+			--sPT: 50px;
+			--sPB: 0;
+		}
+	}
+
 	&__container{
 
 	}

@@ -7,7 +7,6 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var JSCCommon = {
-	// часть вызов скриптов здесь, для использования при AJAX
 	btnToggleMenuMobile: [].slice.call(document.querySelectorAll(".toggle-menu-mobile--js")),
 	menuMobile: document.querySelector(".menu-mobile--js"),
 	menuMobileLink: [].slice.call(document.querySelectorAll(".menu-mobile--js ul li a")),
@@ -20,9 +19,9 @@ var JSCCommon = {
 			autoFocus: false,
 			i18n: {
 				en: {
-					CLOSE: "Закрыть",
-					NEXT: "Вперед",
-					PREV: "Назад" // PLAY_START: "Start slideshow",
+					CLOSE: "Close",
+					NEXT: "Forward",
+					PREV: "Back" // PLAY_START: "Start slideshow",
 					// PLAY_STOP: "Pause slideshow",
 					// FULL_SCREEN: "Full screen",
 					// THUMBS: "Thumbnails",
@@ -114,7 +113,6 @@ var JSCCommon = {
 		}
 	},
 	// /mobileMenu
-	// табы  .
 	tabscostume: function tabscostume(tab) {
 		var tabs = {
 			Btn: [].slice.call(document.querySelectorAll(".".concat(tab, "__btn"))),
@@ -137,7 +135,6 @@ var JSCCommon = {
 			$(this).addClass('active').siblings().removeClass('active').closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active').eq($(this).index()).fadeIn().addClass('active');
 		});
 	},
-	// /табы
 	// /inputMask
 	ifie: function ifie() {
 		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
@@ -160,7 +157,6 @@ var JSCCommon = {
 		});
 	},
 	animateScroll: function animateScroll() {
-		// листалка по стр
 		$(" .top-nav li a, .scroll-link").click(function () {
 			var elementClick = $(this).attr("href");
 			var destination = $(elementClick).offset().top;

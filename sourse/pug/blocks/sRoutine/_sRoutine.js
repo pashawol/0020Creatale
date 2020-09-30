@@ -1,5 +1,5 @@
-let sWhyVue = new Vue({
-		el: '#sWhy',
+let sRoutineVue = new Vue({
+		el: '#sRoutine',
 		data: {
 			imgSRc: 'img/',
 		},
