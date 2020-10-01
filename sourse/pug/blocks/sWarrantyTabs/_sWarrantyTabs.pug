@@ -17,6 +17,11 @@ mixin sWarrantyTabs()
 					+markItem(5, 'Qualitätsgarantie')
 					+markItem(6, 'Eigentumsgarantie')
 	// end sWarrantyTabs
+mixin markItem(imgNum, txt)
+	+e.A.mark-item(href='#')
+		+e.img
+			img(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
+		+e.txt=txt
 
 mixin sWarrantyTabs-karrier()
 	// start sWarrantyTabs
@@ -26,19 +31,18 @@ mixin sWarrantyTabs-karrier()
 				h2 Das bekommst du bei uns
 			+e.row.row
 				+e.picture-col.d-none.d-sm-block.col-sm-6
-					+pic('wt-carrier.jpg')(class='sWarrantyTabs__pic')
+					+pic('wt-carrier-new.jpg')(class='sWarrantyTabs__pic')
 				+e.mark-col.col-sm-6
-					+markItem(1, 'Karriere & Weiterbildung')
-					+markItem(2, 'QUALITÄT')
+					+markItem-kar(1, 'Karriere & Weiterbildung')
+					+markItem-kar(2, 'QUALITÄT')
 				+e.mark-col.col-sm-6
-					+markItem(3, 'Lorem Ipsum')
-					+markItem(4, 'TEAMSPIRIT')
+					+markItem-kar(2, 'Lorem Ipsum')
+					+markItem-kar(4, 'TEAMSPIRIT')
 				+e.mark-col.col-sm-6
-					+markItem(5, 'FLEXIBILITÄT')
-					+markItem(6, 'Lorem Ipsum')
-
-mixin markItem(imgNum, txt)
+					+markItem-kar(5, 'FLEXIBILITÄT')
+					+markItem-kar(6, 'Lorem Ipsum')
+mixin markItem-kar(imgNum, txt)
 	+e.A.mark-item(href='#')
 		+e.img
-			img(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
+			img(loading="lazy" src=`img/@2x/wt-kar-${imgNum}.png` alt="")
 		+e.txt=txt
