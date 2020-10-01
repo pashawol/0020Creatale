@@ -175,14 +175,7 @@ function eventHandler() {
 	JSCCommon.animateScroll();
 
 	// JSCCommon.CustomInputFile();
-	// добавляет подложку для pixel perfect
-	var x = window.location.host;
-	let screenName;
-	screenName = '00-carier.png';
-	if (screenName && x === "localhost:3000") {
-		$(".main-wrapper").after(`<div class="pixel-perfect" style="background-image: url(screen/${screenName});"></div>`);
-	}
-	// /добавляет подложку для pixel perfect
+
 
 
 	function whenResize() {
