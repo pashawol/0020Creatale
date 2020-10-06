@@ -186,30 +186,23 @@
 			}
 		}
 		//col
-		&__btn{
-			margin-bottom: 15px;
-			@include media-breakpoint-up(md) {
-				margin-bottom: 0;
-			}
-			&.active{
-				.tabs__btn-inner{
-					background-color: $primary3;
-				}
-
-			}
-		}
 		&__btn-inner{
 			min-height: 100%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-
+			margin-bottom: 15px;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 0;
+			}
 			@include mt();
 			text-align: center;
 			line-height: 1.2;
 			font-weight: 600;
 			text-transform: uppercase;
-
+			position: relative;
+			z-index: 2;
+			color: #fff !important;
 			padding: 10px;
 			@include media-breakpoint-up(sm){
 				padding: 12px;
@@ -230,7 +223,7 @@
 			border-top: 1px solid $white;
 			border-bottom: 1px solid $white;
 
-			&.active{
+			&.active, &:hover{
 				background-color: $primary3;
 			}
 		}

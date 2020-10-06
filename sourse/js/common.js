@@ -149,7 +149,7 @@ const JSCCommon = {
 		}, { passive: true });
 	},
 	animateScroll() {
-		$(" .top-nav li a, .scroll-link").click(function () {
+		$(" .top-nav li a, .scroll-link, .tabs__btn-inner").click(function () {
 			const elementClick = $(this).attr("href");
 			const destination = $(elementClick).offset().top;
 
