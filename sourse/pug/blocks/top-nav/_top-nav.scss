@@ -1,4 +1,5 @@
 .top-nav {
+	background-color: $primary;
 	position: relative;
 	z-index: 100;
 
@@ -370,6 +371,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding-bottom: 75px;
 	}
 
 	//menu
@@ -589,6 +591,6 @@
 		}
 
 		position: relative;
-		top: -10px;
+		//top: -10px;
 	}
 }

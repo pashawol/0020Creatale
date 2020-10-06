@@ -76,6 +76,14 @@ body {
 		top: 0;
 		z-index: 98;
 	}
+
+	&.fixed2 {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 98;
+	}
 }
 
 .mono {
@@ -740,8 +748,17 @@ iframe {
 		transform: scale(0);
 		transform-origin: bottom right;
 
+
 		height: calc(100vh - 40px);
 		width: calc(100vw - 40px);
+		//**
+		& > *{
+			margin-bottom: 20px;
+		}
+
+		@include media-breakpoint-down(md){
+			overflow: scroll;
+		}
 		@include media-breakpoint-up(md){
 			max-height: calc(100vh - 40px);
 			height: 525px;
@@ -755,7 +772,9 @@ iframe {
 	&__mob-btn{
 		position: absolute;
 		right: 5px;
-		top: 5px;
+		//top: 5px;
+		margin: 0;
+		bottom: 5px;
 		width: 32px;
 		height: 32px;
 		border: 1px solid $white;
