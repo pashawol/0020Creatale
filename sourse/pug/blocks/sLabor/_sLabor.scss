@@ -124,6 +124,13 @@
 		@include media-breakpoint-up(md) {
 			margin-bottom: 18px;
 		}
+		font-size: 16px;
+		@include media-breakpoint-up(xl){
+			font-size: 18px;
+		}
+		@include media-breakpoint-up(xxl){
+			font-size: 21px;
+		}
 
 		&::before {
 			content: '';
