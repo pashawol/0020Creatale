@@ -107,7 +107,6 @@
 
 	}
 	&__map-descr{
-		//background-color: red;
 		position: absolute;
 
 		top: 160px;
@@ -167,9 +166,10 @@
 	}
 	&__link{
 		span{
-
+			display: inline;
 		}
 		a{
+			display: inline;
 			@include mt();
 			color: $white;
 			text-decoration: none;
