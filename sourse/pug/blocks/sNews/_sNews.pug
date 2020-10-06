@@ -73,7 +73,8 @@ mixin mailBlock()
 		+e.content
 			+e.left-img
 				img(loading="lazy" src="img/svg/mail-btn.svg" alt="")
-			+e.line
+			+e.LABEL.line
+				input.custom-ph-js(type="text")
 				p Trage hier deine E-Mail-Adresse ein und erfahre, wie Weihnachtspost zum Erlebnis wird.
 			+e.A.btn(href="#")
 				| Jetzt

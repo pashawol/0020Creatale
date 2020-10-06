@@ -5,7 +5,7 @@ mixin sJoinUs()
 			+b.section-title.text-center
 				h3 Haben wir dein Interesse geweckt und du möchtest mit uns dein Projekt Starten?
 				p Zögere nicht und vereinbare einen Kennenlerntermin mit uns.
-			+e.ingWrap
+			+e.A.ingWrap(href='#')
 				+pic('photoPerson-1','','')
 			+e.name Christian Dittrich
 			+e.position Softwareentwickler und Unternehmer
@@ -22,7 +22,7 @@ mixin sJoinUs-christian()
 					br.d-none.d-xxl-block
 					| So zünden wir Deinen Start. Melde dich bei uns per Mail.
 				p Wir lieben Herausforderungen!
-			+e.ingWrap
+			+e.A.ingWrap(href='#')
 				+pic('photoPerson-2','','')
 			+e.name Christian Dittrich
 			+e.position Softwareentwickler und Unternehmer
@@ -42,7 +42,7 @@ mixin sJoinUs-team()
 					if block
 						block
 					else
-						+e.ingWrap--sm
+						+e.A.ingWrap(href='#')--sm
 							+pic(`photoPerson-${i}`,'','')
 						p= t
 			.row.justify-content-center
@@ -55,7 +55,7 @@ mixin sJoinUs-team()
 						+e.col.col-6
 							+item('5','Frank')
 				.col-lg-3
-					+e.ingWrap
+					+e.A.ingWrap(href='#')
 						+pic('photoPerson-2','','')
 					+e.name Christian Dittrich
 					+e.position Softwareentwickler und Unternehmer
@@ -89,7 +89,7 @@ mixin sJoinUs-carier()
 					if block
 						block
 					else
-						+e.ingWrap--sm
+						+e.A.ingWrap(href='#')--sm
 							+pic(`photoPerson-${i}`,'','')
 						p= t
 			.row.justify-content-center
@@ -128,7 +128,7 @@ mixin sJoinUs-04()
 			+b.section-title.text-center
 				h3 Du möchtest auch ein Projekt mit uns Starten?
 				p Zögere nicht und vereinbare einen Kennenlerntermin mit uns.
-			+e.ingWrap
+			+e.A.ingWrap(href='#')
 				+pic('photoPerson-2','','')
 			+e.name Christian Dittrich
 			+e.position Softwareentwickler und Unternehmer

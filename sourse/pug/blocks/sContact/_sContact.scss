@@ -1,5 +1,6 @@
 // start .sContact
 .sContact {
+
 	&.padding-0{
 		padding-top: 0;
 	}
@@ -144,7 +145,13 @@
 			line-height: (32/21);
 		}
 
-		p{
+		a{
+			display: block;
+			color: $white;
+			&:hover{
+				color: rgba($white, .6);
+			}
+
 			margin-bottom: 10px;
 			@include media-breakpoint-up(md){
 				margin-bottom: 10px;

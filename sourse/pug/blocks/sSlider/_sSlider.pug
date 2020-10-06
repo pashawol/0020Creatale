@@ -17,10 +17,14 @@ mixin sSlider()
 			+e.logoes-slider
 				.swiper-container.logoes-slider-js
 					.swiper-wrapper
-						-for (var i = 1; i <= 4; i++)
-							+logoesSlide(i)
+						+logoesSlide(1)
+						+logoesSlide(2)
+							img.swiper-lazy(src="#" data-src=`img/@2x/partner-slide-2.png` alt="")
+						+logoesSlide(3)
+						+logoesSlide(4)
 						+logoesSlide()
 							img.swiper-lazy(src="#" data-src=`img/@2x/abcomed.png` alt="")
+					.logoes-pugin.logoes-pugin-js
 	// end sSlider
 
 mixin manSlide(slideNum,logo)

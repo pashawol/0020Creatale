@@ -125,22 +125,27 @@
 	&__btn {
 		width: 120px;
 		height: 120px;
+		font-size: 14px;
 		@include media-breakpoint-up(sm) {
 			width: 165px;
 			height: 164px;
-			font-size: 15px;
+			font-size: 13px;
 		}
 		@include media-breakpoint-only(lg) {
 			width: 120px;
 			height: 120px;
-			font-size: 15px;
+			//font-size: 15px;
 		}
-		font-size: 14px;
+
 		border: 1px solid $white;
 		color: $primary2 !important;
 		&::before {
 			background-color: #fbdd00 !important;
 		}
+		&:hover::before {
+			background-color: $black !important;
+		}
+
 		&:after{
 			border: 1px solid $white;
 		}

@@ -264,13 +264,46 @@ function eventHandler() {
 	});
 	var logoesSlider = new Swiper('.logoes-slider-js', {
 		slidesPerView: 'auto',
+		autoplay: 4000,
 		loop: true,
 		//
 		lazy: {
 			loadPrevNext: true,
 			loadPrevNextAmount: 6
+		},
+		//pagination
+		pagination: {
+			el: $(this).find('.logoes-pugin-js'),
+			clickable: true
 		}
+	}); //hide when footer is visiable
+
+	window.addEventListener('scroll', HideFixedBtn, {
+		passive: true
 	});
+	window.setTimeout(HideFixedBtn, 30);
+	var footer = document.querySelector('.footer');
+	var BtnCont = document.querySelector('.fixed-btn-cont');
+
+	function HideFixedBtn() {
+		if (!footer || !BtnCont) return;
+		var footerTop = $('.footer')[0].getBoundingClientRect().top + $(window)['scrollTop']();
+		var windowHeight = calcVh(100);
+		console.log(footerTop, '//', window.scrollY + windowHeight);
+
+		if (windowHeight + window.scrollY > footerTop) {
+			$(BtnCont).addClass('invisible-item');
+		} else {
+			$(BtnCont).removeClass('invisible-item');
+		}
+	}
+
+	function calcVh(v) {
+		var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		return v * h / 100;
+	} //
+
+
 	$('.fixed-btn-js, .mob-btn-js').click(function () {
 		$('.fixed-btn-js').toggleClass('active');
 		$('.fixed-btn-cont').toggleClass('active');
@@ -318,7 +351,15 @@ function eventHandler() {
 			$img.replaceWith($svg);
 		}, 'xml');
 	}); // accordion
-	//end luckyoneJs
+	//input with custom placeholder
+
+	$('.custom-ph-js').blur(function () {
+		if (this.value !== '') {
+			$(this).addClass('not-empty');
+		} else {
+			$(this).removeClass('not-empty');
+		}
+	}); //end luckyoneJs
 }
 
 ;
