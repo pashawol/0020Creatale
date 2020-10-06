@@ -310,7 +310,7 @@ function eventHandler() {
 
 		let footerTop = $('.footer')[0].getBoundingClientRect().top + $(window)['scrollTop']();
 		let windowHeight = calcVh(100);
-		console.log(footerTop, '//', window.scrollY+windowHeight);
+		//console.log(footerTop, '//', window.scrollY+windowHeight);
 
 		if (windowHeight + window.scrollY > footerTop){
 			$(BtnCont).addClass('invisible-item');

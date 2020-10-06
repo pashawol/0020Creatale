@@ -288,8 +288,7 @@ function eventHandler() {
 	function HideFixedBtn() {
 		if (!footer || !BtnCont) return;
 		var footerTop = $('.footer')[0].getBoundingClientRect().top + $(window)['scrollTop']();
-		var windowHeight = calcVh(100);
-		console.log(footerTop, '//', window.scrollY + windowHeight);
+		var windowHeight = calcVh(100); //console.log(footerTop, '//', window.scrollY+windowHeight);
 
 		if (windowHeight + window.scrollY > footerTop) {
 			$(BtnCont).addClass('invisible-item');
