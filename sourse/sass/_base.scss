@@ -761,7 +761,7 @@ iframe {
 		}
 
 		@include media-breakpoint-down(sm){
-			overflow: scroll;
+			overflow: auto;
 		}
 		@include media-breakpoint-up(md){
 			max-height: calc(100vh - 40px);
