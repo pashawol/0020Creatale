@@ -6,7 +6,7 @@ mixin footer()
 					+e.A.logo(href='/')
 						img(loading="lazy" src="img/svg/logo.svg" alt="")
 					+e.A.mail.d-md-none(href="#") contact@creatale.de
-					+e.A.address.d-md-none(href="https://www.google.com/maps/@49.8475482,24.0405042,13z" target="_blank")
+					+e.A.address.d-md-none.link-modal(href='#modal-call-map')
 						b Creatale GmbH
 						span Heilbronner Str. 42
 						span Ludwigsburg
@@ -17,7 +17,7 @@ mixin footer()
 				+e.mail-col.col-lg-4.d-none.d-lg-block
 					+e.A.mail(href="#") contact@creatale.de
 				+e.address-col.col-md-6.col-lg-4.d-none.d-md-block
-					+e.A.address(href="https://www.google.com/maps/@49.8475482,24.0405042,13z" target="_blank")
+					+e.A.address.link-modal(href='#modal-call-map')
 						b Creatale GmbH
 						span Heilbronner Str. 42
 						span Ludwigsburg
