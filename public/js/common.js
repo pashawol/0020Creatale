@@ -157,7 +157,7 @@ var JSCCommon = {
 		});
 	},
 	animateScroll: function animateScroll() {
-		$(" .top-nav li a, .scroll-link").click(function () {
+		$(" .top-nav li a, .scroll-link, .tabs__btn-inner").click(function () {
 			var elementClick = $(this).attr("href");
 			var destination = $(elementClick).offset().top;
 			$('html, body').animate({

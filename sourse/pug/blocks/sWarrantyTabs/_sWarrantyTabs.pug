@@ -17,11 +17,13 @@ mixin sWarrantyTabs()
 					+markItem(5, 'Qualitätsgarantie')
 					+markItem(6, 'Eigentumsgarantie')
 	// end sWarrantyTabs
-mixin markItem(imgNum, txt)
-	+e.A.mark-item(href='#')
+mixin markItem(imgNum, txt, t)
+	+e.mark-item
 		+e.img
-			img(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
+			//- +icon(`mark-img-${imgNum}`)
+			img.img-svg-js(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
 		+e.txt=txt
+		+e.hiddenText.d-none.d-md-block Wir garantieren Dir seriöse Qualität. Durch uns verursachte Fehler beheben wir lebenslang und kostenfrei.
 
 mixin sWarrantyTabs-karrier()
 	// start sWarrantyTabs
@@ -31,7 +33,7 @@ mixin sWarrantyTabs-karrier()
 				h2 Das bekommst du bei uns
 			+e.row.row
 				+e.picture-col.d-none.d-sm-block.col-sm-6
-					+pic('wt-carrier-new.jpg')(class='sWarrantyTabs__pic')
+					+pic('Creatale_Karriere-bei-Kreatale_3429.jpg')(class='sWarrantyTabs__pic')
 				+e.mark-col.col-sm-6
 					+markItem-kar(1, 'Karriere & Weiterbildung')
 					+markItem-kar(2, 'QUALITÄT')
@@ -41,8 +43,11 @@ mixin sWarrantyTabs-karrier()
 				+e.mark-col.col-sm-6
 					+markItem-kar(5, 'FLEXIBILITÄT')
 					+markItem-kar(6, 'Lorem Ipsum')
+
 mixin markItem-kar(imgNum, txt)
-	+e.A.mark-item(href='#')
+	+e.A.mark-item--hoverImg(href='#')
+		+e.imgHidden
+			img(loading="lazy" src="img/@2x/wt-kar-hover.jpg", alt="")
 		+e.img
 			img(loading="lazy" src=`img/@2x/wt-kar-${imgNum}.png` alt="")
 		+e.txt=txt
