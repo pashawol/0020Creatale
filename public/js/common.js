@@ -243,8 +243,10 @@ function eventHandler() {
 		});
 	});
 	window.addEventListener('resize', function () {
-		$('.mob-menu--js, .burger-js').removeClass('active');
-		document.body.classList.remove("fixed");
+		if (window.matchMedia("(min-width: 1300px)").matches) {
+			$('.mob-menu--js, .burger-js').removeClass('active');
+			document.body.classList.remove("fixed");
+		}
 	}, {
 		passive: true
 	}); //sSliders
@@ -282,13 +284,13 @@ function eventHandler() {
 	$('.fixed-btn-js, .mob-btn-js').click(function () {
 		$('.fixed-btn-js').toggleClass('active');
 		$('.fixed-btn-cont').toggleClass('active');
-		$('body').toggleClass('fixed');
+		$('body').toggleClass('fixed2');
 	});
 	$('.fixed-btn-cont').click(function () {
 		if (this.classList.contains('active') && event.target === this) {
 			$(this).removeClass('active');
 			$(this).find('.fixed-btn-js').removeClass('active');
-			$('body').removeClass('fixed');
+			$('body').removeClass('fixed2');
 		}
 	}); //
 
