@@ -111,13 +111,13 @@
 				max-width: none;
 			}
 		}
-		&.tabletHidden{
+		&.lgHidden{
 			display: block;
 			@include media-breakpoint-only(lg) {
 				display: none;
 			}
 		}
-		&.tabletShow{
+		&.lgShow{
 			display: none;
 			@include media-breakpoint-only(lg) {
 				display: block;
