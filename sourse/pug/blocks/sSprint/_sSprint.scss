@@ -111,6 +111,18 @@
 				max-width: none;
 			}
 		}
+		&.lgHidden{
+			display: block;
+			@include media-breakpoint-only(lg) {
+				display: none;
+			}
+		}
+		&.lgShow{
+			display: none;
+			@include media-breakpoint-only(lg) {
+				display: block;
+			}
+		}
 	}
 
 

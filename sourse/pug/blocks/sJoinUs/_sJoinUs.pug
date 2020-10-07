@@ -51,61 +51,15 @@ mixin sJoinUs-team()
 						+e.col.col-12
 							+item('3','Christin')
 						+e.col.col-6
-							+item('4','Anna')
+							
 						+e.col.col-6
-							+item('5','Frank')
+							+item('felix.png','Felix')
 				.col-lg-3
 					+e.A.ingWrap(href='mailto:contact@creatale.de')
 						+pic('photoPerson-2','','')
 					+e.name Christian Dittrich
 					+e.position Softwareentwickler und Unternehmer
 					+e.mail(href="mailto:contact@creatale.de") contact@creatale.de
-				.col-lg
-					.row
-						+e.col.col-12
-							+item('6','Patrik')
-						+e.col.col-6
-							+item()
-								+e.btn.circle-btn-frame(href="#")
-									| Werde Teil
-									br
-									| unseres
-									br
-									| Teams!
-						+e.col.col-6
-							+item('7','Markus')
-
-
-mixin sJoinUs-carier()
-	// start sJoinUs
-	+b.SECTION.sJoinUs--team.sJoinUs--carier.section#sJoinUs&attributes(attributes)
-		+pic('small-mars-man.png')(class="sJoinUs__bg-bot")
-		.container.text-center
-			+b.section-title.text-center
-				p Wir stellen wieder ein.
-				h2 Werde ein Teil von Creatale
-			mixin item(i,t)
-				+e.item
-					if block
-						block
-					else
-						+e.A.ingWrap--sm(href='mailto:contact@creatale.de')
-							+pic(`photoPerson-${i}`,'','')
-						p= t
-			.row.justify-content-center
-				.col-lg
-					.row
-						+e.col.col-12
-							+item('3','Christin')
-						+e.col.col-6
-							+item('4','Anna')
-						+e.col.col-6
-							+item('felix.png','Felix')
-				.col-lg-3
-					a.btn-job(href='#')
-						| JOB
-						br
-						| Finden
 				.col-lg
 					.row
 						+e.col.col-12
@@ -119,7 +73,47 @@ mixin sJoinUs-carier()
 									br
 									| Teams!
 						+e.col.col-6
-							+item('7','Markus')
+							+item('4','Bianka')
+
+
+mixin sJoinUs-carier()
+	// start sJoinUs
+	+b.SECTION.sJoinUs--team.sJoinUs--carier.section#sJoinUs&attributes(attributes)
+		+pic('small-mars-man.png')(class="sJoinUs__bg-bot")
+		.container.text-center
+			+b.section-title.text-center
+				p Wir stellen wieder ein.
+				h2 Werde ein Teil von Creatale
+			mixin item(i,t)
+				+e.item&attributes(attributes)
+					if block
+						block
+					else
+						+e.A.ingWrap--sm(href='mailto:contact@creatale.de')
+							+pic(`photoPerson-${i}`,'','')
+						p= t
+			.row.justify-content-center
+				.col-lg
+					.row
+						+e.col.col-12
+							+item('3','Christin')
+						+e.col.col-6
+							+item('4','Anna')(class="hidden")
+						+e.col.col-6
+							+item('felix.png','Felix')
+				.col-lg-3
+					a.btn-job(href='#')
+						| JOB
+						br
+						| Finden
+				.col-lg
+					.row
+						+e.col.col-12
+							+item('marius.png','Marius')
+						+e.col.col-6
+							+item('4','Bianca')
+						+e.col.col-6
+							+item('7','Markus')(class="hidden")
 
 mixin sJoinUs-04()
 	// start sJoinUs

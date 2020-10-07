@@ -8,14 +8,14 @@ mixin sWarrantyTabs()
 				+e.picture-col.d-none.d-sm-block.col-sm-6
 					+pic('warranty-man.jpg')(class='sWarrantyTabs__pic')
 				+e.mark-col.col-sm-6
-					+markItem(1, 'Flexgarantie')
-					+markItem(2, 'Exit-Garantie')
+					+markItem(1, 'Flexgarantie','Wir garantieren Dir, dass wir Sprint für Sprint flexibel auf Deine Änderungswünsche und den Markt reagieren können.')
+					+markItem(2, 'Exit-Garantie','Wir garantieren Dir, dass Du Dein Projekt nach jedem Sprint beenden oder pausieren kannst.')
 				+e.mark-col.col-sm-6
-					+markItem(3, 'Preisgarantie')
-					+markItem(4, 'Termingarantie')
+					+markItem(3, 'Preisgarantie','Wir garantieren Dir einen Festpreis für jedes entwickelte Feature, damit Du volle Kostenkontrolle hast.')
+					+markItem(4, 'Termingarantie','Wir garantieren Dir für jeden Sprint einen festen Liefertermin, auf den Du Dich verlassen kannst.')
 				+e.mark-col.col-sm-6
-					+markItem(5, 'Qualitätsgarantie')
-					+markItem(6, 'Eigentumsgarantie')
+					+markItem(5, 'Qualitätsgarantie','Wir garantieren Dir seriöse Qualität. Durch uns verursachte Fehler beheben wir lebenslang und kostenfrei.')
+					+markItem(6, 'Eigentumsgarantie','Wir garantieren Dir exklusive und uneingeschränkte Nutzungsrechte - ohne böse Überraschungen.')
 	// end sWarrantyTabs
 mixin markItem(imgNum, txt, t)
 	+e.mark-item
@@ -23,7 +23,7 @@ mixin markItem(imgNum, txt, t)
 			//- +icon(`mark-img-${imgNum}`)
 			img.img-svg-js(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
 		+e.txt=txt
-		+e.hiddenText.d-none.d-md-block Wir garantieren Dir seriöse Qualität. Durch uns verursachte Fehler beheben wir lebenslang und kostenfrei.
+		+e.hiddenText.d-none.d-md-block= t
 
 mixin sWarrantyTabs-karrier()
 	// start sWarrantyTabs
