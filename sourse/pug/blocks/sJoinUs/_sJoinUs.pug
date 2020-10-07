@@ -85,7 +85,7 @@ mixin sJoinUs-carier()
 				p Wir stellen wieder ein.
 				h2 Werde ein Teil von Creatale
 			mixin item(i,t)
-				+e.item
+				+e.item&attributes(attributes)
 					if block
 						block
 					else
@@ -98,7 +98,7 @@ mixin sJoinUs-carier()
 						+e.col.col-12
 							+item('3','Christin')
 						+e.col.col-6
-							+item('4','Anna')
+							+item('4','Anna')(class="hidden")
 						+e.col.col-6
 							+item('felix.png','Felix')
 				.col-lg-3
@@ -111,15 +111,9 @@ mixin sJoinUs-carier()
 						+e.col.col-12
 							+item('marius.png','Marius')
 						+e.col.col-6
-							+item()
-								+e.btn.circle-btn-frame(href="#")
-									| Werde Teil
-									br
-									| unseres
-									br
-									| Teams!
+							+item('4','Bianca')
 						+e.col.col-6
-							+item('7','Markus')
+							+item('7','Markus')(class="hidden")
 
 mixin sJoinUs-04()
 	// start sJoinUs
