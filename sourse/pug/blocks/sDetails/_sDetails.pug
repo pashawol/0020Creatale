@@ -60,7 +60,7 @@ mixin sDetails()
 							+e.contact-txt Dein Ansprechpartner
 							+e.img-cont
 								+e.img-inner
-									img(loading='lazy' src="img/@2x/small-portrait.png" alt="")
+									img(loading='lazy' src="img/@1x/sDigits-bg-croped-2.jpg" alt="")
 								+e.A.portrait-btn.circle-btn-frame(href="#")
 									| Jetzt
 									br
@@ -76,6 +76,7 @@ mixin sDetails()
 										+expectSlide(2, 'Flexibilität')
 										+expectSlide(3, 'QUALITÄT & VIELFALT')
 										+expectSlide(4, 'TEAMSPIRIT')
+									.logoes-pugin.logoes-pugin-js.d-md-none
 	// end sDetails
 
 mixin expectSlide(imgNum, slideTxt)

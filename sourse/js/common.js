@@ -350,6 +350,12 @@ function eventHandler() {
 			loadPrevNext: true,
 			loadPrevNextAmount: 5,
 		},
+		//pagination
+		pagination: {
+			el:  '.expect-slider-js .logoes-pugin-js',
+			clickable: true,
+		},
+
 
 	});
 	//img-svg

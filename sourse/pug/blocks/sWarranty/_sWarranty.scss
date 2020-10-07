@@ -219,27 +219,7 @@
 		}
 	}
 	&__logoes-slider{
-		.logoes-pugin{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-top: 20px;
-			height: 60px;
-
-			.swiper-pagination-bullet{
-				@include mt();
-				margin: 0 10px;
-				width: 10px;
-				height: 10px;
-				border-radius: 50%;
-
-				&-active{
-					background-color: $primary3;
-				}
-
-			}
-		}
-
+	
 		.swiper-container{
 
 		}
@@ -277,3 +257,24 @@
 	//
 
 } // end.sWarranty
+
+	.logoes-pugin {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		height: 60px;
+
+		.swiper-pagination-bullet {
+			@include mt();
+			margin: 0 10px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+
+			&-active {
+				background-color: $primary3;
+			}
+
+		}
+	}

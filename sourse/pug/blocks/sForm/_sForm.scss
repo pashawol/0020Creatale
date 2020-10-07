@@ -4,6 +4,9 @@
 	border-top: 1px solid #bbc0d6;
 	padding-top: calc(var(--sPT) / 1.13);
 	padding-bottom: calc(var(--sPB) * 1.55);
+	.form-control:not(:focus){box-shadow: 0 2px 5px rgba($color: #bbc0d6, $alpha: .73);
+		
+	}
 	.section-title {
 		color: $primary2;
 	}

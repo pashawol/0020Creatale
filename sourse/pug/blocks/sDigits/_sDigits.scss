@@ -71,10 +71,14 @@
 		}
 		@include media-breakpoint-up(lg){
 			height: 73%;
+			// bottom: rem(50);
+			bottom: auto;
+			top: rem(80);
 		}
 		@include media-breakpoint-up(xl){
 			right: 15px;
 			height: 91.4%;
+			bottom: 0;
 		}
 		@include media-breakpoint-up(xxl){
 			right: 17px;
@@ -83,6 +87,7 @@
 		}
 	}
 	&__bg-pic{
+	
 		@include media-breakpoint-up(md){
 			position: absolute;
 			z-index: -2;

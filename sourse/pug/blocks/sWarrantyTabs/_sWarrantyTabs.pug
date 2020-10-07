@@ -23,7 +23,7 @@ mixin markItem(imgNum, txt, t)
 			//- +icon(`mark-img-${imgNum}`)
 			img.img-svg-js(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
 		+e.txt=txt
-		+e.hiddenText.d-none.d-md-block= t
+		+e.hiddenText= t
 
 mixin sWarrantyTabs-karrier()
 	// start sWarrantyTabs

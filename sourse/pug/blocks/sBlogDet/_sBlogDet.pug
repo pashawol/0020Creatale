@@ -247,7 +247,7 @@ mixin cardItem(imgNum, txt, t)
 				img.img-svg-js(loading="lazy" src=`img/svg/mark-img-${imgNum}.svg` alt="")
 			+e.card-txt.text-center
 				+e.card-headline=txt
-				+e.card-descr.d-none.d-md-block= t
+				+e.card-descr= t
 
 mixin smallStepItem(title, imgNum)
 	+e.item-cont

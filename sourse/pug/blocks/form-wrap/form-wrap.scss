@@ -119,6 +119,7 @@
 		@include mt;
 		position: absolute; 
 		margin-right: 10px;
+		box-shadow: 0 2px 5px rgba($color: #bbc0d6, $alpha: .73);
 		&::after{  
 			content: '';
 			position: absolute;
@@ -154,7 +155,7 @@
 
 	&__input:checked + &__lab{
 		background-color: $primary2;
-		 
+		 box-shadow: 0 2px 5px rgba($color: #bbc0d6, $alpha: 0);
 		&::after{
 	
 			opacity: 1;
