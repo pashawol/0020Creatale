@@ -111,6 +111,18 @@
 				max-width: none;
 			}
 		}
+		&.tabletHidden{
+			display: block;
+			@include media-breakpoint-only(lg) {
+				display: none;
+			}
+		}
+		&.tabletShow{
+			display: none;
+			@include media-breakpoint-only(lg) {
+				display: block;
+			}
+		}
 	}
 
 

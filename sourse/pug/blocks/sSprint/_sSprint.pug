@@ -22,7 +22,8 @@ mixin sprintItem(i,title,t)
 					+e.title= title
 					p= t
 			+e.col.col-lg
-				+pic(`sprint-${i}.png`,'','')
+				+pic(`sprint-${i}.png`,'','')(class='tabletHidden')
+				+pic(`sprint-tablet-${i}`,'','')(class='tabletShow')
 
 mixin sSprint-05()
 	// start sSprint
